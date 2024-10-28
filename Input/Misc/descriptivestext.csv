@@ -1,0 +1,11 @@
+Task,Dataset,Notes,foil type,words,participant,word per participant
+,,,,,,
+VLD and SD,Jager,British English; Semantic decision: judgement on whether a word refers to an animal or an object,"Lexical decision: legal non-words and pseudo-homophones matched with target word for length, created by replacing a letter in existing words",120,60,120
+VLD,BLP,British English,"Differed from the target words in exactly one subsyllabic segment per syllable. Matched the target words for syllabic and subsyllabic structure, transition frequencies of the subsyllabic segments, and morphological structure.","28,730",78,"28,730"
+VLD,ELP_LD,North American English,"Pronounceable nonwords from changing one or two letters in a corresponding target word, which can occur in early, middle, or late positions","40,481",816,"3,373 (±1)"
+VLD,AP_full_e,"North American English; Conditions manipulated two variables (visual contrast, nonword difficulty)",Hard nonword: matched with target words for positional bigram frequencies;,400,447,400
+VLD,AP_deg_h,"North American English; Conditions manipulated two variables (visual contrast, nonword difficulty)",Very Hard nonword: selected for higher positional bigram frequencithan target words,400,447,400
+SD,SDP,North American English; Judgement on whether a word is abstract or concrete,N/A,"10,000",312,"1,000"
+NMG,ELP_NMG,North American English (same basic word set as ELP_LD),"Pronounceable nonwords from changing one or two letters in a corresponding target word, which can occur in early, middle, or late positions","40,481",444,"2,530 (+1)"
+ALD,AELP,"Six speakers (male and female speakers of three dialects: Singaporean, American, British)",Orthographically plausible nonwords maintaing at least the first syllable of the target word (for words of three or more syllables) and retaining two-thirds of the target word phonemes in the rest of the syllables,"10,170",438,average ~1700 (variable by no. of valid sessions)
+ALD,MALD,One speaker (male Canadian),Pronounceable nonwords where one-third of the subsyllabic constituents of words were swapped for other segments with similar transitional probabilities,"26,793",232,"26,793"
