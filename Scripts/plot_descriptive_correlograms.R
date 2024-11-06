@@ -2,19 +2,21 @@
 library("psych")
 
 
-pdf(paper="special", file=paste(paste(subfolder, "\\correlogram_cov_dataunion.pdf", sep=""), sep=""), height=20, width=20)
-print(ggpairs(dataunion[,c("NOS", covariate.list)],
-        ggplot2::aes(alpha = 0.1, pch = "."),
-        upper = list(continuous = wrap("cor", size = 5, hjust = 0.6, margin=margin(0,0,0,0))),
-        lower = list(continuous = "smooth", size=0.5),
-        columnLabels = c("NOS", covariate.list)) +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        strip.text = element_text(size=21),
-        axis.text = element_text(size=17),
-        axis.text.x = element_text(angle = 90, hjust = 1)
-  ))
-dev.off()
+#pdf(paper="special", file=paste(paste(subfolder, "\\correlogram_cov_dataunion.pdf", sep=""), sep=""), height=20, width=20)
+#print(
+  ggpairs(dataunion[,c("NOS", covariate.list)],
+          ggplot2::aes(alpha = 0.1, pch = "."),
+          upper = list(continuous = wrap("cor", size = 5, hjust = 0.6, margin=margin(0,0,0,0))),
+          lower = list(continuous = "smooth", size=0.5),
+          columnLabels = c("NOS", covariate.list)) +
+    theme(panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          strip.text = element_text(size=21),
+          axis.text = element_text(size=17),
+          axis.text.x = element_text(angle = 90, hjust = 1)
+  )
+#)
+#dev.off()
 ggsave(paste(subfolder,"\\correlogram_cov_dataunion.png", sep=""),height=20, width=20)
 
 sink(file= paste(subfolder,"\\covariate_correlations.txt", sep = ""))
@@ -23,10 +25,14 @@ sink(file = NULL)
 
 #correlogram for each dataset
 for (i in modeldata) {
-  pdf(paper="special", file=paste(subfolder, "\\correlogram_cov_",i,".pdf", sep=""), height=20, width=20)
-  print(ggpairs(df.list[[i]][,c("NOS", covariate.list)], upper = list(continuous = wrap("cor", size = 5))) +
-          theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()))
-  dev.off()
+  #pdf(paper="special", file=paste(subfolder, "\\correlogram_cov_",i,".pdf", sep=""), height=20, width=20)
+  #print(
+    ggpairs(df.list[[i]][,c("NOS", covariate.list)], upper = list(continuous = wrap("cor", size = 5))) +
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+  #)
+  #dev.off()
+  
+  ggsave(paste(subfolder, "\\correlogram_cov_",i,".pdf", sep=""),height=20, width=20)
 }
 
 #correlate across datasets for each dependent variable
@@ -78,9 +84,11 @@ for (dv in c("RT", "Acc")){
     cdf = merge(cdf, df.list[[names(df.list)[d]]][c("Word",dv)], by="Word", all.x = T)
     names(cdf)[names(cdf) == dv] = names(df.list)[d]
   }
-  pdf(paper="special", file=paste(subfolder, "\\simplecorrelogram_", dv, ".pdf", sep=""), height=6.5, width=7)
-  print(ggcorr(cdf[,modeldata], hjust = 0.75, size = 3, label = T, layout.exp = 1))
-  dev.off()
+  #pdf(paper="special", file=paste(subfolder, "\\simplecorrelogram_", dv, ".pdf", sep=""), height=6.5, width=7)
+  #print(
+  ggcorr(cdf[,modeldata], hjust = 0.75, size = 3, label = T, layout.exp = 1)
+  #)
+  #dev.off()
   ggsave(paste(subfolder,"\\simplecorrelogram_", dv, ".png", sep=""),height=6.5, width=7)
   #dev.off()
 }

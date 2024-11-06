@@ -153,12 +153,14 @@ source(".\\Scripts\\bonferronifamilywise.R")
 ###Section 2: replications of Jager findings###
 
 #datasets as intersected with Jager items: runs both factoral and continuous regressions
+##all datasets run, but only visual lexical decision and semantic decision are of interest
 dflistname = "dfMain3"
 df.list = get(dflistname)
 model.list = c("~ Sense * Freq", "~ NOS * logWF")
 source(".\\Scripts\\tables_flex_final.R")
 
 #datasets with items falling within word frequency and NOS of Jager items: runs continuous regressions
+##all datasets run, but only visual lexical decision and semantic decision are of interest
 dflistname = "dfMain4"
 df.list = get(dflistname)
 model.list = c("~ NOS * logWF")

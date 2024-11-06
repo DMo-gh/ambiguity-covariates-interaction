@@ -10,13 +10,13 @@ jager.full <- merge(jager.full, SUBTL.items[c("Word", "SubCD")], by = "Word", al
 jager.full <- merge(jager.full, Johns.items[c("Word", "MemCD")], by = "Word", all.x = T)
 
 
-library("ggplot2")
-ifelse(!dir.exists(file.path(getwd(), outpath, 'Misc')), dir.create(file.path(getwd(), outpath, 'Misc')), FALSE)
+#library("ggplot2")
+#ifelse(!dir.exists(file.path(getwd(), outpath, 'Misc')), dir.create(file.path(getwd(), outpath, 'Misc')), FALSE)
 
-pdf(paper="special", file=paste("./", outpath, "/Misc/jager_freq_split.pdf", sep = ""), height=5, width=7)
-print(ggplot(jager.full, aes(logWF)) + geom_histogram() + facet_grid(Freq ~ Sense))
-dev.off()
+#pdf(paper="special", file=paste("./", outpath, "/Misc/jager_freq_split.pdf", sep = ""), height=5, width=7)
+#print(ggplot(jager.full, aes(logWF)) + geom_histogram() + facet_grid(Freq ~ Sense))
+#dev.off()
 
-pdf(paper="special", file=paste("./", outpath, "/Misc/jager_sense_split.pdf", sep = ""), height=5, width=7)
-print(ggplot(jager.full, aes(NOS)) + geom_histogram() + facet_grid(Sense ~ Freq))
-dev.off()
+#pdf(paper="special", file=paste("./", outpath, "/Misc/jager_sense_split.pdf", sep = ""), height=5, width=7)
+#print(ggplot(jager.full, aes(NOS)) + geom_histogram() + facet_grid(Sense ~ Freq))
+#dev.off()

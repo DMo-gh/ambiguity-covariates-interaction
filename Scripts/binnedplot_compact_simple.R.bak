@@ -20,7 +20,7 @@ library(RColorBrewer)
 #for multiple regression: plot on residuals after fitting all other predictors than target instead of RT or Acc
 #for multiple regression, use interact_effects plot on binned covariate values
 
-plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
+plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
   
   AccPlts = list()
   RTPlts = list()
@@ -30,11 +30,6 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
   
   for(d in 1:length(modeldata)){
     df <- df.list[[modeldata[d]]]
-    partialmod = paste(setdiff(covariate.list, Cov), collapse = "+")
-    df$resRT = resid(lm(paste("RT~NOS*", partialmod, sep = ""), data = df))
-    df$resAcc = resid(glm(paste("Acc~NOS*", partialmod, sep = ""), family = binomial(link = "logit"), data=df))
-    df$resAcc_scaled = scales::rescale(df$resAcc)
-    
     print(paste(d, ":", modeldata[d]))
     
     B= B_start
@@ -60,9 +55,6 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     lightend = "skyblue"
     darkend = "navy"
     darker_blues <- colorRampPalette(colors = c(lightend, darkend))(B) #defaults to lightest colour if B = 1
-    
-    #set custom linetype scale -- takes first B types from list of line types
-    ltlist = c("solid", "longdash", "twodash", "dotted")[1:B]
     
     if(B > 1){
       if(method == "overlap"){
@@ -135,9 +127,9 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
                             sep = "")
     }
     
-    #NOTE: stats are left out of output for neatness
+    #NOTE: stats left out of output for neatness
     outAcc <- by(data = dfcoded, INDICES = list(dfcoded$bins), FUN = function(x) {
-      model <- glm(resAcc_scaled~NOS, data = x, family = "binomial")
+      model <- glm(Acc~NOS, data = x, family = "binomial")
       data.frame(
         b = coef(model)["NOS"], 
         sig = coef(summary(model))["NOS", "Pr(>|z|)"]
@@ -150,23 +142,17 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     statsAccdf <- data.frame(statsAcc)
     statsAccdf <- rownames_to_column(statsAccdf, "bins")
     
-    if(B > 1){
-      #arrange dfcoded$bins by dfcoded$binNs
-      dfcoded$bins <- forcats::fct_reorder(dfcoded$bins, dfcoded$binNs)
-    }
-    
-    pltAcc <- ggplot(dfcoded, aes(NOS, resAcc_scaled, colour = bins)) +
+    pltAcc <- ggplot(dfcoded, aes(NOS, Acc, colour = bins)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
-      ylim(0.25, 1) + 
+      ylim(0.5, 1) + 
       xlim(0, 40) +
       stat_smooth(method = "glm", method.args = list(family = "binomial"), 
                   aes(fill=bins, linetype = bins), show.legend = TRUE, size = 0.75, se = FALSE) + 
       #scale_color_brewer()+
       scale_color_manual(values=darker_blues)+
-      scale_linetype_manual(values=ltlist)+
       guides(color = guide_legend(
         override.aes=list(shape = 19))) +      
-      {if(!(Cov %in% c("Conc", "SemD", "SubCD", "MemCD", "logWF", "old20", "posUni")))
+      {if(Cov != "MemCD")
       guides(color = guide_legend(
         nrow = 2, byrow = TRUE
         ))} +
@@ -180,7 +166,6 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
             legend.position = c(1, 0),
             legend.justification = c("right", "bottom"),
             legend.background = element_rect(fill="transparent"),
-            legend.key.width = unit(26, "pt"),
             panel.grid.major = element_blank(),
             panel.grid.minor = element_blank())
     
@@ -212,22 +197,16 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     statsRTdf <- data.frame(statsRT)
     statsRTdf <- rownames_to_column(statsRTdf, "bins")
     
-    if(B > 1){
-      #arrange dfcoded$bins by dfcoded$binNs
-      dfcoded$bins <- forcats::fct_reorder(dfcoded$bins, dfcoded$binNs)
-    }
-    
-    pltRT <- ggplot(dfcoded, aes(NOS, resRT, colour = bins)) +
+    pltRT <- ggplot(dfcoded, aes(NOS, RT, colour = bins)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
-      ylim(-50,100) +
+      ylim(400,1400) +
       xlim(0,40) +
-      stat_smooth(method = "glm", aes(fill=bins, linetype = bins), show.legend = TRUE, size = 0.75, se = FALSE) +
+      stat_smooth(method = "glm", aes(fill=bins, linetype=bins), show.legend = TRUE, size = 0.75, se = FALSE) +
       #scale_color_brewer()+
       scale_color_manual(values=darker_blues)+
-      scale_linetype_manual(values=ltlist)+
       guides(color = guide_legend(
         override.aes=list(shape = 19))) +      
-      {if(!(Cov %in% c("Conc", "SemD", "SubCD", "MemCD", "logWF", "old20", "posUni")))
+      {if(Cov != "MemCD")
       guides(color = guide_legend(
         nrow = 2, byrow = TRUE
         ))} +
@@ -239,10 +218,9 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
         axis.text = element_text(size=16),
         legend.title=element_text(size=14),
         legend.text=element_text(size=14),
-        legend.position = c(1, 1),
+		legend.position = c(1, 1),
         legend.justification = c("right", "top"),
         legend.background = element_rect(fill="transparent"),
-        legend.key.width = unit(26, "pt"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
     
@@ -250,10 +228,6 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     if(!(modeldata[d] %in% yAxis)){
       pltRT <- pltRT + theme(axis.text.y=element_blank(),
                              axis.ticks.y=element_blank())
-    }
-	if(!(Cov %in% xAxis)){
-      pltRT <- pltRT + theme(axis.text.x=element_blank(),
-                             axis.ticks.x=element_blank())
     }
     
     b <- as.grob(pltRT)
@@ -280,7 +254,7 @@ allRTPlts = list()
 for (cov in covariate.list){
   if (cov %in% colnames(df.list[[1]])){
     print(cov)
-    covPlts = try(plot_multi_megafigure(Cov=cov, B_start=4, method = "discrete", wAxisy = c("VLD_AP_H-F"),wAxisx = bottomCovs))
+    covPlts = try(plot_cov_megafigure(Cov=cov, B_start=4, method = "discrete", wAxisy = c("VLD_AP_H-F"),wAxisx = bottomCovs))
     
     allAccPlts = c(allAccPlts, covPlts[[1]])
     allRTPlts = c(allRTPlts, covPlts[[2]])
@@ -306,27 +280,27 @@ for (pg in 1:pgs){
   allRTPlts1[seq(1, length(pgCovs)*rlen, by=rlen)] = lapply(seq(1, length(pgCovs)*rlen, by=rlen), function(idx){arrangeGrob(allRTPlts1[[idx]], left=textGrob(pgCovs[(idx+(rlen-1))/rlen], rot = 90, gp = gpar(fontsize = 24)))})
   
   WList = c(3,rep(2.5, length(modeldata)-1))
-  HList = c(3.4, rep(3.2, length(pgCovs)-2), 3.5)
+  HList = c(3.4, rep(3, length(pgCovs)-2), 3.5)
   
   # Add column titles and lay out plots
   allAccPlts1[1:rlen] = lapply(1:rlen, function(idx){arrangeGrob(allAccPlts1[[idx]], top=textGrob(modeldata[idx], gp = gpar(fontsize = 26)))})
   accp <- arrangeGrob(grobs = allAccPlts1, ncol = rlen, 
-                      left = textGrob("Scaled Residuals of Accuracy (proportion) by Multiple Covariate Regression", gp=gpar(fontsize = 22), rot=90),
+                       left = textGrob("Accuracy", gp=gpar(fontsize = 22), rot=90),
+                       bottom = textGrob("NOS", gp=gpar(fontsize = 22)),
+                       widths = WList, heights = HList)
+  
+  
+  allRTPlts1[1:rlen] = lapply(1:rlen, function(idx){arrangeGrob(allRTPlts1[[idx]], top=textGrob(modeldata[idx], gp = gpar(fontsize = 26)))})
+  
+  rtp <- arrangeGrob(grobs = allRTPlts1, ncol = rlen, 
+                      left = textGrob("Reaction Time (ms)", gp=gpar(fontsize = 22), rot=90),
                       bottom = textGrob("NOS", gp=gpar(fontsize = 22)),
                       widths = WList, heights = HList)
   
-  
-  allRTPlts1[1:rlen] = lapply(1:rlen, function(idx){arrangeGrob(allRTPlts1[[idx]], top=textGrob(modeldata[idx], gp = gpar(fontsize = 24)))})
-  
-  rtp <- arrangeGrob(grobs = allRTPlts1, ncol = rlen, 
-                     left = textGrob("Residuals of Reaction Time (ms) by Multiple Covariate Regression", gp=gpar(fontsize = 22), rot=90),
-                     bottom = textGrob("NOS", gp=gpar(fontsize = 22)),
-                     widths = WList, heights = HList)
-  
-  w <- 3 * length(df.list) #width and height of compiled plots
+  w <- 3.5 * length(df.list) #width and height of compiled plots
   h <- 4 * length(pgCovs)
   
-  ggsave(paste(subfolder, "\\", dflistname, "multi_accp", pg, ".png", sep=""), accp, height = h, width = w) 
-  ggsave(paste(subfolder, "\\", dflistname, "multi_rtp", pg, ".png", sep=""), rtp, height = h, width = w)
+  ggsave(paste(subfolder, "\\", dflistname, "simple_accp", pg, ".png", sep=""), accp, height = h, width = w) 
+  ggsave(paste(subfolder, "\\", dflistname, "simple_rtp", pg, ".png", sep=""), rtp, height = h, width = w)
   
 }   

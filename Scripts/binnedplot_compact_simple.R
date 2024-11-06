@@ -56,6 +56,9 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     darkend = "navy"
     darker_blues <- colorRampPalette(colors = c(lightend, darkend))(B) #defaults to lightest colour if B = 1
     
+    #set custom linetype scale -- takes first B types from list of line types
+    ltlist = c("solid", "longdash", "twodash", "dotted")[1:B]
+    
     if(B > 1){
       if(method == "overlap"){
         
@@ -142,6 +145,11 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     statsAccdf <- data.frame(statsAcc)
     statsAccdf <- rownames_to_column(statsAccdf, "bins")
     
+    if(B > 1){
+      #arrange dfcoded$bins by dfcoded$binNs
+      dfcoded$bins <- forcats::fct_reorder(dfcoded$bins, dfcoded$binNs)
+    }
+    
     pltAcc <- ggplot(dfcoded, aes(NOS, Acc, colour = bins)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
       ylim(0.5, 1) + 
@@ -150,6 +158,7 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
                   aes(fill=bins, linetype = bins), show.legend = TRUE, size = 0.75, se = FALSE) + 
       #scale_color_brewer()+
       scale_color_manual(values=darker_blues)+
+      scale_linetype_manual(values=ltlist)+
       guides(color = guide_legend(
         override.aes=list(shape = 19))) +      
       {if(Cov != "MemCD")
@@ -166,6 +175,7 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
             legend.position = c(1, 0),
             legend.justification = c("right", "bottom"),
             legend.background = element_rect(fill="transparent"),
+            legend.key.width = unit(26, "pt"),
             panel.grid.major = element_blank(),
             panel.grid.minor = element_blank())
     
@@ -197,6 +207,11 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     statsRTdf <- data.frame(statsRT)
     statsRTdf <- rownames_to_column(statsRTdf, "bins")
     
+    if(B > 1){
+      #arrange dfcoded$bins by dfcoded$binNs
+      dfcoded$bins <- forcats::fct_reorder(dfcoded$bins, dfcoded$binNs)
+    }
+    
     pltRT <- ggplot(dfcoded, aes(NOS, RT, colour = bins)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
       ylim(400,1350) +
@@ -204,6 +219,7 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
       stat_smooth(method = "glm", aes(fill=bins, linetype=bins), show.legend = TRUE, size = 0.75, se = FALSE) +
       #scale_color_brewer()+
       scale_color_manual(values=darker_blues)+
+      scale_linetype_manual(values=ltlist)+
       guides(color = guide_legend(
         override.aes=list(shape = 19))) +      
       {if(Cov != "MemCD")
@@ -218,9 +234,10 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
         axis.text = element_text(size=16),
         legend.title=element_text(size=14),
         legend.text=element_text(size=14),
-		legend.position = c(1, 1),
+        legend.position = c(1, 1),
         legend.justification = c("right", "top"),
         legend.background = element_rect(fill="transparent"),
+        legend.key.width = unit(26, "pt"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
     
@@ -285,7 +302,7 @@ for (pg in 1:pgs){
   # Add column titles and lay out plots
   allAccPlts1[1:rlen] = lapply(1:rlen, function(idx){arrangeGrob(allAccPlts1[[idx]], top=textGrob(modeldata[idx], gp = gpar(fontsize = 26)))})
   accp <- arrangeGrob(grobs = allAccPlts1, ncol = rlen, 
-                       left = textGrob("Accuracy", gp=gpar(fontsize = 22), rot=90),
+                       left = textGrob("Accuracy (proportion)", gp=gpar(fontsize = 22), rot=90),
                        bottom = textGrob("NOS", gp=gpar(fontsize = 22)),
                        widths = WList, heights = HList)
   

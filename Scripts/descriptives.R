@@ -1,89 +1,56 @@
 library(xtable)
 
-#create table of descriptive stats
+#create tables of descriptive stats (one for original data; one for analysed data)
 
-df.listJ <- df.list
-df.listJ$Jager <- jager.full
-#df.listJ$AP <- df.list$AP_deg_h
-
+#change original data to latex table:
 description <- read.csv(".\\Input\\Misc\\descriptivestext.csv", colClasses = rep("character", 7))
 
-descriptives <- data.frame(matrix(NA, nrow = 10, ncol = (8 + (3 * 4) + length(covariate.list)*4)))
+print(
+  xtable(description, type = "latex")
+  , include.rownames = FALSE
+  , include.colnames = TRUE
+  , size = "normalsize",
+  file = paste(subfolder, "\\Descriptives_original.tex", sep = "")
+)
 
-models <- c("Jager", "BLP", "ELP_LD", "AP_full_e", "AP_deg_h", "AELP", "MALD", "SDP", "ELP_NMG")
+#descriptives table of dependent and independent variables
 
-covariate.list_long_headings = rep("", 4*length(covariate.list))
-for (i in 1:length(covariate.list)){
-  covariate.list_long_headings[4*i - 3] = covariate.list[i]
-}
+models <- c("VLD_AP_H-F", "VLD_AP_V-D", "VLD_BLP", "VLD_ELP", "ALD_AELP", "ALD_MALD", "NMG_ELP", "SD_SDP")
+
+descriptives <- data.frame(matrix(NA, nrow = 1+((length(covariate.list)+3)*4), ncol = 7))
+descriptives[1,] = c("Dataset", "Words Analysed", "Variable", "Mean","SD","Range","IQR")
 
 items <- c("RT", "Acc", "NOS", covariate.list)
 
-
-descriptives[1, 1:(8 + (3 * 4) + length(covariate.list)*4)] <- c("Task", "Dataset", "Notes", "Foil Type", "No. of Words", 
-                          "No. of Participants", "Words per Participant", "Words Analysed", 
-                          "RT","","","","Acc","","","", "NOS","","","", 
-                          covariate.list_long_headings)
-
-descriptives[2, 1:(8 + (3 * 4) + length(covariate.list)*4)] <- c("", "", "", "", "", "", "", "",
-                          rep(c("Mean","SD","Range","IQR"), 3+length(covariate.list)))
-
-descriptives[3:11, 2] <- models
-
-#no dp for RT; 1 dp for NOS, nN, nV, nA, nA; 1 dp for nLet, nSyll; no dp for pld, old,posU, posB 
-
-
 for(n in 1:length(models)){ #where n+2 is row of interest
-  descriptives[(n+2), 1] <- description[grep(models[n], description$Dataset), 1]
-  descriptives[(n+2), 3:7] <- description[grep(models[n], description$Dataset), 3:7]
-  descriptives[(n+2), 8] <- length(df.listJ[[models[n]]]$Word) #find no. of words
-  for(o in 1:length(items)){
-    dp = 2
-    if(items[o] %in% c("RT", "plo20", "old20", "posUni", "posBi")){dp = 0} #set number of decimals to round
-    else if(items[o] %in% c("NOS", "nNoun", "nVerb", "nAdj", "nAdv", "nLet", "nSyll")){dp = 1}
+  
+  descriptives[((n-1) * length(items))+2, 1] <- models[n]
+  descriptives[((n-1) * length(items))+2, 2] <- length(df.list[[models[n]]]$Word) #find no. of words
+  descriptives[(((n-1) * length(items))+2):(n * length(items) + 1), 3] <- items
 
+  for(o in 1:length(items)){
+    #set number of decimals to round
+    dp = 2 #default
+    if(items[o] %in% c("RT", "plo20", "old20", "posUni", "posBi")){dp = 0 
+    }else if(items[o] %in% c("NOS", "nNoun", "nVerb", "nAdj", "nAdv", "nLet", "nSyll")){dp = 1}
     
-    if (!(models[n] == "Jager" & items[o] %in% c("RT", "Acc"))){ 
-      descriptives[(n+2), 9+((o-1)*4)] <- round(unlist(lapply(df.listJ[[models[n]]][items[o]], mean, na.rm = T)), dp) #find mean
-      descriptives[(n+2), 10+((o-1)*4)] <- round(unlist(lapply(df.listJ[[models[n]]][items[o]], sd, na.rm = T)), dp) #find sd
-      descriptives[(n+2), 11+((o-1)*4)] <- as.character(paste(round(min(df.listJ[[models[n]]][items[o]], na.rm = T), dp), 
-                                                 "-",round(max(df.listJ[[models[n]]][items[o]], na.rm = T), dp)))  #find min and max
-      quant <- lapply(df.listJ[[models[n]]][items[o]], quantile, na.rm = TRUE)
-      descriptives[(n+2), 12+((o-1)*4)] <- as.character(paste(round(quant[[1]]["25%"], dp),
-                                                 "-", round(quant[[1]]["75%"], dp)))#find IQR
-    }
+    descriptives[(((n-1) * length(items))+ 1 + o), 4] <- round(unlist(lapply(df.list[[models[n]]][items[o]], mean, na.rm = T)), dp) #find mean
+    descriptives[(((n-1) * length(items))+ 1 + o), 5] <- round(unlist(lapply(df.list[[models[n]]][items[o]], sd, na.rm = T)), dp) #find sd
+    descriptives[(((n-1) * length(items))+ 1 + o), 6] <- as.character(paste(round(min(df.list[[models[n]]][items[o]], na.rm = T), dp), 
+                                                            "-",round(max(df.list[[models[n]]][items[o]], na.rm = T), dp)))  #find min and max
+    quant <- lapply(df.list[[models[n]]][items[o]], quantile, na.rm = TRUE)
+    descriptives[(((n-1) * length(items))+ 1 + o), 7] <- as.character(paste(round(quant[[1]]["25%"], dp),
+                                                            "-", round(quant[[1]]["75%"], dp)))#find IQR
   }
 }
+
 
 write.table(descriptives, paste(subfolder, "\\descriptives_", dflistname, ".csv", sep=""), row.names = F, col.names = F, sep = ",")
 
 print(
-     xtable(descriptives[,1:8], type = "latex")
+     xtable(descriptives, type = "latex")
      , include.rownames = FALSE
      , include.colnames = FALSE
      , size = "normalsize",
-     file = paste(subfolder, "\\Descriptives_original.tex", sep = "")
+     file = paste(subfolder, "\\Descriptives_current.tex", sep = "")
      )
-
-desc_colnames = c("Dataset", descriptives[1,8], descriptives[2,c(9:12)], "Variable")
-descriptives_long = descriptives[3:(3+length(modeldata)-1),c(2, 8, 9:12)]
-descriptives_long[7] = descriptives[1,9]
-colnames(descriptives_long) = desc_colnames
-coln = 13
-while (coln < ncol(descriptives) - 4){
-  d_l = descriptives[3:(3+length(modeldata)-1),c(2, 8, coln:(coln+3))]
-  d_l[7] = descriptives[1,coln]
-  colnames(d_l) = desc_colnames
-  descriptives_long = rbind(descriptives_long, d_l)
-  coln = coln + 4
-}
-
-descriptives_long_arranged = dplyr::arrange(descriptives_long, factor(Dataset, levels = models))
-
-print(
-  xtable(descriptives_long_arranged[,c(1,2,7, c(3:6))], type = "latex")
-  , include.rownames = FALSE
-  , include.colnames = TRUE
-  , size = "normalsize",
-  file = paste(subfolder, "\\Descriptives_current", dflistname, ".tex", sep = "")
-)

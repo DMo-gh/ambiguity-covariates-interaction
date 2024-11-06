@@ -64,6 +64,9 @@ for (ds in modeldata){
   PCAadjP.rt = rbind(PCAadjP.rt, RTintPs)
 }
 
+saveRDS(PCAadjP.rt, paste(subfolderE, "\\PCAbonferroniRT.rds", sep = ""))
+saveRDS(PCAadjP.acc, paste(subfolderE, "\\PCAbonferroniAcc.rds", sep = ""))
+
 #multiple cov regression with nAdv -- megastudies
 startMod = which(grepl("nAdv", RTsumm$V1[as.numeric(modelInd)])&!grepl("RC", RTsumm$V1[as.numeric(modelInd)]))
 startInd = as.numeric(modelInd[startMod])
@@ -104,6 +107,10 @@ for (ds in modeldata[!grepl("AP", modeldata)]){
   MEGAadjP.rt = rbind(MEGAadjP.rt, RTintPs)
 }
 
+saveRDS(MEGAadjP.rt, paste(subfolderE, "\\MultibonferroniRT.rds", sep = ""))
+saveRDS(MEGAadjP.acc, paste(subfolderE, "\\MultibonferroniAcc.rds", sep = ""))
+
+
 #multiple cov regression without nAdv -- AP
 startMod = which(!grepl("nAdv", RTsumm$V1[as.numeric(modelInd)])&!grepl("RC", RTsumm$V1[as.numeric(modelInd)]))
 startInd = as.numeric(modelInd[startMod])
@@ -143,6 +150,9 @@ for (ds in modeldata[grepl("AP", modeldata)]){
   RTintPs = RTintPs %>% arrange(match(interactions, paste("NOS:", covariate.list, sep="")))
   APadjP.rt = rbind(APadjP.rt, RTintPs)
 }
+
+saveRDS(APadjP.rt, paste(subfolderE, "\\APMultibonferroniRT.rds", sep = ""))
+saveRDS(APadjP.acc, paste(subfolderE, "\\APMultibonferroniAcc.rds", sep = ""))
 
 
 #simple covariate regressions
@@ -185,3 +195,6 @@ for (ds in modeldata){
   RTintPs = RTintPs %>% arrange(match(interactions, paste("NOS:", covariate.list, sep="")))
   SIMPLEadjP.rt = rbind(SimpleadjP.rt, RTintPs)
 }
+
+saveRDS(SIMPLEadjP.rt, paste(subfolderE, "\\SimplebonferroniRT.rds", sep = ""))
+saveRDS(SIMPLEadjP.acc, paste(subfolderE, "\\SimplebonferroniAcc.rds", sep = ""))
