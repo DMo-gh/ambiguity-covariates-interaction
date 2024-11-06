@@ -1,0 +1,200 @@
+[1] "VLD_AP_H-F : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-68.895 -17.783  -5.163  14.980  87.881 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 512.351654  10.141329  50.521  < 2e-16 ***
+NOS           0.218990   0.921192   0.238  0.81236    
+posBi         0.317739   0.107568   2.954  0.00356 ** 
+NOS:posBi    -0.026271   0.009699  -2.709  0.00740 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 26.66 on 181 degrees of freedom
+Multiple R-squared:  0.1351,	Adjusted R-squared:  0.1208 
+F-statistic: 9.424 on 3 and 181 DF,  p-value: 8.091e-06
+
+[1] "BIC:  1761.79235193975"
+[1] "VIF NOS : 4.27231701792221"       "VIF posBi : 8.75964119888901"    
+[3] "VIF NOS:posBi : 11.9687415423197"
+[1] "VLD_AP_V-D : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-57.519 -20.057  -2.663  18.041  83.052 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 622.44992   10.63410  58.533  < 2e-16 ***
+NOS           0.25281    0.96595   0.262  0.79384    
+posBi         0.36709    0.11279   3.254  0.00136 ** 
+NOS:posBi    -0.02717    0.01017  -2.671  0.00824 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 27.95 on 181 degrees of freedom
+Multiple R-squared:  0.1441,	Adjusted R-squared:  0.1299 
+F-statistic: 10.16 on 3 and 181 DF,  p-value: 3.239e-06
+
+[1] "BIC:  1779.34770407737"
+[1] "VIF NOS : 4.2723170179222"        "VIF posBi : 8.75964119888901"    
+[3] "VIF NOS:posBi : 11.9687415423197"
+[1] "VLD_BLP : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-113.02  -34.86   -6.24   26.90  248.56 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 599.269653   1.556160 385.095  < 2e-16 ***
+NOS          -4.564003   0.225944 -20.200  < 2e-16 ***
+posBi         0.041535   0.007611   5.457 5.07e-08 ***
+NOS:posBi    -0.001189   0.001013  -1.174    0.241    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48.78 on 5191 degrees of freedom
+Multiple R-squared:  0.1369,	Adjusted R-squared:  0.1364 
+F-statistic: 274.4 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  55170.1826410191"
+[1] "VIF NOS : 1.75490333054893"       "VIF posBi : 3.39869642564094"    
+[3] "VIF NOS:posBi : 4.25519127873377"
+[1] "VLD_ELP : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-201.78  -55.14  -10.00   44.66  424.53 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  7.196e+02  1.999e+00 359.904  < 2e-16 ***
+NOS         -8.578e+00  3.174e-01 -27.021  < 2e-16 ***
+posBi        2.987e-02  9.193e-03   3.249  0.00116 ** 
+NOS:posBi    3.066e-04  1.338e-03   0.229  0.81875    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 78.33 on 8441 degrees of freedom
+Multiple R-squared:  0.1358,	Adjusted R-squared:  0.1355 
+F-statistic:   442 on 3 and 8441 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  97663.9315096984"
+[1] "VIF NOS : 1.81280483644582"       "VIF posBi : 3.18843486868482"    
+[3] "VIF NOS:posBi : 4.11871491912666"
+[1] "ALD_AELP : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-254.829  -56.726   -2.295   52.905  315.763 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 961.229294   2.968266 323.835  < 2e-16 ***
+NOS          -3.745816   0.472319  -7.931 2.64e-15 ***
+posBi         0.017623   0.015804   1.115   0.2649    
+NOS:posBi    -0.004580   0.002749  -1.666   0.0958 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 81.66 on 5314 degrees of freedom
+Multiple R-squared:  0.03492,	Adjusted R-squared:  0.03438 
+F-statistic:  64.1 on 3 and 5314 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  61956.7647926122"
+[1] "VIF NOS : 2.26268083429296"       "VIF posBi : 2.88049042104799"    
+[3] "VIF NOS:posBi : 3.85692453385558"
+[1] "ALD_MALD : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-466.92  -93.78  -19.86   72.82  817.08 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 895.956348   3.771838 237.538  < 2e-16 ***
+NOS          -3.213896   0.583865  -5.505 3.82e-08 ***
+posBi         0.039250   0.017183   2.284   0.0224 *  
+NOS:posBi    -0.004963   0.002463  -2.015   0.0439 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 138 on 7487 degrees of freedom
+Multiple R-squared:  0.01199,	Adjusted R-squared:  0.0116 
+F-statistic:  30.3 on 3 and 7487 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  95113.9516716383"
+[1] "VIF NOS : 1.83541750533514"       "VIF posBi : 3.25764058449445"    
+[3] "VIF NOS:posBi : 4.19970212988136"
+[1] "NMG_ELP : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-153.70  -43.57   -8.36   34.57  326.87 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 670.780507   1.558850 430.305  < 2e-16 ***
+NOS          -5.108384   0.247840 -20.612  < 2e-16 ***
+posBi         0.051088   0.007178   7.117 1.19e-12 ***
+NOS:posBi    -0.001831   0.001045  -1.752   0.0798 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 61.22 on 8465 degrees of freedom
+Multiple R-squared:  0.09969,	Adjusted R-squared:  0.09938 
+F-statistic: 312.5 on 3 and 8465 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  93766.9732846056"
+[1] "VIF NOS : 1.81177065369652"       "VIF posBi : 3.18704361440296"    
+[3] "VIF NOS:posBi : 4.11862662518761"
+[1] "SD_SDP : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-309.47  -83.49   -2.77   77.48  513.51 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 955.659701   5.564045 171.756  < 2e-16 ***
+NOS           0.610909   1.120216   0.545 0.585553    
+posBi         0.083436   0.024766   3.369 0.000764 ***
+NOS:posBi    -0.004559   0.003740  -1.219 0.222971    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 123.5 on 3081 degrees of freedom
+Multiple R-squared:  0.005982,	Adjusted R-squared:  0.005014 
+F-statistic: 6.181 on 3 and 3081 DF,  p-value: 0.0003486
+
+[1] "BIC:  38505.6614457744"
+[1] "VIF NOS : 1.94372626626551"       "VIF posBi : 3.1091947136554"     
+[3] "VIF NOS:posBi : 4.48996840551793"
