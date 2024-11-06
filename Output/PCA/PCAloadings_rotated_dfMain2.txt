@@ -1,0 +1,85 @@
+Principal Components Analysis
+Call: principal(r = na.omit(dataunion[, c(covariate.list)]), nfactors = 4, 
+    rotate = "varimax")
+Standardized loadings (pattern matrix) based upon correlation matrix
+         RC1   RC2   RC3   RC4   h2    u2 com
+nNoun  -0.12  0.27 -0.07 -0.71 0.60 0.397 1.4
+nVerb  -0.29  0.39  0.23 -0.19 0.33 0.672 3.0
+nAdj   -0.06  0.09 -0.01  0.67 0.46 0.539 1.1
+nAdv   -0.04  0.27 -0.13  0.44 0.28 0.718 1.9
+Conc   -0.35 -0.26 -0.07 -0.62 0.58 0.423 2.0
+SemD    0.10  0.70  0.08  0.36 0.63 0.367 1.6
+SubCD  -0.21  0.88 -0.05  0.00 0.82 0.177 1.1
+MemCD  -0.15  0.91 -0.06  0.16 0.87 0.127 1.1
+logWF  -0.32  0.84 -0.12 -0.03 0.82 0.183 1.3
+nLet    0.93 -0.13  0.19  0.04 0.91 0.086 1.1
+nSyll   0.89 -0.14  0.09  0.08 0.82 0.181 1.1
+pld20   0.92 -0.17 -0.08  0.04 0.89 0.110 1.1
+old20   0.92 -0.18 -0.11  0.04 0.89 0.112 1.1
+posUni -0.04 -0.08  0.89 -0.01 0.80 0.204 1.0
+posBi   0.09  0.01  0.92  0.01 0.86 0.139 1.0
+
+                       RC1  RC2  RC3  RC4
+SS loadings           3.75 3.27 1.81 1.73
+Proportion Var        0.25 0.22 0.12 0.12
+Cumulative Var        0.25 0.47 0.59 0.70
+Proportion Explained  0.36 0.31 0.17 0.16
+Cumulative Proportion 0.36 0.66 0.84 1.00
+
+Mean item complexity =  1.4
+Test of the hypothesis that 4 components are sufficient.
+
+The root mean square of the residuals (RMSR) is  0.06 
+ with the empirical chi square  6973.51  with prob <  0 
+
+Fit based upon off diagonal values = 0.96
+
+loadings with no cutoff:
+
+Loadings:
+       RC1      RC2      RC3      RC4     
+nNoun  -0.11622  0.27159 -0.06767 -0.71468
+nVerb  -0.28801  0.39475  0.22958 -0.19103
+nAdj   -0.06298  0.08881 -0.01459  0.67013
+nAdv   -0.03507  0.27236 -0.13196  0.43517
+Conc   -0.35286 -0.25907 -0.07457 -0.61601
+SemD    0.09803  0.69961  0.08208  0.35661
+SubCD  -0.21047  0.88056 -0.05314  0.00359
+MemCD  -0.15048  0.90683 -0.06091  0.15721
+logWF  -0.31964  0.83642 -0.12099 -0.02953
+nLet    0.92832 -0.12715  0.18510  0.03612
+nSyll   0.88639 -0.13763  0.08750  0.08426
+pld20   0.92272 -0.17435 -0.08236  0.03809
+old20   0.91656 -0.18402 -0.11230  0.03699
+posUni -0.04104 -0.07813  0.88795 -0.00512
+posBi   0.09373  0.01222  0.92319  0.00641
+
+                   RC1     RC2     RC3     RC4
+SS loadings    3.75432 3.27118 1.81043 1.72924
+Proportion Var 0.25029 0.21808 0.12070 0.11528
+Cumulative Var 0.25029 0.46837 0.58906 0.70434
+
+loadings with cutoff at 0.3:
+
+Loadings:
+       RC1    RC2    RC3    RC4   
+nNoun                       -0.715
+nVerb          0.395              
+nAdj                         0.670
+nAdv                         0.435
+Conc   -0.353               -0.616
+SemD           0.700         0.357
+SubCD          0.881              
+MemCD          0.907              
+logWF  -0.320  0.836              
+nLet    0.928                     
+nSyll   0.886                     
+pld20   0.923                     
+old20   0.917                     
+posUni                0.888       
+posBi                 0.923       
+
+                 RC1   RC2   RC3   RC4
+SS loadings    3.754 3.271 1.810 1.729
+Proportion Var 0.250 0.218 0.121 0.115
+Cumulative Var 0.250 0.468 0.589 0.704
