@@ -67,7 +67,7 @@ for (dv in c("RT", "Acc")){
 
 #simplified versions
 pdf(paper="special", file=paste(subfolder, "\\simplecorrelogram_cov_dataunion.pdf", sep=""), height=8, width=8)
-print(ggcorr(dataunion[,c("NOS", covariate.list)], hjust = 0.75, size = 3, label = T))
+print(ggcorr(dataunion[,c("NOS", covariate.list)], hjust = 0.75, size = 3, label = T, label_round = 2))
 dev.off()
 
 ggsave(paste(subfolder,"\\simplecorrelogram_cov_dataunion.png", sep=""),height=8, width=8)
@@ -84,12 +84,12 @@ for (dv in c("RT", "Acc")){
     cdf = merge(cdf, df.list[[names(df.list)[d]]][c("Word",dv)], by="Word", all.x = T)
     names(cdf)[names(cdf) == dv] = names(df.list)[d]
   }
-  #pdf(paper="special", file=paste(subfolder, "\\simplecorrelogram_", dv, ".pdf", sep=""), height=6.5, width=7)
-  #print(
-  ggcorr(cdf[,modeldata], hjust = 0.75, size = 3, label = T, layout.exp = 1)
-  #)
-  #dev.off()
-  ggsave(paste(subfolder,"\\simplecorrelogram_", dv, ".png", sep=""),height=6.5, width=7)
+  pdf(paper="special", file=paste(subfolder, "\\simplecorrelogram_", dv, ".pdf", sep=""), height=6.5, width=7)
+  print(
+  ggcorr(cdf[,modeldata], hjust = 0.75, size = 3, label = T, label_round = 2, layout.exp = 1)
+  )
+  dev.off()
+  #ggsave(paste(subfolder,"\\simplecorrelogram_", dv, ".png", sep=""),height=6.5, width=7)
   #dev.off()
 }
 
