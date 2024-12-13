@@ -145,22 +145,34 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     })
     statsAcc <- do.call("rbind", outAcc)
     statsAcc$b <- paste("b =", rd(statsAcc$b,3))
+    statsAcc$issig <- ifelse(statsAcc$sig<0.05, "*", "")
     statsAcc$sig <- paste("sig =", ifelse(statsAcc$sig<.001, "<.001", rd(statsAcc$sig,3)))
     
     statsAccdf <- data.frame(statsAcc)
     statsAccdf <- rownames_to_column(statsAccdf, "bins")
+    statsAccdf$binsig = paste(statsAccdf$bins, statsAccdf$issig, sep = "")
+    print(statsAccdf)
     
-    if(B > 1){
-      #arrange dfcoded$bins by dfcoded$binNs
-      dfcoded$bins <- forcats::fct_reorder(dfcoded$bins, dfcoded$binNs)
+    #"binsig" column marks statistical significance for bin label in plot
+    if("binsig" %in% colnames(dfcoded)){
+      dfcoded = subset(dfcoded, select=-c(binsig))
     }
     
-    pltAcc <- ggplot(dfcoded, aes(NOS, resAcc_scaled, colour = bins)) +
+    dfcoded = merge(dfcoded, statsAccdf, by = "bins")
+    #print(unique(dfcoded$binsig))
+    
+    if(B > 1){
+      #arrange dfcoded$binsig by dfcoded$binNs
+      dfcoded$binsig <- forcats::fct_reorder(dfcoded$binsig, dfcoded$binNs)
+    }
+    
+    
+    pltAcc <- ggplot(dfcoded, aes(NOS, resAcc_scaled, colour = binsig)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
       ylim(0.25, 1) + 
       xlim(0, 40) +
       stat_smooth(method = "glm", method.args = list(family = "binomial"), 
-                  aes(fill=bins, linetype = bins), show.legend = TRUE, size = 0.75, se = FALSE) + 
+                  aes(fill=binsig, linetype = binsig), show.legend = TRUE, size = 0.75, se = FALSE) + 
       #scale_color_brewer()+
       scale_color_manual(values=darker_blues)+
       scale_linetype_manual(values=ltlist)+
@@ -199,7 +211,7 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     
     
     outRT <- by(data = dfcoded, INDICES = list(dfcoded$bins), FUN = function(x) {
-      model <- lm(RT ~ NOS, data = x)
+      model <- lm(resRT ~ NOS, data = x)
       data.frame(
         b = coef(model)["NOS"], 
         sig = coef(summary(model))["NOS", "Pr(>|t|)"]
@@ -207,21 +219,34 @@ plot_multi_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     })
     statsRT <- do.call("rbind", outRT)
     statsRT$b <- paste("b =", rd(statsRT$b,3))
+    statsRT$issig <- ifelse(statsRT$sig < 0.05, "*", "")
     statsRT$sig <- paste("sig =", ifelse(statsRT$sig<0.001, "<.001", rd(statsRT$sig,3)))
     
     statsRTdf <- data.frame(statsRT)
     statsRTdf <- rownames_to_column(statsRTdf, "bins")
     
+    #marks statistical significance for bin label in plot
+    dfcoded = merge(dfcoded, statsRTdf, by = "bins")
+    dfcoded$bins = paste0(dfcoded$bins, dfcoded$issig)
+    statsRTdf$binsig = paste(statsRTdf$bins, statsRTdf$issig, sep = "")
+    print(statsRTdf)
+    
+    #binsig column marks statistical significance for bin label in plot
+    if("binsig" %in% colnames(dfcoded)){
+      dfcoded = subset(dfcoded, select=-c(binsig))
+    }
+    dfcoded = merge(dfcoded, statsRTdf, by = "bins")
+    
     if(B > 1){
-      #arrange dfcoded$bins by dfcoded$binNs
-      dfcoded$bins <- forcats::fct_reorder(dfcoded$bins, dfcoded$binNs)
+      #arrange dfcoded$binsig by dfcoded$binNs
+      dfcoded$binsig <- forcats::fct_reorder(dfcoded$binsig, dfcoded$binNs)
     }
     
-    pltRT <- ggplot(dfcoded, aes(NOS, resRT, colour = bins)) +
+    pltRT <- ggplot(dfcoded, aes(NOS, resRT, colour = binsig)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
       ylim(-50,100) +
       xlim(0,40) +
-      stat_smooth(method = "glm", aes(fill=bins, linetype = bins), show.legend = TRUE, size = 0.75, se = FALSE) +
+      stat_smooth(method = "glm", aes(fill=binsig, linetype = binsig), show.legend = TRUE, size = 0.75, se = FALSE) +
       #scale_color_brewer()+
       scale_color_manual(values=darker_blues)+
       scale_linetype_manual(values=ltlist)+

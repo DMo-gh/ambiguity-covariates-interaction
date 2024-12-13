@@ -180,7 +180,7 @@ for (ds in modeldata){
     }
   }
   ACCintPs = ACCintPs %>% arrange(match(interactions, paste("NOS:", covariate.list, sep="")))
-  SIMPLEadjP.acc = rbind(SimpleadjP.acc, ACCintPs)
+  SIMPLEadjP.acc = rbind(SIMPLEadjP.acc, ACCintPs)
   
   RTintPs = simple.rt.summ[simple.rt.summ$V2 == ds & grepl("NOS:", simple.rt.summ$V13),c("V2", "V13", "V14", "V18")] %>% 
     add_column(X = NA) %>% `colnames<-`(c("dataset", "interactions", "b", "p", "adjpsig")) %>%
@@ -193,7 +193,7 @@ for (ds in modeldata){
     }
   }
   RTintPs = RTintPs %>% arrange(match(interactions, paste("NOS:", covariate.list, sep="")))
-  SIMPLEadjP.rt = rbind(SimpleadjP.rt, RTintPs)
+  SIMPLEadjP.rt = rbind(SIMPLEadjP.rt, RTintPs)
 }
 
 saveRDS(SIMPLEadjP.rt, paste(subfolderE, "\\SimplebonferroniRT.rds", sep = ""))
