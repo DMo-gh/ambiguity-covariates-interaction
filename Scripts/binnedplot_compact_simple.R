@@ -52,9 +52,9 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     print(B)
     
     #set custom colour scale -- divide same 
-    lightend = "skyblue"
-    darkend = "navy"
-    darker_blues <- colorRampPalette(colors = c(lightend, darkend))(B) #defaults to lightest colour if B = 1
+    #lightend = "skyblue"
+    #darkend = "navy"
+    #darker_blues <- colorRampPalette(colors = c(lightend, darkend))(B) #defaults to lightest colour if B = 1
     
     #set custom linetype scale -- takes first B types from list of line types
     ltlist = c("solid", "longdash", "twodash", "dotted")[1:B]
@@ -139,6 +139,7 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
       )
     })
     statsAcc <- do.call("rbind", outAcc)
+    statsAcc$bcolour <- ifelse(statsAcc$b < 0, "red", "blue")
     statsAcc$b <- paste("b =", rd(statsAcc$b,3))
     statsAcc$issig <- ifelse(statsAcc$sig < 0.05, "*", "")
     statsAcc$sig <- paste("sig =", ifelse(statsAcc$sig<.001, "<.001", rd(statsAcc$sig,3)))
@@ -152,6 +153,9 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     if("binsig" %in% colnames(dfcoded)){
       dfcoded = subset(dfcoded, select=-c(binsig))
     }
+    if("bcolour" %in% colnames(dfcoded)){
+      dfcoded = subset(dfcoded, select=-c(bcolour))
+    }
     
     dfcoded = merge(dfcoded, statsAccdf, by = "bins")
     #print(unique(dfcoded$binsig))
@@ -163,12 +167,16 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     
     pltAcc <- ggplot(dfcoded, aes(NOS, Acc, colour = binsig)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
-      ylim(0.5, 1) + 
-      xlim(0, 40) +
+      coord_cartesian(ylim = c(0.5, 1), xlim = c(0, 40)) +
       stat_smooth(method = "glm", method.args = list(family = "binomial"), 
                   aes(fill=binsig, linetype = binsig), show.legend = TRUE, size = 0.75, se = FALSE) + 
       #scale_color_brewer()+
-      scale_color_manual(values=darker_blues)+
+      #scale_color_manual(values=darker_blues)+
+      {if(B==1)
+        scale_colour_manual(values = unique(dfcoded$bcolour))
+        else
+          scale_colour_manual(values = dfcoded[,c("binNs", "bcolour")] %>% distinct() %>% 
+          arrange(binNs) %>% select(bcolour) %>% unlist %>% unname)} +
       scale_linetype_manual(values=ltlist)+
       guides(color = guide_legend(
         override.aes=list(shape = 19))) +      
@@ -212,6 +220,7 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
       )
     })
     statsRT <- do.call("rbind", outRT)
+    statsRT$bcolour <- ifelse(statsRT$b < 0, "red", "blue")
     statsRT$b <- paste("b =", rd(statsRT$b,3))
     statsRT$issig <-ifelse(statsRT$sig<0.05, "*", "")
     statsRT$sig <- paste("sig =", ifelse(statsRT$sig<0.001, "<.001", rd(statsRT$sig,3)))
@@ -225,6 +234,9 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     if("binsig" %in% colnames(dfcoded)){
       dfcoded = subset(dfcoded, select=-c(binsig))
     }
+    if("bcolour" %in% colnames(dfcoded)){
+      dfcoded = subset(dfcoded, select=-c(bcolour))
+    }
     dfcoded = merge(dfcoded, statsRTdf, by = "bins")
 
     if(B > 1){
@@ -234,11 +246,15 @@ plot_cov_megafigure <- function(Cov, B_start, method, wAxisy, wAxisx){
     
     pltRT <- ggplot(dfcoded, aes(NOS, RT, colour = binsig)) +
       #geom_point(alpha = 1, shape = ".", aes(colour = bins)) +
-      ylim(400,1350) +
-      xlim(0,40) +
-      stat_smooth(method = "glm", aes(fill=binsig, linetype=binsig), show.legend = TRUE, size = 0.75, se = FALSE) +
+      coord_cartesian(ylim = c(400,1350), xlim = c(0,40)) +
+      stat_smooth(method = "lm", aes(fill=binsig, linetype=binsig), show.legend = TRUE, size = 0.75, se = FALSE) +
       #scale_color_brewer()+
-      scale_color_manual(values=darker_blues)+
+      #scale_color_manual(values=darker_blues)+
+      {if(B==1)
+        scale_colour_manual(values = unique(dfcoded$bcolour))
+        else
+          scale_colour_manual(values = dfcoded[,c("binNs", "bcolour")] %>% distinct() %>% 
+                                arrange(binNs) %>% select(bcolour) %>% unlist %>% unname)} +
       scale_linetype_manual(values=ltlist)+
       guides(color = guide_legend(
         override.aes=list(shape = 19))) +      
