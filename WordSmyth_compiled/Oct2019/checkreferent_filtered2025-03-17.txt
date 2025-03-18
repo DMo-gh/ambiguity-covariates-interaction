@@ -1,0 +1,127 @@
+referent not found: word = data, referent = 'datum'
+referent not found: word = disc, referent = disk
+referent not found: word = ditto, referent = ditto mark
+referent not found: word = doom, referent = Last Judgment
+referent not found: word = economy, referent = political economy
+referent not found: word = an, referent = a1
+referent not found: word = an, referent = a2
+referent not found: word = fluke1, referent = 'fluke'
+referent not found: word = fluke1, referent = 'fluke'
+referent not found: word = fluke2, referent = 'fluke'
+referent not found: word = fly1, referent = fly ball
+referent not found: word = flyer, referent = flier
+referent not found: word = forsaken, referent = forsake
+referent not found: word = frontal, referent = frontal bone
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = gage2, referent = gauge
+referent not found: word = gin3, referent = gin rummy
+referent not found: word = grave2, referent = grave accent
+referent not found: word = grey, referent = gray
+referent not found: word = groundhog, referent = woodchuck
+referent not found: word = hardened, referent = harden
+referent not found: word = heck, referent = the interjection "hell"
+referent not found: word = hooray, referent = hurrah
+referent not found: word = iron, referent = branding iron
+referent not found: word = ark, referent = ark of the covenant
+referent not found: word = ark, referent = Holy Ark
+referent not found: word = kilo, referent = kilogram
+referent not found: word = kin, referent = 'kin'
+referent not found: word = kin, referent = 'kin'
+referent not found: word = laden, referent = lade
+referent not found: word = lead2, referent = white lead
+referent not found: word = lime1, referent = birdlime
+referent not found: word = lithium, referent = lithium carbonate
+referent not found: word = mantle, referent = mantel
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = mark2, referent = ostmark
+referent not found: word = mark2, referent = deutsche mark
+referent not found: word = mark2, referent = markka
+referent not found: word = mat3, referent = matte
+referent not found: word = moustache, referent = mustache
+referent not found: word = auxiliary, referent = auxiliary verb
+referent not found: word = okay, referent = OK
+referent not found: word = opera2, referent = opus
+referent not found: word = ounce1, referent = fluid ounce
+referent not found: word = ounce2, referent = snow leopard
+referent not found: word = ourselves, referent = 'myself'
+referent not found: word = ourselves, referent = 'myself'
+referent not found: word = ourselves, referent = 'myself'
+referent not found: word = pancake, referent = Pan-Cake Make-Up
+referent not found: word = panties, referent = 'panty'
+referent not found: word = bacteria, referent = fermentation and putrefaction and that
+referent not found: word = bacteria, referent = in some cases
+referent not found: word = bacteria, referent = cause disease
+referent not found: word = phoney, referent = phony
+referent not found: word = poetic, referent = poetics
+referent not found: word = pop1, referent = pop fly
+referent not found: word = premier, referent = prime minister
+referent not found: word = prize, referent = "prise.
+referent not found: word = prostate, referent = prostate gland
+referent not found: word = reclaim, referent = re-claim
+referent not found: word = rendezvous, referent = 'rendezvous'
+referent not found: word = rendezvous, referent = 'rendezvous'
+referent not found: word = rent2, referent = rend
+referent not found: word = be, referent = another verb to indicate continuing action
+referent not found: word = be, referent = another verb to form a passive construction
+referent not found: word = revere2, referent = revers
+referent not found: word = rod, referent = fishing rod
+referent not found: word = sedan, referent = sedan chair
+referent not found: word = selection, referent = a particular organism survives over another; natural selection
+referent not found: word = should, referent = used after verbs in the past tense that express speech or thoughts
+referent not found: word = should, referent = "shall" 
+referent not found: word = ski, referent = water ski
+referent not found: word = slew2, referent = slue1
+referent not found: word = slew3, referent = slough1
+referent not found: word = smitten, referent = smite
+referent not found: word = soy, referent = soy sauce
+referent not found: word = splinter, referent = splinter group
+referent not found: word = stoop3, referent = stoup
+referent not found: word = stove2, referent = stave
+referent not found: word = stud2, referent = stud poker
+referent not found: word = swimsuit, referent = bathing suit
+referent not found: word = tissue, referent = tissue paper
+referent not found: word = ton, referent = metric ton
+referent not found: word = underlying, referent = underlie
+referent not found: word = boa, referent = boa constrictor
+referent not found: word = vice2, referent = vise
+referent not found: word = villain, referent = villein
+referent not found: word = bogey, referent = bogy
+referent not found: word = virus, referent = computer virus
+referent not found: word = whereabouts, referent = 'whereabouts'
+referent not found: word = wit2, referent = to wit
+referent not found: word = worm, referent = computer worm
+referent not found: word = year, referent = astronomical yea
+referent not found: word = yen2, referent = 'yen'
+referent not found: word = yen2, referent = 'yen'
+referent not found: word = born, referent = bear1 with meaning connected with birth
+referent not found: word = zone, referent = time zone
+referent not found: word = borne, referent = bear1 with meaning connected with carrying
+referent not found: word = borne, referent = or enduring
+referent not found: word = bourgeois, referent = 'bourgeois'
+referent not found: word = bourgeois, referent = 'bourgeois'
+referent not found: word = bourgeois, referent = 'bourgeois'
+referent not found: word = bowls, referent = lawn bowling
+referent not found: word = dreamt, referent = "dream"
+referent not found: word = goes, referent = 'go'
+referent not found: word = goes, referent = 'go'
+referent not found: word = groceries, referent = 'grocery'
+referent not found: word = authorities, referent = 'authority'
+referent not found: word = criteria, referent = criterion
+referent not found: word = read2, referent = read1
+referent not found: word = caddy2, referent = caddie
+referent not found: word = carbon, referent = carbon copy
+referent not found: word = carbon, referent = carbon paper
+referent not found: word = cent, referent = sen3
+referent not found: word = coil1, referent = IUD
+referent not found: word = containment, referent = containment structure
+referent not found: word = cosy, referent = cozy

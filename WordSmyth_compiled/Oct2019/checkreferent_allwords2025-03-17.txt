@@ -1,0 +1,482 @@
+referent not found: word = aline, referent = align
+referent not found: word = Cyprian, referent = Cypriot
+referent not found: word = daimon, referent = daemon
+referent not found: word = data, referent = 'datum'
+referent not found: word = deka-, referent = deca-
+referent not found: word = dekagram, referent = decagram
+referent not found: word = dekameter, referent = decameter
+referent not found: word = despatch, referent = dispatch
+referent not found: word = dextrous, referent = dexterous
+referent not found: word = diaeresis, referent = dieresis
+referent not found: word = dipper, referent = Big Dipper and Little Dipper
+referent not found: word = disc, referent = disk
+referent not found: word = disk jockey, referent = disc jockey
+referent not found: word = dissyllable, referent = disyllable
+referent not found: word = Djakarta, referent = Jakarta
+referent not found: word = donut, referent = doughnut
+referent not found: word = ambience, referent = ambiance
+referent not found: word = Doomsday Book, referent = Domesday Book
+referent not found: word = amebocyte, referent = amoebocyte
+referent not found: word = ameer, referent = emir
+referent not found: word = drily, referent = dryly
+referent not found: word = dyke1, referent = dike
+referent not found: word = dynamo- (dynam-), referent = dyna-
+referent not found: word = -ean, referent = -an
+referent not found: word = Early Precambrian, referent = Archean
+referent not found: word = amir, referent = emir
+referent not found: word = -ed, referent = regular verbs
+referent not found: word = -efy, referent = -fy
+referent not found: word = eikon, referent = icon
+referent not found: word = emeer, referent = emir
+referent not found: word = Emmanuel, referent = Immanuel
+referent not found: word = -en4, referent = certain nouns
+referent not found: word = endoblast (entoblast), referent = endoderm
+referent not found: word = amuck, referent = amok
+referent not found: word = an, referent = a1
+referent not found: word = -es2, referent = nouns that end in "s," "x," "z," "ch," "sh," or "y" that changes to "i"
+referent not found: word = anaemia, referent = anemia
+referent not found: word = anaesthesia, referent = anesthesia
+referent not found: word = esthete, referent = aesthete
+referent not found: word = esthetic, referent = aesthetic
+referent not found: word = esthetics, referent = aesthetics
+referent not found: word = Eumenides, referent = Furies
+referent not found: word = eurhythmics, referent = eurythmics
+referent not found: word = exophthalmia, referent = exophthalmos
+referent not found: word = anchylose, referent = ankylose
+referent not found: word = extraversion, referent = extroversion
+referent not found: word = -ey, referent = -y1
+referent not found: word = eyrie, referent = aerie
+referent not found: word = faeces, referent = feces
+referent not found: word = falderal, referent = folderol
+referent not found: word = anemone, referent = "sea anemone.
+referent not found: word = filagree, referent = filigree
+referent not found: word = filet, referent = fillet
+referent not found: word = Angora, referent = Ankara
+referent not found: word = fiord, referent = fjord
+referent not found: word = fluke1, referent = 'fluke'
+referent not found: word = fluke1, referent = 'fluke'
+referent not found: word = fluke2, referent = 'fluke'
+referent not found: word = flyer, referent = flier
+referent not found: word = fo'c's'le, referent = forecastle
+referent not found: word = foetal, referent = fetal
+referent not found: word = foetid, referent = fetid
+referent not found: word = foetus, referent = fetus
+referent not found: word = fool's cap, referent = dunce cap
+referent not found: word = foregather, referent = forgather
+referent not found: word = forego2, referent = forgo
+referent not found: word = forwent, referent = forgo
+referent not found: word = freshwater, referent = "fresh water," water that is not salty
+referent not found: word = frier, referent = fryer
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = fry1, referent = 'fry'
+referent not found: word = ante meridiem, referent = A.M.
+referent not found: word = fuze, referent = fuse1
+referent not found: word = fuzee, referent = fusee
+referent not found: word = gage2, referent = gauge
+referent not found: word = galliot, referent = galiot
+referent not found: word = gantlet1, referent = gauntlet2
+referent not found: word = gantlet2, referent = gauntlet1
+referent not found: word = gayety, referent = gaiety
+referent not found: word = gayly, referent = gaily
+referent not found: word = gerfalcon, referent = gyrfalcon
+referent not found: word = gip, referent = gyp
+referent not found: word = Gipsy, referent = Gypsy
+referent not found: word = gismo, referent = gizmo
+referent not found: word = Graecism, referent = Grecism
+referent not found: word = Graeco-, referent = Greco-
+referent not found: word = grayhound, referent = greyhound
+referent not found: word = great calorie, referent = calorie
+referent not found: word = grey, referent = gray
+referent not found: word = griffon, referent = griffin
+referent not found: word = gris-gris, referent = grigri
+referent not found: word = apanage, referent = appanage
+referent not found: word = gryphon, referent = griffin
+referent not found: word = gybe, referent = jibe1
+referent not found: word = haemato-, referent = hemato-
+referent not found: word = hairbreadth, referent = hairsbreadth
+referent not found: word = halliard, referent = halyard
+referent not found: word = harken, referent = hearken
+referent not found: word = heck, referent = the interjection "hell"
+referent not found: word = hekto-, referent = hecto-
+referent not found: word = hema-, referent = hemo-
+referent not found: word = hi-fi, referent = high-fidelity
+referent not found: word = highjack, referent = hijack
+referent not found: word = hippy2, referent = hippie
+referent not found: word = homy, referent = homey
+referent not found: word = honied, referent = honeyed
+referent not found: word = hooray, referent = hurrah
+referent not found: word = hyaena, referent = hyena
+referent not found: word = hypoblast, referent = endoderm
+referent not found: word = hypochondria, referent = 'hypochondrium'
+referent not found: word = -ial, referent = -al1
+referent not found: word = -ian, referent = -an
+referent not found: word = -iana, referent = -ana
+referent not found: word = -ibility, referent = -ability
+referent not found: word = -ible, referent = -able
+referent not found: word = -ibly, referent = -ably
+referent not found: word = Arabian, referent = Arabian horse
+referent not found: word = -id2, referent = -ide
+referent not found: word = -ie, referent = -y
+referent not found: word = -ify, referent = -fy
+referent not found: word = ikon, referent = icon
+referent not found: word = arak, referent = arrack
+referent not found: word = imbed, referent = embed
+referent not found: word = -in1, referent = -ine2
+referent not found: word = incunabula, referent = 'incunabulum'
+referent not found: word = incunabula, referent = 'incunabulum'
+referent not found: word = incunabula, referent = 'incunabulum'
+referent not found: word = incunabulum, referent = 'incunabula'
+referent not found: word = incunabulum, referent = 'incunabula'
+referent not found: word = Indian bread, referent = corn bread
+referent not found: word = archeology, referent = archaeology
+referent not found: word = Archeozoic, referent = Archean
+referent not found: word = -ing1, referent = verbs
+referent not found: word = accessary, referent = accessory
+referent not found: word = interne, referent = intern2
+referent not found: word = Iroquois, referent = 'Iroquois'
+referent not found: word = ixtle, referent = istle
+referent not found: word = Jammu and Kashmir, referent = Kashmir
+referent not found: word = Japanese, referent = 'Japanese'
+referent not found: word = Javanese, referent = 'Javanese'
+referent not found: word = jibe2, referent = gibe
+referent not found: word = kabala [or] kabbala, referent = cabala
+referent not found: word = kadi, referent = cadi
+referent not found: word = kaffee klatsch, referent = coffee klatsch
+
+referent not found: word = kebob, referent = kabob
+referent not found: word = Omar Khayyam1, referent = Omar Khayyam
+referent not found: word = kilocalorie, referent = calorie
+referent not found: word = kiloelectron volt, referent = keV
+referent not found: word = kin, referent = 'kin'
+referent not found: word = kin, referent = 'kin'
+referent not found: word = kinsfolk, referent = kinfolk
+referent not found: word = kithara, referent = cithara
+referent not found: word = -art, referent = -ard
+referent not found: word = knockwurst, referent = knackwurst
+referent not found: word = Kriss Kringle, referent = Santa Claus
+referent not found: word = lady's man, referent = ladies' man
+referent not found: word = laniard, referent = lanyard
+referent not found: word = large calorie, referent = calorie
+referent not found: word = lbs., referent = 'lb.'
+referent not found: word = lei1, referent = 'leu'
+referent not found: word = Leonardo, referent = da Vinci
+referent not found: word = leuco- (leuc-), referent = leuko-
+referent not found: word = lichee, referent = litchi
+referent not found: word = life force, referent = élan vital
+referent not found: word = likeable, referent = likable
+referent not found: word = lineage2, referent = linage
+referent not found: word = assafetida, referent = asafetida
+referent not found: word = loadstar, referent = lodestar
+referent not found: word = loadstone, referent = lodestone
+referent not found: word = loci, referent = 'locus'
+referent not found: word = lour, referent = lower2
+referent not found: word = lutanist, referent = lutenist
+referent not found: word = -lyte2, referent = -lite
+referent not found: word = manioc, referent = cassava
+referent not found: word = mannikin, referent = manikin
+referent not found: word = mantle, referent = mantel
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = at1, referent = 'at'
+referent not found: word = marchese, referent = 'marchesa'
+referent not found: word = mark2, referent = deutsche mark
+referent not found: word = Athapaskan, referent = Athabaskan
+referent not found: word = mat3, referent = matte
+referent not found: word = mediaeval, referent = medieval
+referent not found: word = meninges, referent = 'meninx'
+referent not found: word = Messrs., referent = "Mr.
+referent not found: word = micrometer2, referent = micron
+referent not found: word = mikron, referent = micron
+referent not found: word = milage, referent = mileage
+referent not found: word = millepede, referent = millipede
+referent not found: word = mis-2, referent = miso-
+referent not found: word = Mohammed, referent = Muhammad
+referent not found: word = Mohammedan, referent = Muhammadan
+referent not found: word = Mohammedanism, referent = Muhammadanism
+referent not found: word = Mohican, referent = Mahican
+referent not found: word = Mojave, referent = Mohave
+referent not found: word = monecious, referent = monoecious
+referent not found: word = monied, referent = moneyed
+referent not found: word = mos., referent = 'many'
+referent not found: word = mos., referent = 'mo.'
+referent not found: word = mos., referent = 'much'
+referent not found: word = mos., referent = 'much'
+referent not found: word = mousey, referent = mousy
+referent not found: word = moustache, referent = mustache
+referent not found: word = mujik, referent = muzhik
+referent not found: word = nightspot, referent = night club
+referent not found: word = nighty, referent = nightie
+referent not found: word = nonsuch, referent = nonesuch
+referent not found: word = nos., referent = 'no.'
+referent not found: word = nosey, referent = nosy
+referent not found: word = nought, referent = naught
+referent not found: word = numbskull, referent = numskull
+referent not found: word = oct-, referent = octo-
+referent not found: word = octa-, referent = octo-
+referent not found: word = axes2, referent = ax
+referent not found: word = okay, referent = OK
+referent not found: word = -ol2, referent = -ole
+referent not found: word = -ology, referent = -logy
+referent not found: word = Azeri, referent = Azerbaijani
+referent not found: word = azoic, referent = Archean
+referent not found: word = -or1, referent = -er1
+referent not found: word = ourselves, referent = 'myself'
+referent not found: word = ourselves, referent = 'myself'
+referent not found: word = ourselves, referent = 'myself'
+referent not found: word = ousel, referent = ouzel
+referent not found: word = packman, referent = peddler
+referent not found: word = panocha (panoche), referent = penuche
+referent not found: word = panties, referent = 'panty'
+referent not found: word = Paraguay tea, referent = maté
+referent not found: word = bacteria, referent = fermentation and putrefaction and that
+referent not found: word = bacteria, referent = in some cases
+referent not found: word = bacteria, referent = cause disease
+referent not found: word = pawpaw, referent = papaw
+referent not found: word = pazazz, referent = pizazz
+referent not found: word = Bagdad, referent = Baghdad
+referent not found: word = pedlar (pedler), referent = peddler
+referent not found: word = peewee, referent = pewee
+referent not found: word = Pekingese, referent = 'Pekingese'
+referent not found: word = pendant, referent = pendent
+referent not found: word = petty bourgeois, referent = petit bourgeois
+referent not found: word = phaeton, referent = Phaëthon
+referent not found: word = phenix, referent = phoenix
+referent not found: word = phoney, referent = phony
+referent not found: word = Pigmy, referent = Pygmy
+referent not found: word = pilau, referent = pilaf
+referent not found: word = piney, referent = piny
+referent not found: word = pinyon, referent = piñon
+referent not found: word = pix, referent = pyx
+referent not found: word = pixie, referent = pixy
+referent not found: word = Pnom-Penh, referent = Phnom Penh
+referent not found: word = pokey, referent = poky
+referent not found: word = banian, referent = banyan
+referent not found: word = pompon, referent = pompom1
+referent not found: word = Portuguese, referent = 'Portuguese'
+referent not found: word = bannister, referent = banister
+referent not found: word = postal card, referent = postcard
+referent not found: word = post meridiem, referent = P.M
+referent not found: word = pp., referent = 'p. [or] pg.'
+referent not found: word = Bar-B-Que (Bar-B-Q), referent = barbecue
+referent not found: word = prevue, referent = preview
+referent not found: word = prize, referent = "prise.
+referent not found: word = propellent, referent = propellant
+referent not found: word = pryer, referent = prier
+referent not found: word = barque, referent = bark3
+referent not found: word = barquentine, referent = barkentine
+referent not found: word = quintar, referent = qintar
+referent not found: word = -r1, referent = -er1
+referent not found: word = -r2, referent = -er2
+referent not found: word = racquet, referent = racket2
+referent not found: word = ranee, referent = rani
+referent not found: word = Rembrandt van Rijn1, referent = van Rijn
+referent not found: word = rendezvous, referent = 'rendezvous'
+referent not found: word = rendezvous, referent = 'rendezvous'
+referent not found: word = be, referent = another verb to indicate continuing action
+referent not found: word = be, referent = another verb to form a passive construction
+referent not found: word = revery, referent = reverie
+referent not found: word = rhumba, referent = rumba
+referent not found: word = rial2, referent = riyal
+referent not found: word = rigamarole, referent = rigmarole
+referent not found: word = -ry, referent = -ery
+referent not found: word = -s2, referent = most nouns
+referent not found: word = saleable, referent = salable
+referent not found: word = beeves, referent = 'beef'
+referent not found: word = sceptic, referent = skeptic
+referent not found: word = scollop, referent = scallop
+referent not found: word = selection, referent = a particular organism survives over another; natural selection
+referent not found: word = Shabuoth, referent = Shavuoth
+referent not found: word = shantey, referent = chantey
+referent not found: word = shanty2, referent = chantey
+
+referent not found: word = shortie, referent = shorty
+referent not found: word = shote, referent = shoat
+referent not found: word = should, referent = used after verbs in the past tense that express speech or thoughts
+referent not found: word = should, referent = "shall" 
+referent not found: word = Siamese, referent = 'Siamese'
+referent not found: word = Siamese, referent = 'Siamese'
+referent not found: word = sillabub, referent = syllabub
+referent not found: word = Singhalese, referent = Sinhalese
+referent not found: word = sirup, referent = syrup
+referent not found: word = ski, referent = water ski
+referent not found: word = slew2, referent = slue1
+referent not found: word = slew3, referent = slough1
+referent not found: word = slue2, referent = slew4
+referent not found: word = small calorie, referent = calorie
+referent not found: word = smoulder, referent = smolder
+referent not found: word = soubriquet, referent = sobriquet
+referent not found: word = spacial, referent = spatial
+referent not found: word = spic-and-span, referent = spick-and-span
+referent not found: word = bicarbonate of soda, referent = sodium bicarbonate and baking soda
+referent not found: word = -st, referent = -est
+referent not found: word = stanch2, referent = staunch2
+referent not found: word = staunch1, referent = stanch1
+referent not found: word = stedfast, referent = steadfast
+referent not found: word = stimy, referent = stymie
+referent not found: word = stoop3, referent = stoup
+referent not found: word = straightjacket, referent = straitjacket
+referent not found: word = straight-laced, referent = strait-laced
+referent not found: word = Succoth, referent = Sukkoth
+referent not found: word = sulphur, referent = sulfur
+referent not found: word = Swiss, referent = 'Swiss'
+referent not found: word = swob, referent = swab
+referent not found: word = swop, referent = swap
+referent not found: word = synaesthesia, referent = synesthesia
+referent not found: word = tabu, referent = taboo
+referent not found: word = taw3, referent = tav
+referent not found: word = teepee, referent = tepee
+referent not found: word = tee shirt, referent = T-shirt
+referent not found: word = tel-, referent = tele-1
+referent not found: word = tel-, referent = tele-2
+referent not found: word = Telegu, referent = Telugu
+referent not found: word = telo-, referent = tele1
+referent not found: word = telo-, referent = tele2
+referent not found: word = The Thousand and One Nights, referent = Arabian Nights
+referent not found: word = tiercel, referent = tercel
+referent not found: word = tike, referent = tyke
+referent not found: word = Timorese, referent = 'Timorese'
+referent not found: word = tipi, referent = tepee
+referent not found: word = tiro, referent = tyro
+referent not found: word = topi, referent = topee
+referent not found: word = bleu cheese, referent = blue cheese
+referent not found: word = tranship, referent = transship
+referent not found: word = transsonic, referent = transonic
+referent not found: word = trenail, referent = treenail
+referent not found: word = trivia, referent = 'trivium'
+referent not found: word = trivia, referent = 'trivium'
+referent not found: word = trolly, referent = trolley
+referent not found: word = Trust Territory of the Pacific Islands2, referent = Pacific Islands
+referent not found: word = Trust Territory of the Pacific Islands2, referent = Trust Territory of the
+referent not found: word = tuberose2, referent = tuberous
+referent not found: word = twirp, referent = twerp
+referent not found: word = -ty2, referent = -ity
+referent not found: word = tympani, referent = timpani
+referent not found: word = tzetze fly, referent = tsetse fly
+referent not found: word = blueing, referent = bluing
+referent not found: word = Valentine's Day [or] Valentines Day, referent = Saint Valentine's Day
+referent not found: word = Vergil, referent = Virgil
+referent not found: word = vérité [or] verite, referent = cinéma vérité
+referent not found: word = vertu, referent = virtu
+referent not found: word = vice2, referent = vise
+referent not found: word = villain, referent = villein
+referent not found: word = boeuf bourguignon, referent = beef bourguignon
+referent not found: word = bogey, referent = bogy
+referent not found: word = viscera, referent = 'viscus'
+referent not found: word = viscera, referent = 'viscus'
+referent not found: word = bogie2, referent = bogy
+referent not found: word = bogyman, referent = bogeyman
+referent not found: word = vizor, referent = visor
+referent not found: word = vulcanism, referent = volcanism
+referent not found: word = Welch, referent = Welsh
+referent not found: word = whereabouts, referent = 'whereabouts'
+referent not found: word = widgeon, referent = wigeon
+referent not found: word = year, referent = astronomical yea
+referent not found: word = yen2, referent = 'yen'
+referent not found: word = yen2, referent = 'yen'
+referent not found: word = born, referent = bear1 with meaning connected with birth
+referent not found: word = borne, referent = bear1 with meaning connected with carrying
+referent not found: word = borne, referent = or enduring
+referent not found: word = bo's'n [or] bos'n, referent = boatswain
+referent not found: word = bosun, referent = boatswain
+referent not found: word = bott, referent = bot
+referent not found: word = bourgeois, referent = 'bourgeois'
+referent not found: word = bourgeois, referent = 'bourgeois'
+referent not found: word = bourgeois, referent = 'bourgeois'
+referent not found: word = bourguignon, referent = beef bourguignon
+referent not found: word = dreamt, referent = "dream"
+referent not found: word = algae, referent = 'alga'
+referent not found: word = goes, referent = 'go'
+referent not found: word = goes, referent = 'go'
+referent not found: word = brassy2, referent = brassie
+referent not found: word = apatosaurus, referent = apatosau
+referent not found: word = orca, referent = killer whal
+referent not found: word = briarroot, referent = brierroot
+referent not found: word = briarwood, referent = brierwood
+referent not found: word = buncombe, referent = bunkum
+referent not found: word = groceries, referent = 'grocery'
+referent not found: word = authorities, referent = 'authority'
+referent not found: word = Erik Torvaldsson, referent = Eric the Red
+referent not found: word = read2, referent = read1
+referent not found: word = pirarucu, referent = arapaime
+referent not found: word = Shirley Temple Black, referent = Shirley Temple
+referent not found: word = min.2, referent = 'min.'
+referent not found: word = min.2, referent = 'mink'
+referent not found: word = caddy2, referent = caddie
+referent not found: word = caecum, referent = cecum
+referent not found: word = caesium, referent = cesium
+referent not found: word = calèche [or] caleche, referent = calash
+referent not found: word = calif, referent = caliph
+referent not found: word = calk1, referent = caulk
+referent not found: word = moulder, referent = molder
+referent not found: word = calliper, referent = caliper
+referent not found: word = callisthenics, referent = calisthenics
+referent not found: word = gaol, referent = "jail.
+referent not found: word = hijinks, referent = "high jinks.
+referent not found: word = camomile, referent = chamomile
+referent not found: word = aedes, referent = yellow fever mosquito
+referent not found: word = thunk1, referent = the verb "think.
+referent not found: word = homozygous, referent = a particular gene
+referent not found: word = homozygote, referent = a particular gene
+referent not found: word = Aeolian, referent = eolian
+referent not found: word = symmetric, referent = "symmetrical.
+referent not found: word = cañon [or] canon, referent = canyon
+referent not found: word = aeon, referent = eon
+referent not found: word = Canton, referent = Guangzhou
+referent not found: word = Cantonese, referent = 'Cantonese'
+referent not found: word = tellin', referent = "tell" spelled in a way that reflects rapid
+referent not found: word = tellin', referent = or dialectical speech
+referent not found: word = carabineer [or] carabinier, referent = carbineer
+referent not found: word = aery, referent = aerie
+referent not found: word = carriole, referent = cariole
+referent not found: word = carrom, referent = carom
+referent not found: word = carrousel, referent = carousel
+
+referent not found: word = carvel, referent = caravel
+referent not found: word = cassaba, referent = casaba
+referent not found: word = aestivate, referent = estivate
+referent not found: word = catalo, referent = cattalo
+referent not found: word = catchup, referent = ketchup
+referent not found: word = cath-, referent = cata-
+referent not found: word = catsup, referent = ketchup
+referent not found: word = catty-cornered, referent = cater-cornered
+referent not found: word = cayman, referent = caiman
+referent not found: word = cent, referent = sen3
+referent not found: word = cesura, referent = caesura
+referent not found: word = charr, referent = char2
+referent not found: word = Cheshvan, referent = Heshvan
+referent not found: word = chile, referent = chili
+referent not found: word = chilli, referent = chili
+referent not found: word = chimaera, referent = chimera
+referent not found: word = chincapin, referent = chinquapin
+referent not found: word = Chinese, referent = 'Chinese'
+referent not found: word = chinkapin, referent = chinquapin
+referent not found: word = chopfallen, referent = chapfallen
+referent not found: word = cineraria, referent = 'cinerarium'
+referent not found: word = civies, referent = civvies
+referent not found: word = clearstory, referent = clerestory
+referent not found: word = clew, referent = clue
+referent not found: word = clew, referent = clue
+referent not found: word = -agog, referent = -agogue
+referent not found: word = coeliac, referent = celiac
+referent not found: word = coenobite, referent = cenobite
+referent not found: word = col-2, referent = colo-
+referent not found: word = coney, referent = cony
+referent not found: word = Congolese, referent = 'Congolese'
+referent not found: word = cornelian, referent = carnelian
+referent not found: word = Cos., referent = 'Co.'
+referent not found: word = cosy, referent = cozy
+referent not found: word = coulter, referent = colter
+referent not found: word = coupe, referent = coupé
+referent not found: word = Aleutian, referent = Aleut
+referent not found: word = crawfish, referent = crayfish
+referent not found: word = Algonkian, referent = Algonquian
+referent not found: word = Algonkian, referent = Algonquian
+referent not found: word = crozier, referent = crosier
+referent not found: word = cruzado, referent = crusado
