@@ -186,5 +186,11 @@ print(summary(
      data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% Rice2019$Item,])
   )
 )
+print(summary(
+  lm("Acc ~ NOS * old20", 
+     data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% Rice2019$Item,])
+)
+)
+
 sink()
 sink()
