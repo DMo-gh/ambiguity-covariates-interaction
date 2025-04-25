@@ -64,10 +64,17 @@ source(".\\Scripts\\getinteresction.R")
 source(".\\Scripts\\jagerlimits_final.R")
 
 #available datasets:
+subfolder = paste(outpath, "\\AnalysedDatasets\\", sep = "")
+ifelse(!dir.exists(file.path(getwd(), subfolder)), dir.create(file.path(getwd(), subfolder)), FALSE)
+
 #dfMain: only BLP, ELP, SDP, AELP, MALD
+saveRDS(dfMain, paste0(subfolder, "dfMain.rds"))
 #dfMain2: all non-jager datasets
+saveRDS(dfMain2, paste0(subfolder, "dfMain2.rds"))
 #dfMain3: all datasets intersected with Jager words (freq split at 24; sense split at 4)
-#dfMain4: all datasets limited by Jager WF and senses
+saveRDS(dfMain3, paste0(subfolder, "dfMain3.rds"))
+#dfMain4: all datasets limited by Jager WF and senses upper and lower bounds
+saveRDS(dfMain4, paste0(subfolder, "dfMain4.rds"))
 
 ###Section 1: Covariate Interactions###
 
@@ -150,7 +157,9 @@ source(".\\Scripts\\tables_flex_final.R")
 source(".\\Scripts\\bonferronifamilywise.R")
 
 
-###Section 2: replications of Jager findings###
+###Section 2: replications of previous findings###
+
+#Jager:
 
 #datasets as intersected with Jager items: runs both factoral and continuous regressions
 ##all datasets run, but only visual lexical decision and semantic decision are of interest
@@ -166,3 +175,16 @@ df.list = get(dflistname)
 model.list = c("~ NOS * logWF")
 source(".\\Scripts\\tables_flex_final.R")
 
+
+#Rice
+
+library(readxl)
+Rice2019 <- read_excel(".\\Input\\Misc\\Rice et al Supplementary Materials.xlsx")
+sink(paste0(outpath, "\\RiceReplication.txt"))
+print(summary(
+  lm("RT ~ NOS * old20", 
+     data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% Rice2019$Item,])
+  )
+)
+sink()
+sink()
