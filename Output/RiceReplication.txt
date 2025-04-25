@@ -20,3 +20,25 @@ Residual standard error: 36.31 on 333 degrees of freedom
 Multiple R-squared:  0.1481,	Adjusted R-squared:  0.1404 
 F-statistic:  19.3 on 3 and 333 DF,  p-value: 1.461e-11
 
+
+Call:
+lm(formula = "Acc ~ NOS * old20", data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% 
+    Rice2019$Item, ])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.268022 -0.007694  0.011296  0.018628  0.025552 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.9718616  0.0097255  99.929   <2e-16 ***
+NOS         -0.0008134  0.0014625  -0.556    0.578    
+old20        0.0021081  0.0049383   0.427    0.670    
+NOS:old20    0.0011297  0.0008767   1.289    0.198    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03147 on 333 degrees of freedom
+Multiple R-squared:  0.0251,	Adjusted R-squared:  0.01632 
+F-statistic: 2.858 on 3 and 333 DF,  p-value: 0.0371
+
