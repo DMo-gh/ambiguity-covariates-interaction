@@ -1,44 +1,86 @@
+[1] "Full Interaction Models:"
 
 Call:
-lm(formula = "RT ~ NOS * old20", data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% 
-    Rice2019$Item, ])
+lm(formula = "RT ~ NOS * coltNOrth", data = BLPdf)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--75.579 -24.609  -6.288  18.951 164.359 
+-64.347 -25.070  -5.822  17.748 180.344 
 
 Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  499.217     11.220  44.492  < 2e-16 ***
-NOS            3.118      1.687   1.848  0.06546 .  
-old20         30.987      5.697   5.439 1.04e-07 ***
-NOS:old20     -3.030      1.011  -2.995  0.00295 ** 
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   566.27034    4.42245 128.045  < 2e-16 ***
+NOS            -3.03820    0.70413  -4.315 2.11e-05 ***
+coltNOrth      -2.27154    0.67630  -3.359 0.000874 ***
+NOS:coltNOrth   0.15420    0.08438   1.827 0.068529 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 36.31 on 333 degrees of freedom
-Multiple R-squared:  0.1481,	Adjusted R-squared:  0.1404 
-F-statistic:  19.3 on 3 and 333 DF,  p-value: 1.461e-11
+Residual standard error: 37.3 on 333 degrees of freedom
+Multiple R-squared:  0.1009,	Adjusted R-squared:  0.09283 
+F-statistic: 12.46 on 3 and 333 DF,  p-value: 9.637e-08
 
+          NOS     coltNOrth NOS:coltNOrth 
+     2.097903      2.272656      3.757794 
 
 Call:
-lm(formula = "Acc ~ NOS * old20", data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% 
-    Rice2019$Item, ])
+lm(formula = "Acc ~ NOS * coltNOrth", data = BLPdf)
 
 Residuals:
       Min        1Q    Median        3Q       Max 
--0.268022 -0.007694  0.011296  0.018628  0.025552 
+-0.266036 -0.008813  0.012188  0.017610  0.033132 
 
 Coefficients:
-              Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  0.9718616  0.0097255  99.929   <2e-16 ***
-NOS         -0.0008134  0.0014625  -0.556    0.578    
-old20        0.0021081  0.0049383   0.427    0.670    
-NOS:old20    0.0011297  0.0008767   1.289    0.198    
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    9.806e-01  3.729e-03 262.989   <2e-16 ***
+NOS            9.037e-04  5.937e-04   1.522   0.1289    
+coltNOrth     -9.813e-04  5.702e-04  -1.721   0.0862 .  
+NOS:coltNOrth  6.722e-06  7.114e-05   0.094   0.9248    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.03147 on 333 degrees of freedom
-Multiple R-squared:  0.0251,	Adjusted R-squared:  0.01632 
-F-statistic: 2.858 on 3 and 333 DF,  p-value: 0.0371
+Residual standard error: 0.03145 on 333 degrees of freedom
+Multiple R-squared:  0.02653,	Adjusted R-squared:  0.01776 
+F-statistic: 3.025 on 3 and 333 DF,  p-value: 0.02974
+
+          NOS     coltNOrth NOS:coltNOrth 
+     2.097903      2.272656      3.757794 
+[1] "Interaction Terms Only:"
+
+Call:
+lm(formula = "RT ~ NOS : coltNOrth", data = BLPdf)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-64.681 -25.547  -7.807  16.233 194.844 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   548.73128    2.34785 233.716  < 2e-16 ***
+NOS:coltNOrth  -0.17321    0.04478  -3.868 0.000132 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 38.37 on 335 degrees of freedom
+Multiple R-squared:  0.04275,	Adjusted R-squared:  0.03989 
+F-statistic: 14.96 on 1 and 335 DF,  p-value: 0.0001319
+
+
+Call:
+lm(formula = "Acc ~ NOS : coltNOrth", data = BLPdf)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.272013 -0.008729  0.017277  0.017323  0.020584 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    9.827e-01  1.944e-03 505.441   <2e-16 ***
+NOS:coltNOrth -5.742e-06  3.709e-05  -0.155    0.877    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03178 on 335 degrees of freedom
+Multiple R-squared:  7.155e-05,	Adjusted R-squared:  -0.002913 
+F-statistic: 0.02397 on 1 and 335 DF,  p-value: 0.8771
 
