@@ -176,21 +176,26 @@ model.list = c("~ NOS * logWF")
 source(".\\Scripts\\tables_flex_final.R")
 
 
-#Rice
+#Rice )
 
 library(readxl)
 Rice2019 <- read_excel(".\\Input\\Misc\\Rice et al Supplementary Materials.xlsx")
+##get ColtNOrth from UNION_full and combine with BLP data
+BLPdf = dfMain2$VLD_BLP %>% 
+  filter(Word %in% Rice2019$Item)%>%
+  merge(UNION_full[c("Word", "coltNOrth")], by = "Word", all.x = T)
+
 sink(paste0(outpath, "\\RiceReplication.txt"))
-print(summary(
-  lm("RT ~ NOS * old20", 
-     data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% Rice2019$Item,])
-  )
-)
-print(summary(
-  lm("Acc ~ NOS * old20", 
-     data = dfMain2$VLD_BLP[dfMain2$VLD_BLP$Word %in% Rice2019$Item,])
-)
-)
+
+print("Full Interaction Models:")
+print(summary(lm("RT ~ NOS * coltNOrth", data = BLPdf)))
+print(car::vif(lm("RT ~ NOS * coltNOrth", data = BLPdf)))
+print(summary(lm("Acc ~ NOS * coltNOrth", data = BLPdf)))
+print(car::vif(lm("Acc ~ NOS * coltNOrth", data = BLPdf)))
+      
+print("Interaction Terms Only:")
+print(summary(lm("RT ~ NOS : coltNOrth", data = BLPdf)))
+print(summary(lm("Acc ~ NOS : coltNOrth", data = BLPdf)))
 
 sink()
 sink()
