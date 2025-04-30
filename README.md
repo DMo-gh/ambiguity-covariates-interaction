@@ -13,3 +13,6 @@ This file is also where main parameters of analyses can be set (e.g. covariates 
 NOTE: PCA component and resulting regression analyses are coded according to findings from previous step which required visual inspections (e.g. the number of principle components within covariates analyses)
 
 While most data analyses run in R (with scripts written in version 4.1.2), Jupyter Notebook (Python3) is used to create LaTex-friendly tables from output Excel sheets and R dataframes. A corresponding "LaTex Table Formatting.ipynb" file can be found in ".\Scripts\".
+
+_____________________
+Additionally, we have included a .pdf file with only the Supplements section in a .zip folder
