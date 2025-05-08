@@ -1,3 +1,5 @@
+Repository in support of manuscript: Mo, D., Beekhuizen, B., Stevenson, S., Armstrong, B. C. (2025). Number of Senses effects are modulated by semantic and lexical factors: Evidence from mega-study analyses. [Manuscript submitted for publication]
+
 This project contains three folders for analyses:
 
 Input: include data used in running analyses scripts (e.g., megastudy data, covariate data)
