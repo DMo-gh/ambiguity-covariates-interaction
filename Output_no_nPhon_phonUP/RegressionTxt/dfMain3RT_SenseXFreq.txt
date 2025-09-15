@@ -1,0 +1,196 @@
+[1] "VLD_AP_H-F : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-17.674  -1.243   0.000   6.900  16.367 
+
+Coefficients: (1 not defined because of singularities)
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         534.926     18.864  28.357 1.27e-07 ***
+Sensemany            -1.574     13.776  -0.114   0.9127    
+Freqhigh            -28.377     13.776  -2.060   0.0851 .  
+Sensemany:Freqhigh       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 12.89 on 6 degrees of freedom
+Multiple R-squared:  0.4154,	Adjusted R-squared:  0.2206 
+F-statistic: 2.132 on 2 and 6 DF,  p-value: 0.1998
+
+[1] "BIC:  76.6917793988627"
+[1] "VLD_AP_V-D : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-33.136 -17.971   0.000   5.682  46.850 
+
+Coefficients: (1 not defined because of singularities)
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          658.61      42.19  15.611 4.38e-06 ***
+Sensemany            -26.22      30.81  -0.851    0.427    
+Freqhigh             -16.18      30.81  -0.525    0.618    
+Sensemany:Freqhigh       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 28.82 on 6 degrees of freedom
+Multiple R-squared:  0.1308,	Adjusted R-squared:  -0.159 
+F-statistic: 0.4513 on 2 and 6 DF,  p-value: 0.6568
+
+[1] "BIC:  91.1807350800079"
+[1] "VLD_BLP : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-74.510 -23.047  -5.565  25.386 180.267 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        566.4314     6.6438  85.257   <2e-16 ***
+Sensemany           -7.8411     9.3957  -0.835   0.4058    
+Freqhigh           -19.8747     9.5747  -2.076   0.0403 *  
+Sensemany:Freqhigh   0.3748    13.3579   0.028   0.9777    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 35.16 on 107 degrees of freedom
+Multiple R-squared:  0.08701,	Adjusted R-squared:  0.06141 
+F-statistic: 3.399 on 3 and 107 DF,  p-value: 0.02048
+
+[1] "BIC:  1124.75022756516"
+[1] "VIF Sense : 1.98069498069498"      "VIF Freq : 2.05821205821206"      
+[3] "VIF Sense:Freq : 3.09296109296109"
+[1] "VLD_ELP : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-105.450  -40.082   -5.098   33.355  198.638 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          660.95      11.03  59.921  < 2e-16 ***
+Sensemany            -16.38      15.46  -1.059  0.29195    
+Freqhigh             -48.47      15.90  -3.049  0.00289 ** 
+Sensemany:Freqhigh     6.47      22.08   0.293  0.77009    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 58.37 on 108 degrees of freedom
+Multiple R-squared:  0.1457,	Adjusted R-squared:  0.122 
+F-statistic: 6.141 on 3 and 108 DF,  p-value: 0.0006783
+
+[1] "BIC:  1248.31527431707"
+[1] "VIF Sense : 1.96301020408164"      "VIF Freq : 2.07626079277865"      
+[3] "VIF Sense:Freq : 3.07626079277865"
+[1] "ALD_AELP : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-132.02  -50.10  -11.10   41.23  198.89 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          938.30      14.01  66.964  < 2e-16 ***
+Sensemany            -25.47      19.64  -1.297  0.19739    
+Freqhigh             -67.60      20.01  -3.379  0.00102 ** 
+Sensemany:Freqhigh    42.21      27.79   1.519  0.13178    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 72.81 on 106 degrees of freedom
+Multiple R-squared:  0.1114,	Adjusted R-squared:  0.08627 
+F-statistic:  4.43 on 3 and 106 DF,  p-value: 0.005639
+
+[1] "BIC:  1274.91611464734"
+[1] "VIF Sense : 1.99801587301587"      "VIF Freq : 2.07621082621082"      
+[3] "VIF Sense:Freq : 3.11126373626374"
+[1] "ALD_MALD : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-313.04  -95.88  -31.99   72.47  486.11 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         834.369     26.885  31.034   <2e-16 ***
+Sensemany           -20.076     37.025  -0.542    0.589    
+Freqhigh             -6.167     38.021  -0.162    0.871    
+Sensemany:Freqhigh   40.593     52.361   0.775    0.440    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 137.1 on 106 degrees of freedom
+Multiple R-squared:  0.008797,	Adjusted R-squared:  -0.01926 
+F-statistic: 0.3136 on 3 and 106 DF,  p-value: 0.8155
+
+[1] "BIC:  1414.13187033611"
+[1] "VIF Sense : 2"                     "VIF Freq : 2.11538461538461"      
+[3] "VIF Sense:Freq : 3.11538461538461"
+[1] "NMG_ELP : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-78.642 -28.844  -4.882  22.771  93.200 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        625.2821     6.4745  96.575   <2e-16 ***
+Sensemany            3.0879     9.0771   0.340   0.7344    
+Freqhigh           -21.6191     9.3308  -2.317   0.0224 *  
+Sensemany:Freqhigh   0.5004    12.9620   0.039   0.9693    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 34.26 on 108 degrees of freedom
+Multiple R-squared:  0.09307,	Adjusted R-squared:  0.06788 
+F-statistic: 3.695 on 3 and 108 DF,  p-value: 0.0141
+
+[1] "BIC:  1128.97318139011"
+[1] "VIF Sense : 1.96301020408164"      "VIF Freq : 2.07626079277865"      
+[3] "VIF Sense:Freq : 3.07626079277865"
+[1] "SD_SDP : RT~ Sense * Freq"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-107.502  -40.925    7.723   31.223  121.788 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          815.33      22.45  36.317   <2e-16 ***
+Sensemany            -14.92      29.93  -0.499   0.6226    
+Freqhigh             -63.48      30.74  -2.065   0.0499 *  
+Sensemany:Freqhigh    23.96      47.11   0.509   0.6157    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 59.4 on 24 degrees of freedom
+Multiple R-squared:  0.1887,	Adjusted R-squared:  0.08726 
+F-statistic:  1.86 on 3 and 24 DF,  p-value: 0.1633
+
+[1] "BIC:  320.523997082389"
+[1] "VIF Sense : 1.7687074829932"       "VIF Freq : 1.83673469387755"      
+[3] "VIF Sense:Freq : 2.15646258503401"

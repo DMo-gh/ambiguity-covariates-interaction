@@ -1,0 +1,374 @@
+[1] "VLD_AP_H-F binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+      Min         1Q     Median         3Q        Max  
+-0.126052  -0.004781   0.000000   0.072699   0.077083  
+
+Coefficients: (1 not defined because of singularities)
+                   Estimate Std. Error z value Pr(>|z|)
+(Intercept)        2.809520   6.861444   0.409    0.682
+Sensemany          0.008878   5.316927   0.002    0.999
+Freqhigh           0.311375   4.729549   0.066    0.948
+Sensemany:Freqhigh       NA         NA      NA       NA
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 0.041901  on 8  degrees of freedom
+Residual deviance: 0.037789  on 6  degrees of freedom
+AIC: 6.8015
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df  Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                            8   0.041901         
+Sense       1 0.0000451         7   0.041856   0.9946
+Freq        1 0.0040665         6   0.037789   0.9492
+Sense:Freq  0 0.0000000         6   0.037789         
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-0.4007497826 -0.4006482192 -0.0002031268 -0.0002534977 -0.0000225699 -0.0002649530 
+[1] "adj.r.sq:  -0.332691477418589"
+[1] "BIC:  7.39317329730592"
+[1] "VLD_AP_V-D binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.15047  -0.02337   0.00000   0.05752   0.14437  
+
+Coefficients: (1 not defined because of singularities)
+                     Estimate Std. Error z value Pr(>|z|)
+(Intercept)           20.7404 29232.4385   0.001    0.999
+Sensemany            -18.3425 29232.4383  -0.001    0.999
+Freqhigh               0.8256     4.1195   0.200    0.841
+Sensemany:Freqhigh         NA         NA      NA       NA
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 0.171220  on 8  degrees of freedom
+Residual deviance: 0.051606  on 6  degrees of freedom
+AIC: 6.7206
+
+Number of Fisher Scoring iterations: 20
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                           8   0.171220         
+Sense       1 0.084533         7   0.086687   0.7712
+Freq        1 0.035082         6   0.051606   0.8514
+Sense:Freq  0 0.000000         6   0.051606         
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-0.3603081016 -0.3584063375 -0.0038035282 -0.0053061676 -0.0004227036 -0.0055214460 
+[1] "adj.r.sq:  -0.319902066328823"
+[1] "BIC:  7.31228993527645"
+[1] "VLD_BLP binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.57112  -0.08954   0.00923   0.21937   0.23162  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)   
+(Intercept)         3.62942    1.19099   3.047  0.00231 **
+Sensemany           0.29801    1.81759   0.164  0.86976   
+Freqhigh           -0.02441    1.70619  -0.014  0.98859   
+Sensemany:Freqhigh -0.18796    2.50637  -0.075  0.94022   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 4.1171  on 110  degrees of freedom
+Residual deviance: 4.0786  on 107  degrees of freedom
+AIC: 13.349
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df  Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                          110     4.1171         
+Sense       1 0.0248281       109     4.0922   0.8748
+Freq        1 0.0080340       108     4.0842   0.9286
+Sense:Freq  1 0.0056349       107     4.0786   0.9402
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-2.674512e+00 -2.674058e+00 -9.072018e-04 -1.696302e-04 -8.173023e-06 -1.737502e-04 
+[1] "adj.r.sq:  -0.0277049671969667"
+[1] "BIC:  24.1871440324563"
+[1] "VIF Sense : 2.12021010538558"      "VIF Freq : 1.87329856787128"      
+[3] "VIF Sense:Freq : 3.12461138211237"
+[1] "VLD_ELP binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.62583  -0.06953  -0.01668   0.22424   0.32956  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          2.8859     0.8446   3.417 0.000634 ***
+Sensemany            0.6895     1.4194   0.486 0.627105    
+Freqhigh             1.0258     1.6471   0.623 0.533439    
+Sensemany:Freqhigh  -0.9305     2.3321  -0.399 0.689886    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 5.1103  on 111  degrees of freedom
+Residual deviance: 4.5589  on 108  degrees of freedom
+AIC: 15.131
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                         111     5.1103         
+Sense       1  0.10818       110     5.0021   0.7422
+Freq        1  0.28044       109     4.7217   0.5964
+Sense:Freq  1  0.16278       108     4.5589   0.6866
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-3.5656664998 -3.5558542113 -0.0196245771 -0.0027594744 -0.0001752348 -0.0028482607 
+[1] "adj.r.sq:  -0.0224021076330734"
+[1] "BIC:  26.0053284848615"
+[1] "VIF Sense : 1.67081668333595"      "VIF Freq : 2.09896477111781"      
+[3] "VIF Sense:Freq : 3.02359052752451"
+[1] "ALD_AELP binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.68995  -0.09604   0.06500   0.17732   0.40924  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          2.0113     0.5965   3.372 0.000747 ***
+Sensemany            0.3908     0.9083   0.430 0.667031    
+Freqhigh             0.6317     0.9879   0.639 0.522548    
+Sensemany:Freqhigh  -0.4520     1.4045  -0.322 0.747564    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 6.1999  on 109  degrees of freedom
+Residual deviance: 5.6490  on 106  degrees of freedom
+AIC: 27.439
+
+Number of Fisher Scoring iterations: 5
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                         109     6.1999         
+Sense       1  0.09269       108     6.1072   0.7608
+Freq        1  0.35409       107     5.7531   0.5518
+Sense:Freq  1  0.10413       106     5.6490   0.7469
+fitting null model for pseudo-r2
+         llh      llhNull           G2     McFadden         r2ML         r2CU 
+-9.719438492 -9.692402740 -0.054071503 -0.002789376 -0.000491680 -0.003043118 
+[1] "adj.r.sq:  -0.0228957465883277"
+[1] "BIC:  38.2407984463767"
+[1] "VIF Sense : 1.73898067278381"      "VIF Freq : 2.00260737893854"      
+[3] "VIF Sense:Freq : 2.90092793057853"
+[1] "ALD_MALD binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3031   0.2211   0.2581   0.3139   0.3388  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          2.8291     0.8546   3.310 0.000932 ***
+Sensemany            0.8704     1.4813   0.588 0.556810    
+Freqhigh             0.1565     1.2533   0.125 0.900606    
+Sensemany:Freqhigh  -0.4708     2.0305  -0.232 0.816648    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 18.483  on 109  degrees of freedom
+Residual deviance: 18.029  on 106  degrees of freedom
+AIC: 28.525
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                         109     18.483         
+Sense       1  0.39933       108     18.084   0.5274
+Freq        1  0.00060       107     18.083   0.9804
+Sense:Freq  1  0.05417       106     18.029   0.8160
+fitting null model for pseudo-r2
+         llh      llhNull           G2     McFadden         r2ML         r2CU 
+-10.26237477 -10.81826019   1.11177084   0.05138399   0.01005610   0.05631798 
+[1] "adj.r.sq:  -0.0242369528641286"
+[1] "BIC:  39.3266709949717"
+[1] "VIF Sense : 2.16183780713596"      "VIF Freq : 1.63373561222562"      
+[3] "VIF Sense:Freq : 2.95186950373707"
+[1] "NMG_ELP binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.78234   0.05254   0.12112   0.20101   0.23771  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)   
+(Intercept)          3.5524     1.1484   3.093  0.00198 **
+Sensemany            0.3394     1.7545   0.193  0.84660   
+Freqhigh             1.3591     2.5731   0.528  0.59736   
+Sensemany:Freqhigh   1.3339     5.7805   0.231  0.81750   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 5.9434  on 111  degrees of freedom
+Residual deviance: 4.9207  on 108  degrees of freedom
+AIC: 11.215
+
+Number of Fisher Scoring iterations: 9
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                         111     5.9434         
+Sense       1  0.10622       110     5.8372   0.7445
+Freq        1  0.85133       109     4.9858   0.3562
+Sense:Freq  1  0.06514       108     4.9207   0.7985
+fitting null model for pseudo-r2
+         llh      llhNull           G2     McFadden         r2ML         r2CU 
+-1.607674118 -1.601394127 -0.012559983 -0.003921578 -0.000112149 -0.003978139 
+[1] "adj.r.sq:  -0.0201210939093623"
+[1] "BIC:  22.0893437212445"
+[1] "VIF Sense : 1.14008450313612"      "VIF Freq : 1.29082453164434"      
+[3] "VIF Sense:Freq : 1.30046184243325"
+[1] "SD_SDP binomial: Acc~ Sense * Freq"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.28312  -0.09056   0.09452   0.14225   0.21902  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)
+(Intercept)          5.4088     5.6740   0.953    0.340
+Sensemany           -1.4058     6.2051  -0.227    0.821
+Freqhigh            -0.5806     6.9332  -0.084    0.933
+Sensemany:Freqhigh   0.2959     8.0735   0.037    0.971
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 0.84627  on 27  degrees of freedom
+Residual deviance: 0.73088  on 24  degrees of freedom
+AIC: 8.7077
+
+Number of Fisher Scoring iterations: 8
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                          27    0.84627         
+Sense       1 0.103377        26    0.74289   0.7478
+Freq        1 0.010640        25    0.73225   0.9178
+Sense:Freq  1 0.001368        24    0.73088   0.9705
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-3.538293e-01 -3.531173e-01 -1.423993e-03 -2.016317e-03 -5.085817e-05 -2.041904e-03 
+[1] "adj.r.sq:  -0.120694467543884"
+[1] "BIC:  14.0364766514083"
+[1] "VIF Sense : 2.63452864550563"      "VIF Freq : 4.10702194231321"      
+[3] "VIF Sense:Freq : 4.41493994288696"

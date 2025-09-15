@@ -1,0 +1,391 @@
+[1] "VLD_AP_H-F binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.67957  -0.06409   0.04449   0.15244   0.33367  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  2.21342    1.11939   1.977    0.048 *
+NOS          0.08925    0.14173   0.630    0.529  
+nNoun       -0.03945    0.29339  -0.134    0.893  
+NOS:nNoun   -0.00378    0.02330  -0.162    0.871  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 7.0327  on 184  degrees of freedom
+Residual deviance: 6.4188  on 181  degrees of freedom
+AIC: 31.9
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                        184     7.0327         
+NOS        1  0.38235       183     6.6503   0.5363
+nNoun      1  0.20623       182     6.4441   0.6497
+NOS:nNoun  1  0.02529       181     6.4188   0.8736
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-1.195008e+01 -1.193010e+01 -3.995743e-02 -1.674647e-03 -2.160094e-04 -1.785154e-03 
+[1] "adj.r.sq:  -0.0132182249315471"
+[1] "BIC:  44.7815867971281"
+[1] "VIF NOS : 4.00594158262977"       "VIF nNoun : 5.53007396076291"    
+[3] "VIF NOS:nNoun : 10.5296371170353"
+[1] "VLD_AP_V-D binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.79187  -0.08823   0.05522   0.14584   0.40629  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  2.323971   1.137608   2.043   0.0411 *
+NOS          0.055787   0.141676   0.394   0.6938  
+nNoun       -0.030723   0.304014  -0.101   0.9195  
+NOS:nNoun   -0.000163   0.024996  -0.007   0.9948  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 7.8444  on 184  degrees of freedom
+Residual deviance: 7.4379  on 181  degrees of freedom
+AIC: 31.859
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                        184     7.8444         
+NOS        1  0.37023       183     7.4742   0.5429
+nNoun      1  0.03624       182     7.4379   0.8490
+NOS:nNoun  1  0.00004       181     7.4379   0.9948
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-1.192966e+01 -1.191637e+01 -2.657976e-02 -1.115262e-03 -1.436847e-04 -1.188727e-03 
+[1] "adj.r.sq:  -0.0142319719195985"
+[1] "BIC:  44.7407484012473"
+[1] "VIF NOS : 3.84616796019567"      "VIF nNoun : 5.60331330464974"    "VIF NOS:nNoun : 10.649894898909"
+[1] "VLD_BLP binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.44957  -0.05893   0.12549   0.27605   0.37065  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  2.513934   0.156936  16.019  < 2e-16 ***
+NOS          0.129638   0.038358   3.380 0.000726 ***
+nNoun        0.025682   0.075000   0.342 0.732025    
+NOS:nNoun   -0.003388   0.009723  -0.348 0.727518    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 450.73  on 5194  degrees of freedom
+Residual deviance: 420.11  on 5191  degrees of freedom
+AIC: 502.95
+
+Number of Fisher Scoring iterations: 7
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                       5194     450.73              
+NOS        1  30.4846      5193     420.24 3.365e-08 ***
+nNoun      1   0.0154      5192     420.23    0.9013    
+NOS:nNoun  1   0.1146      5191     420.11    0.7349    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-2.474739e+02 -2.473377e+02 -2.723106e-01 -5.504834e-04 -5.241921e-05 -5.771233e-04 
+[1] "adj.r.sq:  0.00532490924523366"
+[1] "BIC:  529.16959371452"
+[1] "VIF NOS : 2.38710055907953"       "VIF nNoun : 3.27322654722451"    
+[3] "VIF NOS:nNoun : 5.33144347469906"
+[1] "VLD_ELP binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.39440  -0.06268   0.10270   0.29015   0.35751  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) 2.641519   0.113399  23.294  < 2e-16 ***
+NOS         0.076676   0.027098   2.830  0.00466 ** 
+nNoun       0.013325   0.057066   0.234  0.81537    
+NOS:nNoun   0.001542   0.007986   0.193  0.84693    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 655.02  on 8444  degrees of freedom
+Residual deviance: 629.70  on 8441  degrees of freedom
+AIC: 890.48
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                       8444     655.02              
+NOS        1  24.9030      8443     630.12 6.029e-07 ***
+nNoun      1   0.3821      8442     629.74    0.5365    
+NOS:nNoun  1   0.0381      8441     629.70    0.8451    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-4.412396e+02 -4.412594e+02  3.972171e-02  4.500947e-05  4.703566e-06  4.740211e-05 
+[1] "adj.r.sq:  0.00265095079344202"
+[1] "BIC:  918.644473291382"
+[1] "VIF NOS : 2.04175252165463"       "VIF nNoun : 3.14966358264946"    
+[3] "VIF NOS:nNoun : 4.81631203222296"
+[1] "ALD_AELP binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.20666  -0.06817   0.11829   0.23031   0.38079  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  2.6172207  0.1343276  19.484   <2e-16 ***
+NOS          0.0364420  0.0299352   1.217    0.223    
+nNoun       -0.0334302  0.0517594  -0.646    0.518    
+NOS:nNoun   -0.0008376  0.0056443  -0.148    0.882    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 393.09  on 5317  degrees of freedom
+Residual deviance: 390.49  on 5314  degrees of freedom
+AIC: 704.77
+
+Number of Fisher Scoring iterations: 5
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                       5317     393.09         
+NOS        1  1.51514      5316     391.58   0.2184
+nNoun      1  1.07002      5315     390.51   0.3009
+NOS:nNoun  1  0.02169      5314     390.49   0.8829
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-3.483855e+02 -3.483022e+02 -1.666396e-01 -2.392169e-04 -3.133550e-05 -2.552304e-04 
+[1] "adj.r.sq:  -5.30836723298123e-05"
+[1] "BIC:  731.086357350453"
+[1] "VIF NOS : 3.10207427374334"       "VIF nNoun : 3.02735298124367"    
+[3] "VIF NOS:nNoun : 5.74756052261277"
+[1] "ALD_MALD binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4670   0.2685   0.2765   0.2810   0.2837  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.2037912  0.1315738  24.350   <2e-16 ***
+NOS          0.0161034  0.0260425   0.618    0.536    
+nNoun       -0.0176435  0.0577200  -0.306    0.760    
+NOS:nNoun    0.0009019  0.0062911   0.143    0.886    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1210.2  on 7490  degrees of freedom
+Residual deviance: 1209.3  on 7487  degrees of freedom
+AIC: 1219.7
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                       7490     1210.2         
+NOS        1  0.83536      7489     1209.4   0.3607
+nNoun      1  0.08995      7488     1209.3   0.7642
+NOS:nNoun  1  0.02094      7487     1209.3   0.8849
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-6.058626e+02 -6.065540e+02  1.382756e+00  1.139845e-03  1.845719e-04  1.234516e-03 
+[1] "adj.r.sq:  -0.000266621907695219"
+[1] "BIC:  1247.411024297"
+[1] "VIF NOS : 2.15609391200482"       "VIF nNoun : 2.94603274505945"    
+[3] "VIF NOS:nNoun : 4.68308748470439"
+[1] "NMG_ELP binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.50036  -0.08959   0.17667   0.20286   0.22649  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.547369   0.188957  18.773   <2e-16 ***
+NOS          0.122655   0.050057   2.450   0.0143 *  
+nNoun       -0.022385   0.098481  -0.227   0.8202    
+NOS:nNoun    0.002793   0.015532   0.180   0.8573    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 468.26  on 8468  degrees of freedom
+Residual deviance: 450.63  on 8465  degrees of freedom
+AIC: 319.87
+
+Number of Fisher Scoring iterations: 8
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                       8468     468.26              
+NOS        1  17.5803      8467     450.68 2.754e-05 ***
+nNoun      1   0.0189      8466     450.66    0.8906    
+NOS:nNoun  1   0.0336      8465     450.63    0.8546    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-1.559335e+02 -1.557942e+02 -2.784342e-01 -8.935960e-04 -3.287741e-05 -9.101502e-04 
+[1] "adj.r.sq:  0.00163597900608203"
+[1] "BIC:  348.043575040896"
+[1] "VIF NOS : 2.09881653525302"       "VIF nNoun : 3.36382615614592"    
+[3] "VIF NOS:nNoun : 5.16842296864854"
+[1] "SD_SDP binomial: Acc~ NOS * nNoun"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0467  -0.1508   0.1169   0.2997   1.0672  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  2.42832    0.12425  19.543   <2e-16 ***
+NOS         -0.06979    0.02803  -2.490   0.0128 *  
+nNoun       -0.11515    0.06036  -1.908   0.0564 .  
+NOS:nNoun    0.01281    0.00794   1.613   0.1067    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 391.12  on 3084  degrees of freedom
+Residual deviance: 380.64  on 3081  degrees of freedom
+AIC: 758.5
+
+Number of Fisher Scoring iterations: 5
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev Pr(>Chi)  
+NULL                       3084     391.12           
+NOS        1   6.5905      3083     384.53  0.01025 *
+nNoun      1   0.9796      3082     383.55  0.32230  
+NOS:nNoun  1   2.9092      3081     380.64  0.08807 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-3.752492e+02 -3.753389e+02  1.793765e-01  2.389528e-04  5.814305e-05  2.691952e-04 
+[1] "adj.r.sq:  0.0022935338103488"
+[1] "BIC:  782.635606759099"
+[1] "VIF NOS : 2.18904072386618"       "VIF nNoun : 3.14917402379834"    
+[3] "VIF NOS:nNoun : 5.01031632687649"
