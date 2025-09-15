@@ -1,0 +1,1 @@
+This folder contains the output of analyses with a shorter list of covariates. Specifically, number of phonemes and phonological uniqueness points which were added at reviewer requests (see "Output" folder).
