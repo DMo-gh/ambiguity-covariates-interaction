@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * nVerb"
+[1] "AP_H-F : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.1012,	Adjusted R-squared:  0.08628
 F-statistic: 6.791 on 3 and 181 DF,  p-value: 0.0002304
 
 [1] "BIC:  1768.90915747097"
-[1] "VIF NOS : 3.82843788762429"       "VIF nVerb : 6.68397542850323"    
-[3] "VIF NOS:nVerb : 9.88558562673896"
-[1] "VLD_AP_V-D : RT~ NOS * nVerb"
+[1] "VIF NOS : 3.82843788762429"       "VIF nVerb : 6.68397542850323"     "VIF NOS:nVerb : 9.88558562673896"
+[1] "AP_V-D : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.1043,	Adjusted R-squared:  0.08943
 F-statistic: 7.023 on 3 and 181 DF,  p-value: 0.0001709
 
 [1] "BIC:  1787.75875919433"
-[1] "VIF NOS : 3.82843788762428"       "VIF nVerb : 6.68397542850322"    
-[3] "VIF NOS:nVerb : 9.88558562673894"
-[1] "VLD_BLP : RT~ NOS * nVerb"
+[1] "VIF NOS : 3.82843788762428"       "VIF nVerb : 6.68397542850322"     "VIF NOS:nVerb : 9.88558562673894"
+[1] "BLP : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.1417,	Adjusted R-squared:  0.1412
 F-statistic: 285.7 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  55141.0340826116"
-[1] "VIF NOS : 2.57699185383046"       "VIF nVerb : 4.24152285263408"    
-[3] "VIF NOS:nVerb : 4.16635538182553"
-[1] "VLD_ELP : RT~ NOS * nVerb"
+[1] "VIF NOS : 2.57699185383046"       "VIF nVerb : 4.24152285263408"     "VIF NOS:nVerb : 4.16635538182553"
+[1] "ELP : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -96,9 +93,8 @@ Multiple R-squared:  0.1496,	Adjusted R-squared:  0.1492
 F-statistic: 494.8 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  97528.2166487758"
-[1] "VIF NOS : 2.61284346511049"       "VIF nVerb : 4.39513057759241"    
-[3] "VIF NOS:nVerb : 4.07186663047938"
-[1] "ALD_AELP : RT~ NOS * nVerb"
+[1] "VIF NOS : 2.61284346511049"       "VIF nVerb : 4.39513057759241"     "VIF NOS:nVerb : 4.07186663047938"
+[1] "AELP : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -121,9 +117,8 @@ Multiple R-squared:  0.04095,	Adjusted R-squared:  0.04041
 F-statistic: 75.64 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61923.4457864257"
-[1] "VIF NOS : 2.81322533440681"       "VIF nVerb : 4.09896628317407"    
-[3] "VIF NOS:nVerb : 3.96605804245133"
-[1] "ALD_MALD : RT~ NOS * nVerb"
+[1] "VIF NOS : 2.81322533440681"       "VIF nVerb : 4.09896628317407"     "VIF NOS:nVerb : 3.96605804245133"
+[1] "MALD : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -146,9 +141,8 @@ Multiple R-squared:  0.01285,	Adjusted R-squared:  0.01245
 F-statistic: 32.48 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95107.4924676945"
-[1] "VIF NOS : 2.65297815060283"       "VIF nVerb : 4.49739007338935"    
-[3] "VIF NOS:nVerb : 4.14891625719395"
-[1] "NMG_ELP : RT~ NOS * nVerb"
+[1] "VIF NOS : 2.65297815060283"       "VIF nVerb : 4.49739007338935"     "VIF NOS:nVerb : 4.14891625719395"
+[1] "NMG : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -171,9 +165,8 @@ Multiple R-squared:  0.1001,	Adjusted R-squared:  0.09974
 F-statistic: 313.7 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  93763.5687170602"
-[1] "VIF NOS : 2.61308115219439"       "VIF nVerb : 4.39589459659054"    
-[3] "VIF NOS:nVerb : 4.06978737662346"
-[1] "SD_SDP : RT~ NOS * nVerb"
+[1] "VIF NOS : 2.61308115219439"       "VIF nVerb : 4.39589459659054"     "VIF NOS:nVerb : 4.06978737662346"
+[1] "SDP : RT~ NOS * nVerb"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -196,5 +189,4 @@ Multiple R-squared:  0.004129,	Adjusted R-squared:  0.003159
 F-statistic: 4.258 on 3 and 3081 DF,  p-value: 0.005212
 
 [1] "BIC:  38511.4081688788"
-[1] "VIF NOS : 2.95062735072725"       "VIF nVerb : 4.29269266330972"    
-[3] "VIF NOS:nVerb : 3.79638128743573"
+[1] "VIF NOS : 2.95062735072725"       "VIF nVerb : 4.29269266330972"     "VIF NOS:nVerb : 3.79638128743573"

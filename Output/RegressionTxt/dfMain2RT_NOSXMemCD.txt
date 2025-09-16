@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * MemCD"
+[1] "AP_H-F : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.1975,	Adjusted R-squared:  0.1842
 F-statistic: 14.85 on 3 and 181 DF,  p-value: 1.104e-08
 
 [1] "BIC:  1747.943795543"
-[1] "VIF NOS : 8.47275860249073"       "VIF MemCD : 7.94758525585494"    
-[3] "VIF NOS:MemCD : 17.6315953441983"
-[1] "VLD_AP_V-D : RT~ NOS * MemCD"
+[1] "VIF NOS : 8.47275860249073"       "VIF MemCD : 7.94758525585494"     "VIF NOS:MemCD : 17.6315953441983"
+[1] "AP_V-D : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.1449,	Adjusted R-squared:  0.1307
 F-statistic: 10.22 on 3 and 181 DF,  p-value: 2.99e-06
 
 [1] "BIC:  1779.17931578611"
-[1] "VIF NOS : 8.47275860249071"       "VIF MemCD : 7.94758525585493"    
-[3] "VIF NOS:MemCD : 17.6315953441982"
-[1] "VLD_BLP : RT~ NOS * MemCD"
+[1] "VIF NOS : 8.47275860249071"       "VIF MemCD : 7.94758525585493"     "VIF NOS:MemCD : 17.6315953441982"
+[1] "BLP : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.3204,	Adjusted R-squared:   0.32
 F-statistic: 815.8 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  53928.0753655433"
-[1] "VIF NOS : 4.18001000451388"       "VIF MemCD : 2.54456705881088"    
-[3] "VIF NOS:MemCD : 6.95111104269621"
-[1] "VLD_ELP : RT~ NOS * MemCD"
+[1] "VIF NOS : 4.18001000451388"       "VIF MemCD : 2.54456705881088"     "VIF NOS:MemCD : 6.95111104269621"
+[1] "ELP : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -96,9 +93,8 @@ Multiple R-squared:  0.266,	Adjusted R-squared:  0.2657
 F-statistic:  1020 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  96284.808300898"
-[1] "VIF NOS : 4.07479156592349"       "VIF MemCD : 2.39395004079041"    
-[3] "VIF NOS:MemCD : 6.55889131938405"
-[1] "ALD_AELP : RT~ NOS * MemCD"
+[1] "VIF NOS : 4.07479156592349"       "VIF MemCD : 2.39395004079041"     "VIF NOS:MemCD : 6.55889131938405"
+[1] "AELP : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -121,9 +117,8 @@ Multiple R-squared:  0.1039,	Adjusted R-squared:  0.1034
 F-statistic: 205.4 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61562.4854416098"
-[1] "VIF NOS : 4.26334543399926"       "VIF MemCD : 2.68340894175223"    
-[3] "VIF NOS:MemCD : 7.26770177173948"
-[1] "ALD_MALD : RT~ NOS * MemCD"
+[1] "VIF NOS : 4.26334543399926"       "VIF MemCD : 2.68340894175223"     "VIF NOS:MemCD : 7.26770177173948"
+[1] "MALD : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -146,9 +141,8 @@ Multiple R-squared:  0.0239,	Adjusted R-squared:  0.02351
 F-statistic:  61.1 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95023.1479343206"
-[1] "VIF NOS : 4.24465096735831"       "VIF MemCD : 2.43404099846564"    
-[3] "VIF NOS:MemCD : 6.85240771903532"
-[1] "NMG_ELP : RT~ NOS * MemCD"
+[1] "VIF NOS : 4.24465096735831"       "VIF MemCD : 2.43404099846564"     "VIF NOS:MemCD : 6.85240771903532"
+[1] "NMG : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -171,9 +165,8 @@ Multiple R-squared:  0.1778,	Adjusted R-squared:  0.1775
 F-statistic:   610 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  92998.9086733267"
-[1] "VIF NOS : 4.0717801142219"        "VIF MemCD : 2.39222843747894"    
-[3] "VIF NOS:MemCD : 6.55151590036073"
-[1] "SD_SDP : RT~ NOS * MemCD"
+[1] "VIF NOS : 4.0717801142219"        "VIF MemCD : 2.39222843747894"     "VIF NOS:MemCD : 6.55151590036073"
+[1] "SDP : RT~ NOS * MemCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -196,5 +189,4 @@ Multiple R-squared:  0.009262,	Adjusted R-squared:  0.008297
 F-statistic: 9.601 on 3 and 3081 DF,  p-value: 2.622e-06
 
 [1] "BIC:  38495.4646867319"
-[1] "VIF NOS : 4.1210292707305"        "VIF MemCD : 2.24764604336793"    
-[3] "VIF NOS:MemCD : 6.39641367217244"
+[1] "VIF NOS : 4.1210292707305"        "VIF MemCD : 2.24764604336793"     "VIF NOS:MemCD : 6.39641367217244"

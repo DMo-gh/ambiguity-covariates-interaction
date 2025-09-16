@@ -1,0 +1,24 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * SubCD"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-120.712  -28.739   -4.862   23.225  220.355 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 736.6419     3.6639  201.05   <2e-16 ***
+NOS          -9.4808     0.6731  -14.09   <2e-16 ***
+SubCD       -58.2821     1.4430  -40.39   <2e-16 ***
+NOS:SubCD     2.7107     0.2177   12.45   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 41.37 on 5191 degrees of freedom
+Multiple R-squared:  0.3791,	Adjusted R-squared:  0.3787 
+F-statistic:  1056 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  53459.2217987652"
+[1] "VIF NOS : 21.6496366723026"       "VIF SubCD : 2.4881861621154"      "VIF NOS:SubCD : 27.1928731398444"

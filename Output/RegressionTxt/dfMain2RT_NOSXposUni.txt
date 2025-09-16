@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * posUni"
+[1] "AP_H-F : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.1449,	Adjusted R-squared:  0.1307
 F-statistic: 10.22 on 3 and 181 DF,  p-value: 2.993e-06
 
 [1] "BIC:  1759.69347973506"
-[1] "VIF NOS : 6.8317567265279"         "VIF posUni : 5.9211610092395"     
-[3] "VIF NOS:posUni : 9.95503407127583"
-[1] "VLD_AP_V-D : RT~ NOS * posUni"
+[1] "VIF NOS : 6.8317567265279"         "VIF posUni : 5.9211610092395"      "VIF NOS:posUni : 9.95503407127583"
+[1] "AP_V-D : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.1719,	Adjusted R-squared:  0.1582
 F-statistic: 12.53 on 3 and 181 DF,  p-value: 1.766e-07
 
 [1] "BIC:  1773.23265282905"
-[1] "VIF NOS : 6.83175672652792"        "VIF posUni : 5.92116100923951"    
-[3] "VIF NOS:posUni : 9.95503407127586"
-[1] "VLD_BLP : RT~ NOS * posUni"
+[1] "VIF NOS : 6.83175672652792"        "VIF posUni : 5.92116100923951"     "VIF NOS:posUni : 9.95503407127586"
+[1] "BLP : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.1408,	Adjusted R-squared:  0.1403
 F-statistic: 283.5 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  55146.5884268385"
-[1] "VIF NOS : 4.05012106902223"        "VIF posUni : 2.57594417847058"    
-[3] "VIF NOS:posUni : 5.14442100451796"
-[1] "VLD_ELP : RT~ NOS * posUni"
+[1] "VIF NOS : 4.05012106902223"        "VIF posUni : 2.57594417847058"     "VIF NOS:posUni : 5.14442100451796"
+[1] "ELP : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -96,9 +93,8 @@ Multiple R-squared:  0.1398,	Adjusted R-squared:  0.1395
 F-statistic: 457.1 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  97624.8454576255"
-[1] "VIF NOS : 4.16522766388282"        "VIF posUni : 2.47990376740212"    
-[3] "VIF NOS:posUni : 5.52091180898613"
-[1] "ALD_AELP : RT~ NOS * posUni"
+[1] "VIF NOS : 4.16522766388282"        "VIF posUni : 2.47990376740212"     "VIF NOS:posUni : 5.52091180898613"
+[1] "AELP : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -121,9 +117,8 @@ Multiple R-squared:  0.04662,	Adjusted R-squared:  0.04608
 F-statistic: 86.62 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61891.9117096879"
-[1] "VIF NOS : 5.18148582779586"        "VIF posUni : 2.71125914537369"    
-[3] "VIF NOS:posUni : 6.26117120921791"
-[1] "ALD_MALD : RT~ NOS * posUni"
+[1] "VIF NOS : 5.18148582779586"        "VIF posUni : 2.71125914537369"     "VIF NOS:posUni : 6.26117120921791"
+[1] "MALD : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -146,9 +141,8 @@ Multiple R-squared:  0.01252,	Adjusted R-squared:  0.01213
 F-statistic: 31.64 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95109.9557020455"
-[1] "VIF NOS : 4.34129531178711"        "VIF posUni : 2.54736447793209"    
-[3] "VIF NOS:posUni : 5.73681454635944"
-[1] "NMG_ELP : RT~ NOS * posUni"
+[1] "VIF NOS : 4.34129531178711"        "VIF posUni : 2.54736447793209"     "VIF NOS:posUni : 5.73681454635944"
+[1] "NMG : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -171,9 +165,8 @@ Multiple R-squared:  0.09367,	Adjusted R-squared:  0.09335
 F-statistic: 291.6 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  93823.4300463625"
-[1] "VIF NOS : 4.15946635949343"        "VIF posUni : 2.47536897009894"    
-[3] "VIF NOS:posUni : 5.51599685960682"
-[1] "SD_SDP : RT~ NOS * posUni"
+[1] "VIF NOS : 4.15946635949343"        "VIF posUni : 2.47536897009894"     "VIF NOS:posUni : 5.51599685960682"
+[1] "SDP : RT~ NOS * posUni"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -196,5 +189,4 @@ Multiple R-squared:  0.001369,	Adjusted R-squared:  0.0003961
 F-statistic: 1.407 on 3 and 3081 DF,  p-value: 0.2387
 
 [1] "BIC:  38519.9466828489"
-[1] "VIF NOS : 6.00653408253776"        "VIF posUni : 2.49278809010455"    
-[3] "VIF NOS:posUni : 7.94053119903566"
+[1] "VIF NOS : 6.00653408253776"        "VIF posUni : 2.49278809010455"     "VIF NOS:posUni : 7.94053119903566"

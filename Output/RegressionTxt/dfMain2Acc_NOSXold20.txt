@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F binomial: Acc~ NOS * old20"
+[1] "AP_H-F binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -42,9 +42,8 @@ fitting null model for pseudo-r2
 -1.194746e+01 -1.193010e+01 -3.470438e-02 -1.454488e-03 -1.876089e-04 -1.550445e-03 
 [1] "adj.r.sq:  -0.0137213440448845"
 [1] "BIC:  44.776333747988"
-[1] "VIF NOS : 26.2317410233398"       "VIF old20 : 4.55485641584765"    
-[3] "VIF NOS:old20 : 25.4715119408909"
-[1] "VLD_AP_V-D binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 26.2317410233398"       "VIF old20 : 4.55485641584765"     "VIF NOS:old20 : 25.4715119408909"
+[1] "AP_V-D binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -88,9 +87,8 @@ fitting null model for pseudo-r2
 -1.193206e+01 -1.191637e+01 -3.136718e-02 -1.316138e-03 -1.695667e-04 -1.402853e-03 
 [1] "adj.r.sq:  -0.0140322467134151"
 [1] "BIC:  44.7455358201923"
-[1] "VIF NOS : 26.5904470064329"       "VIF old20 : 4.62555874416914"    
-[3] "VIF NOS:old20 : 26.2714639121767"
-[1] "VLD_BLP binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 26.5904470064329"       "VIF old20 : 4.62555874416914"     "VIF NOS:old20 : 26.2714639121767"
+[1] "BLP binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -138,9 +136,8 @@ fitting null model for pseudo-r2
 -2.471534e+02 -2.473377e+02  3.686178e-01  7.451710e-04  7.095375e-05  7.811844e-04 
 [1] "adj.r.sq:  0.00854454803165494"
 [1] "BIC:  528.528665250114"
-[1] "VIF NOS : 13.5500213898204"       "VIF old20 : 2.64499106609627"    
-[3] "VIF NOS:old20 : 12.3978161779737"
-[1] "VLD_ELP binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 13.5500213898204"       "VIF old20 : 2.64499106609627"     "VIF NOS:old20 : 12.3978161779737"
+[1] "ELP binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -188,9 +185,8 @@ fitting null model for pseudo-r2
 -4.413827e+02 -4.412594e+02 -2.466013e-01 -2.794289e-04 -2.920129e-05 -2.942879e-04 
 [1] "adj.r.sq:  0.00507056795367333"
 [1] "BIC:  918.930796303574"
-[1] "VIF NOS : 9.71203534459579"       "VIF old20 : 2.67306114016922"    
-[3] "VIF NOS:old20 : 8.45270103049143"
-[1] "ALD_AELP binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 9.71203534459579"       "VIF old20 : 2.67306114016922"     "VIF NOS:old20 : 8.45270103049143"
+[1] "AELP binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -238,9 +234,8 @@ fitting null model for pseudo-r2
 -3.498215e+02 -3.483022e+02 -3.038757e+00 -4.362242e-03 -5.715730e-04 -4.655513e-03 
 [1] "adj.r.sq:  0.00907425033002318"
 [1] "BIC:  733.958474691057"
-[1] "VIF NOS : 10.4288115316524"       "VIF old20 : 2.59249906016165"    
-[3] "VIF NOS:old20 : 8.77347060062361"
-[1] "ALD_MALD binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 10.4288115316524"       "VIF old20 : 2.59249906016165"     "VIF NOS:old20 : 8.77347060062361"
+[1] "MALD binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -288,9 +283,8 @@ fitting null model for pseudo-r2
 -5.912723e+02 -6.065540e+02  3.056337e+01  2.519427e-02  4.071699e-03  2.723371e-02 
 [1] "adj.r.sq:  0.00473805739472499"
 [1] "BIC:  1218.23041469906"
-[1] "VIF NOS : 10.7724925300112"       "VIF old20 : 2.55063214711361"    
-[3] "VIF NOS:old20 : 9.21405173690232"
-[1] "NMG_ELP binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 10.7724925300112"       "VIF old20 : 2.55063214711361"     "VIF NOS:old20 : 9.21405173690232"
+[1] "NMG binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -338,9 +332,8 @@ fitting null model for pseudo-r2
 -1.559357e+02 -1.557942e+02 -2.828987e-01 -9.079240e-04 -3.340458e-05 -9.247439e-04 
 [1] "adj.r.sq:  0.00160053909958879"
 [1] "BIC:  348.048039484074"
-[1] "VIF NOS : 9.17029679069867"       "VIF old20 : 2.78720335190154"    
-[3] "VIF NOS:old20 : 8.23352537158774"
-[1] "SD_SDP binomial: Acc~ NOS * old20"
+[1] "VIF NOS : 9.17029679069867"       "VIF old20 : 2.78720335190154"     "VIF NOS:old20 : 8.23352537158774"
+[1] "SDP binomial: Acc~ NOS * old20"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -388,5 +381,4 @@ fitting null model for pseudo-r2
 -3.769050e+02 -3.753389e+02 -3.132254e+00 -4.172568e-03 -1.015833e-03 -4.703182e-03 
 [1] "adj.r.sq:  0.00272258864506314"
 [1] "BIC:  785.947237261796"
-[1] "VIF NOS : 10.9792090140482"       "VIF old20 : 2.37981369633499"    
-[3] "VIF NOS:old20 : 9.53608460270321"
+[1] "VIF NOS : 10.9792090140482"       "VIF old20 : 2.37981369633499"     "VIF NOS:old20 : 9.53608460270321"

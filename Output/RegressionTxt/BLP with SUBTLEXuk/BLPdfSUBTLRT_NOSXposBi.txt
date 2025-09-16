@@ -1,0 +1,24 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * posBi"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-113.02  -34.86   -6.24   26.90  248.56 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 599.269653   1.556160 385.095  < 2e-16 ***
+NOS          -4.564003   0.225944 -20.200  < 2e-16 ***
+posBi         0.041535   0.007611   5.457 5.07e-08 ***
+NOS:posBi    -0.001189   0.001013  -1.174    0.241    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48.78 on 5191 degrees of freedom
+Multiple R-squared:  0.1369,	Adjusted R-squared:  0.1364 
+F-statistic: 274.4 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  55170.1826410191"
+[1] "VIF NOS : 1.75490333054893"       "VIF posBi : 3.39869642564094"     "VIF NOS:posBi : 4.25519127873377"

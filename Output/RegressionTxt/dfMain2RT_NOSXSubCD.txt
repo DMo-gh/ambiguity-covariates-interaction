@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * SubCD"
+[1] "AP_H-F : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.2885,	Adjusted R-squared:  0.2767
 F-statistic: 24.46 on 3 and 181 DF,  p-value: 2.458e-13
 
 [1] "BIC:  1725.67359779167"
-[1] "VIF NOS : 71.4919276099056"       "VIF SubCD : 7.40292653527255"    
-[3] "VIF NOS:SubCD : 83.7327408829526"
-[1] "VLD_AP_V-D : RT~ NOS * SubCD"
+[1] "VIF NOS : 71.4919276099056"       "VIF SubCD : 7.40292653527255"     "VIF NOS:SubCD : 83.7327408829526"
+[1] "AP_V-D : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.1818,	Adjusted R-squared:  0.1683
 F-statistic: 13.41 on 3 and 181 DF,  p-value: 6.094e-08
 
 [1] "BIC:  1771.00307507751"
-[1] "VIF NOS : 71.491927609905"        "VIF SubCD : 7.40292653527255"    
-[3] "VIF NOS:SubCD : 83.7327408829519"
-[1] "VLD_BLP : RT~ NOS * SubCD"
+[1] "VIF NOS : 71.491927609905"        "VIF SubCD : 7.40292653527255"     "VIF NOS:SubCD : 83.7327408829519"
+[1] "BLP : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.3791,	Adjusted R-squared:  0.3787
 F-statistic:  1056 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  53459.2217987652"
-[1] "VIF NOS : 21.6496366723026"       "VIF SubCD : 2.4881861621154"     
-[3] "VIF NOS:SubCD : 27.1928731398444"
-[1] "VLD_ELP : RT~ NOS * SubCD"
+[1] "VIF NOS : 21.6496366723026"       "VIF SubCD : 2.4881861621154"      "VIF NOS:SubCD : 27.1928731398444"
+[1] "ELP : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -96,9 +93,8 @@ Multiple R-squared:  0.3132,	Adjusted R-squared:  0.3129
 F-statistic:  1283 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95723.5530899925"
-[1] "VIF NOS : 20.3656342118502"       "VIF SubCD : 2.36664222989399"    
-[3] "VIF NOS:SubCD : 25.4458347298438"
-[1] "ALD_AELP : RT~ NOS * SubCD"
+[1] "VIF NOS : 20.3656342118502"       "VIF SubCD : 2.36664222989399"     "VIF NOS:SubCD : 25.4458347298438"
+[1] "AELP : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -121,9 +117,8 @@ Multiple R-squared:  0.1338,	Adjusted R-squared:  0.1333
 F-statistic: 273.5 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61382.2053952437"
-[1] "VIF NOS : 21.7008952342944"       "VIF SubCD : 2.58199879267502"    
-[3] "VIF NOS:SubCD : 27.5807238962507"
-[1] "ALD_MALD : RT~ NOS * SubCD"
+[1] "VIF NOS : 21.7008952342944"       "VIF SubCD : 2.58199879267502"     "VIF NOS:SubCD : 27.5807238962507"
+[1] "MALD : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -146,9 +141,8 @@ Multiple R-squared:  0.03323,	Adjusted R-squared:  0.03285
 F-statistic: 85.79 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  94951.1683451867"
-[1] "VIF NOS : 21.2805931899352"       "VIF SubCD : 2.38868778306696"    
-[3] "VIF NOS:SubCD : 26.5228495180236"
-[1] "NMG_ELP : RT~ NOS * SubCD"
+[1] "VIF NOS : 21.2805931899352"       "VIF SubCD : 2.38868778306696"     "VIF NOS:SubCD : 26.5228495180236"
+[1] "NMG : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -171,9 +165,8 @@ Multiple R-squared:  0.2066,	Adjusted R-squared:  0.2063
 F-statistic: 734.8 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  92696.4405903933"
-[1] "VIF NOS : 20.3431820691729"       "VIF SubCD : 2.36502285266342"    
-[3] "VIF NOS:SubCD : 25.4169874561962"
-[1] "SD_SDP : RT~ NOS * SubCD"
+[1] "VIF NOS : 20.3431820691729"       "VIF SubCD : 2.36502285266342"     "VIF NOS:SubCD : 25.4169874561962"
+[1] "SDP : RT~ NOS * SubCD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)

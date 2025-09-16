@@ -1,0 +1,192 @@
+[1] "AP_H-F : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-63.144 -17.437  -5.516  14.859  89.041 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 507.4200    25.3208  20.040   <2e-16 ***
+NOS           1.5097     2.6831   0.563    0.574    
+phonUP        7.0946     5.6279   1.261    0.209    
+NOS:phonUP   -0.7779     0.5902  -1.318    0.189    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 27.16 on 181 degrees of freedom
+Multiple R-squared:  0.1019,	Adjusted R-squared:  0.08706 
+F-statistic: 6.849 on 3 and 181 DF,  p-value: 0.0002139
+
+[1] "BIC:  1768.75070523001"
+[1] "VIF NOS : 34.9059591971435"        "VIF phonUP : 5.4126506179214"      "VIF NOS:phonUP : 41.5185983518537"
+[1] "AP_V-D : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-69.326 -21.412  -1.844  17.288  86.452 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 613.3488    26.7227  22.952   <2e-16 ***
+NOS           2.2455     2.8316   0.793    0.429    
+phonUP        8.9818     5.9395   1.512    0.132    
+NOS:phonUP   -0.9534     0.6229  -1.530    0.128    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 28.67 on 181 degrees of freedom
+Multiple R-squared:  0.09976,	Adjusted R-squared:  0.08484 
+F-statistic: 6.686 on 3 and 181 DF,  p-value: 0.000264
+
+[1] "BIC:  1788.68881223949"
+[1] "VIF NOS : 34.9059591971432"        "VIF phonUP : 5.41265061792141"     "VIF NOS:phonUP : 41.5185983518534"
+[1] "BLP : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-120.206  -34.043   -5.463   27.579  246.665 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 632.3069     4.3922 143.962  < 2e-16 ***
+NOS          -6.3672     0.7521  -8.466  < 2e-16 ***
+phonUP       -5.5622     0.9010  -6.174 7.18e-10 ***
+NOS:phonUP    0.3625     0.1572   2.306   0.0211 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48.83 on 5191 degrees of freedom
+Multiple R-squared:  0.135,	Adjusted R-squared:  0.1345 
+F-statistic: 270.1 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  55181.2837984623"
+[1] "VIF NOS : 19.4022234538757"        "VIF phonUP : 2.82155711648756"     "VIF NOS:phonUP : 21.2696624842498"
+[1] "ELP : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-195.66  -54.94   -9.87   45.26  427.63 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 680.3054     4.3166 157.604  < 2e-16 ***
+NOS          -5.4379     0.8698  -6.252 4.25e-10 ***
+phonUP        8.1605     0.7954  10.260  < 2e-16 ***
+NOS:phonUP   -0.5662     0.1738  -3.258  0.00113 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 77.72 on 8441 degrees of freedom
+Multiple R-squared:  0.1493,	Adjusted R-squared:  0.149 
+F-statistic: 493.9 on 3 and 8441 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  97530.3730620107"
+[1] "VIF NOS : 13.8277819258711"        "VIF phonUP : 2.79456733470583"     "VIF NOS:phonUP : 14.6550712356892"
+[1] "AELP : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-236.03  -56.77   -1.58   52.96  325.12 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 922.2649     6.2168 148.350  < 2e-16 ***
+NOS          -1.6892     1.2562  -1.345   0.1788    
+phonUP        7.4973     1.1337   6.613 4.14e-11 ***
+NOS:phonUP   -0.4839     0.2427  -1.994   0.0462 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 81.06 on 5314 degrees of freedom
+Multiple R-squared:  0.04903,	Adjusted R-squared:  0.04849 
+F-statistic: 91.33 on 3 and 5314 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  61878.4524728581"
+[1] "VIF NOS : 16.2426294317927"        "VIF phonUP : 3.17507826000778"     "VIF NOS:phonUP : 17.5484213954818"
+[1] "MALD : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-459.32  -93.61  -19.96   73.52  820.81 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 886.7039     8.2125 107.970  < 2e-16 ***
+NOS          -8.0997     1.6125  -5.023  5.2e-07 ***
+phonUP        2.2865     1.4981   1.526  0.12697    
+NOS:phonUP    0.9111     0.3203   2.845  0.00445 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 137.6 on 7487 degrees of freedom
+Multiple R-squared:  0.01765,	Adjusted R-squared:  0.01725 
+F-statistic: 44.83 on 3 and 7487 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  95070.9642066304"
+[1] "VIF NOS : 14.0802049567967"       "VIF phonUP : 2.81972073828691"    "VIF NOS:phonUP : 14.784375206464"
+[1] "NMG : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-148.90  -42.70   -8.43   33.60  337.36 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 641.23884    3.34964 191.435  < 2e-16 ***
+NOS          -4.80603    0.67616  -7.108 1.27e-12 ***
+phonUP        6.79621    0.61779  11.001  < 2e-16 ***
+NOS:phonUP   -0.03879    0.13514  -0.287    0.774    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 60.47 on 8465 degrees of freedom
+Multiple R-squared:  0.1218,	Adjusted R-squared:  0.1215 
+F-statistic: 391.4 on 3 and 8465 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  93556.1746015653"
+[1] "VIF NOS : 13.8250749806959"        "VIF phonUP : 2.79388217502049"     "VIF NOS:phonUP : 14.6687201245313"
+[1] "SDP : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-309.93  -83.74   -3.52   76.88  502.42 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 980.8442    11.9050  82.389  < 2e-16 ***
+NOS          -7.3784     2.8683  -2.572  0.01015 *  
+phonUP       -2.4490     2.1305  -1.149  0.25045    
+NOS:phonUP    1.4967     0.5339   2.803  0.00509 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 123.6 on 3081 degrees of freedom
+Multiple R-squared:  0.003641,	Adjusted R-squared:  0.002671 
+F-statistic: 3.753 on 3 and 3081 DF,  p-value: 0.01049
+
+[1] "BIC:  38512.9178242239"
+[1] "VIF NOS : 12.7135061333521"        "VIF phonUP : 2.75685717147852"     "VIF NOS:phonUP : 14.2188228410593"

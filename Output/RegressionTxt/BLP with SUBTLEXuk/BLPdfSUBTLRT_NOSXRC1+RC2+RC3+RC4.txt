@@ -1,0 +1,32 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * ( RC1 + RC2 + RC3 + RC4 )"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-122.287  -28.860   -4.713   24.152  223.339 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 590.8273     1.4510 407.189  < 2e-16 ***
+NOS          -0.6101     0.3430  -1.779 0.075365 .  
+RC1           6.1373     1.6323   3.760 0.000172 ***
+RC2         -36.4168     0.8596 -42.367  < 2e-16 ***
+RC3           4.8669     0.9864   4.934 8.32e-07 ***
+RC4           8.9801     0.8447  10.631  < 2e-16 ***
+NOS:RC1       0.5797     0.3130   1.852 0.064042 .  
+NOS:RC2       1.2738     0.1071  11.891  < 2e-16 ***
+NOS:RC3      -0.2463     0.1394  -1.768 0.077162 .  
+NOS:RC4      -0.4131     0.0772  -5.351 9.12e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 41.28 on 5185 degrees of freedom
+Multiple R-squared:  0.3826,	Adjusted R-squared:  0.3816 
+F-statistic:   357 on 9 and 5185 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  53480.7034606756"
+[1] "VIF NOS : 5.64792354044893"     "VIF RC1 : 2.9348556355393"      "VIF RC2 : 2.58599186143104"    
+[4] "VIF RC3 : 3.08005376037117"     "VIF RC4 : 2.51035285214247"     "VIF NOS:RC1 : 6.68890583649071"
+[7] "VIF NOS:RC2 : 4.08049066098325" "VIF NOS:RC3 : 3.6380038580494"  "VIF NOS:RC4 : 3.02997875867505"

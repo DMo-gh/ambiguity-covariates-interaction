@@ -1,0 +1,24 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * nVerb"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-120.269  -34.562   -5.667   27.060  248.517 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 611.46307    1.22993 497.155  < 2e-16 ***
+NOS          -6.54569    0.27303 -23.974  < 2e-16 ***
+nVerb        -0.32213    0.50140  -0.642    0.521    
+NOS:nVerb     0.22209    0.02849   7.794 7.77e-15 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48.64 on 5191 degrees of freedom
+Multiple R-squared:  0.1417,	Adjusted R-squared:  0.1412 
+F-statistic: 285.7 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  55141.0340826116"
+[1] "VIF NOS : 2.57699185383046"       "VIF nVerb : 4.24152285263408"     "VIF NOS:nVerb : 4.16635538182553"

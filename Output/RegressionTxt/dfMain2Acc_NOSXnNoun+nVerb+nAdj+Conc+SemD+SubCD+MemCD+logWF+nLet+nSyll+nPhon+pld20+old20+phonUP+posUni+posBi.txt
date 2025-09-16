@@ -1,0 +1,944 @@
+[1] "AP_H-F binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.35409  -0.06903   0.01369   0.10206   0.35896  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept)  7.958e-01  2.085e+01   0.038    0.970
+NOS         -5.846e-01  2.266e+00  -0.258    0.796
+nNoun        1.962e-01  8.930e-01   0.220    0.826
+nVerb        3.155e-01  8.474e-01   0.372    0.710
+nAdj         3.810e-01  9.080e-01   0.420    0.675
+Conc         4.143e-01  1.096e+00   0.378    0.705
+SemD         9.744e-01  4.506e+00   0.216    0.829
+SubCD       -2.297e+00  1.187e+01  -0.194    0.847
+MemCD        1.328e-03  4.926e-03   0.270    0.787
+logWF        2.651e+00  1.086e+01   0.244    0.807
+nLet         3.425e-01  3.128e+00   0.109    0.913
+nSyll       -6.169e-01  2.355e+00  -0.262    0.793
+nPhon       -2.251e-02  2.616e+00  -0.009    0.993
+pld20       -1.105e+00  3.796e+00  -0.291    0.771
+old20        4.844e-01  5.366e+00   0.090    0.928
+phonUP       1.419e-01  1.899e+00   0.075    0.940
+posUni       6.572e-04  5.752e-03   0.114    0.909
+posBi       -7.568e-03  4.196e-02  -0.180    0.857
+NOS:nNoun   -1.083e-04  3.766e-02  -0.003    0.998
+NOS:nVerb   -3.274e-03  2.712e-02  -0.121    0.904
+NOS:nAdj    -5.367e-03  4.855e-02  -0.111    0.912
+NOS:Conc    -2.676e-02  1.241e-01  -0.216    0.829
+NOS:SemD    -3.351e-02  4.962e-01  -0.068    0.946
+NOS:SubCD    3.170e-01  1.326e+00   0.239    0.811
+NOS:MemCD   -1.071e-04  5.087e-04  -0.210    0.833
+NOS:logWF   -3.051e-01  1.214e+00  -0.251    0.802
+NOS:nLet     3.543e-02  3.320e-01   0.107    0.915
+NOS:nSyll   -7.382e-03  2.665e-01  -0.028    0.978
+NOS:nPhon    1.699e-05  2.817e-01   0.000    1.000
+NOS:pld20    1.026e-01  4.204e-01   0.244    0.807
+NOS:old20   -1.083e-01  5.697e-01  -0.190    0.849
+NOS:phonUP   5.003e-03  2.353e-01   0.021    0.983
+NOS:posUni  -7.061e-05  6.136e-04  -0.115    0.908
+NOS:posBi    4.395e-04  3.992e-03   0.110    0.912
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 7.0327  on 184  degrees of freedom
+Residual deviance: 3.4810  on 151  degrees of freedom
+AIC: 92.167
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                         184     7.0327         
+NOS         1  0.38235       183     6.6503   0.5363
+nNoun       1  0.20623       182     6.4441   0.6497
+nVerb       1  0.05094       181     6.3932   0.8214
+nAdj        1  0.17595       180     6.2172   0.6749
+Conc        1  0.08272       179     6.1345   0.7736
+SemD        1  0.38923       178     5.7453   0.5327
+SubCD       1  0.35290       177     5.3924   0.5525
+MemCD       1  0.08041       176     5.3120   0.7767
+logWF       1  0.00202       175     5.3099   0.9641
+nLet        1  0.32495       174     4.9850   0.5686
+nSyll       1  0.78882       173     4.1962   0.3745
+nPhon       1  0.04552       172     4.1506   0.8310
+pld20       1  0.10437       171     4.0463   0.7467
+old20       1  0.00630       170     4.0400   0.9367
+phonUP      1  0.09590       169     3.9441   0.7568
+posUni      1  0.03873       168     3.9053   0.8440
+posBi       1  0.01875       167     3.8866   0.8911
+NOS:nNoun   1  0.01216       166     3.8744   0.9122
+NOS:nVerb   1  0.02357       165     3.8509   0.8780
+NOS:nAdj    1  0.00314       164     3.8477   0.9553
+NOS:Conc    1  0.03778       163     3.8099   0.8459
+NOS:SemD    1  0.01677       162     3.7932   0.8970
+NOS:SubCD   1  0.07540       161     3.7178   0.7836
+NOS:MemCD   1  0.02221       160     3.6955   0.8815
+NOS:logWF   1  0.05971       159     3.6358   0.8070
+NOS:nLet    1  0.04245       158     3.5934   0.8368
+NOS:nSyll   1  0.00223       157     3.5912   0.9623
+NOS:nPhon   1  0.01793       156     3.5732   0.8935
+NOS:pld20   1  0.02996       155     3.5433   0.8626
+NOS:old20   1  0.04456       154     3.4987   0.8328
+NOS:phonUP  1  0.00140       153     3.4973   0.9701
+NOS:posUni  1  0.00414       152     3.4932   0.9487
+NOS:posBi   1  0.01218       151     3.4810   0.9121
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-12.083411895 -11.930103032  -0.306617725  -0.012850590  -0.001658767  -0.013708452 
+[1] "adj.r.sq:  -0.188290860629146"
+[1] "BIC:  201.658921842435"
+ [1] "VIF NOS : 1019.33908678604"        "VIF nNoun : 50.0486847032111"      "VIF nVerb : 78.5371684223534"     
+ [4] "VIF nAdj : 30.9199334664028"       "VIF Conc : 9.71013733764616"       "VIF SemD : 9.75843650065932"      
+ [7] "VIF SubCD : 211.303769538244"      "VIF MemCD : 23.9320893561289"      "VIF logWF : 172.391206817289"     
+[10] "VIF nLet : 60.9150088037391"       "VIF nSyll : 10.659530179938"       "VIF nPhon : 50.8756356745771"     
+[13] "VIF pld20 : 17.4099710125227"      "VIF old20 : 27.5705752044258"      "VIF phonUP : 30.9050637371942"    
+[16] "VIF posUni : 54.1916924552147"     "VIF posBi : 63.0896673124164"      "VIF NOS:nNoun : 25.4528317938114" 
+[19] "VIF NOS:nVerb : 22.5937650343027"  "VIF NOS:nAdj : 11.3853138923444"   "VIF NOS:Conc : 61.1544461135314"  
+[22] "VIF NOS:SemD : 162.190611698205"   "VIF NOS:SubCD : 3022.38063979109"  "VIF NOS:MemCD : 55.8433964000848" 
+[25] "VIF NOS:logWF : 712.441653918121"  "VIF NOS:nLet : 412.746591535715"   "VIF NOS:nSyll : 20.5815115675865" 
+[28] "VIF NOS:nPhon : 213.803604437263"  "VIF NOS:pld20 : 65.4903898224242"  "VIF NOS:old20 : 146.844256942388" 
+[31] "VIF NOS:phonUP : 242.403894053806" "VIF NOS:posUni : 75.9485232565753" "VIF NOS:posBi : 76.3091687140388" 
+[1] "AP_V-D binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.70021  -0.07522   0.01854   0.12793   0.36110  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept) -4.865e+00  2.106e+01  -0.231    0.817
+NOS         -2.044e-01  2.293e+00  -0.089    0.929
+nNoun        1.632e-01  9.088e-01   0.180    0.857
+nVerb        2.364e-01  8.673e-01   0.273    0.785
+nAdj         3.007e-01  9.102e-01   0.330    0.741
+Conc         3.301e-01  1.147e+00   0.288    0.773
+SemD        -5.952e-02  4.519e+00  -0.013    0.989
+SubCD        8.231e-01  1.143e+01   0.072    0.943
+MemCD        1.029e-03  4.974e-03   0.207    0.836
+logWF        1.095e+00  1.030e+01   0.106    0.915
+nLet         1.235e+00  3.373e+00   0.366    0.714
+nSyll       -7.858e-01  2.411e+00  -0.326    0.745
+nPhon       -2.466e-01  2.675e+00  -0.092    0.927
+pld20        3.125e-01  3.792e+00   0.082    0.934
+old20       -3.778e-01  5.526e+00  -0.068    0.945
+phonUP      -8.303e-03  1.959e+00  -0.004    0.997
+posUni      -1.115e-03  6.080e-03  -0.183    0.855
+posBi       -2.395e-03  4.334e-02  -0.055    0.956
+NOS:nNoun    3.217e-03  3.929e-02   0.082    0.935
+NOS:nVerb    2.188e-03  2.720e-02   0.080    0.936
+NOS:nAdj    -2.321e-03  4.533e-02  -0.051    0.959
+NOS:Conc    -8.273e-03  1.253e-01  -0.066    0.947
+NOS:SemD     1.121e-02  4.956e-01   0.023    0.982
+NOS:SubCD    1.284e-01  1.269e+00   0.101    0.919
+NOS:MemCD   -8.283e-05  5.062e-04  -0.164    0.870
+NOS:logWF   -2.734e-01  1.148e+00  -0.238    0.812
+NOS:nLet    -3.136e-02  3.502e-01  -0.090    0.929
+NOS:nSyll    8.298e-02  3.024e-01   0.274    0.784
+NOS:nPhon    2.855e-02  2.993e-01   0.095    0.924
+NOS:pld20   -4.599e-02  4.262e-01  -0.108    0.914
+NOS:old20    1.095e-02  5.882e-01   0.019    0.985
+NOS:phonUP  -3.682e-03  2.520e-01  -0.015    0.988
+NOS:posUni  -1.763e-05  6.315e-04  -0.028    0.978
+NOS:posBi    3.933e-04  4.142e-03   0.095    0.924
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 7.8444  on 184  degrees of freedom
+Residual deviance: 4.9661  on 151  degrees of freedom
+AIC: 92.051
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)
+NULL                         184     7.8444         
+NOS         1  0.37023       183     7.4742   0.5429
+nNoun       1  0.03624       182     7.4379   0.8490
+nVerb       1  0.07281       181     7.3651   0.7873
+nAdj        1  0.07851       180     7.2866   0.7793
+Conc        1  0.05536       179     7.2312   0.8140
+SemD        1  0.14601       178     7.0852   0.7024
+SubCD       1  0.28419       177     6.8010   0.5940
+MemCD       1  0.00295       176     6.7981   0.9567
+logWF       1  0.12658       175     6.6715   0.7220
+nLet        1  0.37751       174     6.2940   0.5389
+nSyll       1  0.21820       173     6.0758   0.6404
+nPhon       1  0.00653       172     6.0693   0.9356
+pld20       1  0.00103       171     6.0682   0.9744
+old20       1  0.00004       170     6.0682   0.9950
+phonUP      1  0.00583       169     6.0624   0.9392
+posUni      1  0.33084       168     5.7315   0.5652
+posBi       1  0.04950       167     5.6820   0.8239
+NOS:nNoun   1  0.00127       166     5.6808   0.9716
+NOS:nVerb   1  0.02341       165     5.6574   0.8784
+NOS:nAdj    1  0.00172       164     5.6556   0.9669
+NOS:Conc    1  0.00044       163     5.6552   0.9833
+NOS:SemD    1  0.01485       162     5.6403   0.9030
+NOS:SubCD   1  0.47406       161     5.1663   0.4911
+NOS:MemCD   1  0.01828       160     5.1480   0.8925
+NOS:logWF   1  0.04924       159     5.0988   0.8244
+NOS:nLet    1  0.00028       158     5.0985   0.9866
+NOS:nSyll   1  0.07913       157     5.0194   0.7785
+NOS:nPhon   1  0.02555       156     4.9938   0.8730
+NOS:pld20   1  0.01747       155     4.9763   0.8949
+NOS:old20   1  0.00034       154     4.9760   0.9852
+NOS:phonUP  1  0.00003       153     4.9760   0.9954
+NOS:posUni  1  0.00082       152     4.9751   0.9771
+NOS:posBi   1  0.00906       151     4.9661   0.9242
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-12.025330424 -11.916372672  -0.217915504  -0.009143533  -0.001178616  -0.009750878 
+[1] "adj.r.sq:  -0.196832134213527"
+[1] "BIC:  201.542758900925"
+ [1] "VIF NOS : 1041.97978321782"        "VIF nNoun : 49.8102763033243"      "VIF nVerb : 85.0187380456728"     
+ [4] "VIF nAdj : 40.6944675558491"       "VIF Conc : 10.3957904405532"       "VIF SemD : 9.49045024387017"      
+ [7] "VIF SubCD : 211.350202670456"      "VIF MemCD : 26.807913091612"       "VIF logWF : 167.047231109339"     
+[10] "VIF nLet : 64.1412288374709"       "VIF nSyll : 10.0727627904661"      "VIF nPhon : 50.5412108936366"     
+[13] "VIF pld20 : 16.2993774059958"      "VIF old20 : 28.1479326436659"      "VIF phonUP : 31.0049976497677"    
+[16] "VIF posUni : 52.0523508961414"     "VIF posBi : 50.2925570362116"      "VIF NOS:nNoun : 25.9215421098261" 
+[19] "VIF NOS:nVerb : 23.0335819486585"  "VIF NOS:nAdj : 14.8466023117162"   "VIF NOS:Conc : 58.1135721171383"  
+[22] "VIF NOS:SemD : 164.446147107578"   "VIF NOS:SubCD : 2912.21326892963"  "VIF NOS:MemCD : 61.249518909581"  
+[25] "VIF NOS:logWF : 702.845483412554"  "VIF NOS:nLet : 455.874319256859"   "VIF NOS:nSyll : 21.5207824638452" 
+[28] "VIF NOS:nPhon : 241.357094555019"  "VIF NOS:pld20 : 67.2176186940523"  "VIF NOS:old20 : 157.25214143538"  
+[31] "VIF NOS:phonUP : 279.105906348629" "VIF NOS:posUni : 71.727213272157"  "VIF NOS:posBi : 61.8057297068221" 
+[1] "BLP binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.34867  -0.09487   0.10473   0.20858   0.66675  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -3.217e+00  1.248e+00  -2.578  0.00992 **
+NOS          9.467e-02  3.132e-01   0.302  0.76245   
+nNoun        8.946e-02  1.250e-01   0.716  0.47415   
+nVerb        1.015e-01  1.096e-01   0.926  0.35434   
+nAdj         1.792e-01  1.264e-01   1.418  0.15621   
+Conc         2.537e-01  1.301e-01   1.951  0.05112 . 
+SemD         4.721e-01  4.747e-01   0.995  0.31989   
+SubCD        6.785e-01  4.012e-01   1.691  0.09079 . 
+MemCD        4.607e-04  6.465e-04   0.713  0.47604   
+logWF        5.629e-01  3.272e-01   1.720  0.08535 . 
+nLet         3.614e-01  2.227e-01   1.623  0.10468   
+nSyll        1.459e-01  3.166e-01   0.461  0.64493   
+nPhon       -1.286e-02  2.127e-01  -0.060  0.95180   
+pld20        1.244e-01  3.916e-01   0.318  0.75063   
+old20       -4.024e-01  4.878e-01  -0.825  0.40937   
+phonUP       1.276e-01  1.428e-01   0.893  0.37179   
+posUni      -4.174e-06  3.869e-04  -0.011  0.99139   
+posBi       -1.029e-03  1.409e-03  -0.730  0.46513   
+NOS:nNoun    2.989e-03  1.154e-02   0.259  0.79560   
+NOS:nVerb   -3.772e-04  4.606e-03  -0.082  0.93474   
+NOS:nAdj    -1.309e-03  9.966e-03  -0.131  0.89550   
+NOS:Conc    -4.949e-03  3.060e-02  -0.162  0.87152   
+NOS:SemD    -5.653e-02  1.196e-01  -0.473  0.63652   
+NOS:SubCD    6.772e-03  8.712e-02   0.078  0.93805   
+NOS:MemCD   -1.187e-05  1.269e-04  -0.094  0.92543   
+NOS:logWF   -3.801e-02  6.025e-02  -0.631  0.52814   
+NOS:nLet    -1.095e-02  5.108e-02  -0.214  0.83026   
+NOS:nSyll   -9.586e-03  6.882e-02  -0.139  0.88922   
+NOS:nPhon   -4.846e-03  5.120e-02  -0.095  0.92458   
+NOS:pld20    3.364e-03  9.948e-02   0.034  0.97303   
+NOS:old20    6.194e-02  1.121e-01   0.552  0.58069   
+NOS:phonUP  -2.922e-03  3.607e-02  -0.081  0.93543   
+NOS:posUni  -3.399e-05  8.788e-05  -0.387  0.69893   
+NOS:posBi    1.362e-04  2.611e-04   0.522  0.60189   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 450.73  on 5194  degrees of freedom
+Residual deviance: 302.27  on 5161  degrees of freedom
+AIC: 561.67
+
+Number of Fisher Scoring iterations: 7
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                        5194     450.73              
+NOS         1   30.485      5193     420.24 3.365e-08 ***
+nNoun       1    0.015      5192     420.23    0.9013    
+nVerb       1    0.416      5191     419.81    0.5189    
+nAdj        1    0.826      5190     418.99    0.3635    
+Conc        1    0.166      5189     418.82    0.6837    
+SemD        1   22.345      5188     396.48 2.278e-06 ***
+SubCD       1   44.976      5187     351.50 1.994e-11 ***
+MemCD       1    0.357      5186     351.14    0.5499    
+logWF       1    5.343      5185     345.80    0.0208 *  
+nLet        1   34.046      5184     311.75 5.384e-09 ***
+nSyll       1    0.385      5183     311.37    0.5349    
+nPhon       1    0.838      5182     310.53    0.3601    
+pld20       1    0.096      5181     310.43    0.7570    
+old20       1    0.048      5180     310.39    0.8273    
+phonUP      1    2.437      5179     307.95    0.1185    
+posUni      1    0.972      5178     306.98    0.3242    
+posBi       1    0.295      5177     306.68    0.5871    
+NOS:nNoun   1    0.289      5176     306.39    0.5907    
+NOS:nVerb   1    0.806      5175     305.59    0.3692    
+NOS:nAdj    1    0.212      5174     305.38    0.6451    
+NOS:Conc    1    0.093      5173     305.28    0.7598    
+NOS:SemD    1    1.425      5172     303.86    0.2325    
+NOS:SubCD   1    0.251      5171     303.61    0.6164    
+NOS:MemCD   1    0.078      5170     303.53    0.7803    
+NOS:logWF   1    0.346      5169     303.18    0.5565    
+NOS:nLet    1    0.057      5168     303.12    0.8109    
+NOS:nSyll   1    0.010      5167     303.11    0.9219    
+NOS:nPhon   1    0.009      5166     303.11    0.9256    
+NOS:pld20   1    0.231      5165     302.87    0.6305    
+NOS:old20   1    0.293      5164     302.58    0.5882    
+NOS:phonUP  1    0.022      5163     302.56    0.8827    
+NOS:posUni  1    0.010      5162     302.55    0.9207    
+NOS:posBi   1    0.284      5161     302.27    0.5939    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-2.468373e+02 -2.473377e+02  1.000907e+00  2.023361e-03  1.926488e-04  2.121019e-03 
+[1] "adj.r.sq:  0.0308582427114895"
+[1] "BIC:  784.55993313642"
+ [1] "VIF NOS : 212.083432264624"        "VIF nNoun : 7.94859093344607"      "VIF nVerb : 11.9952306911708"     
+ [4] "VIF nAdj : 4.82393698794704"       "VIF Conc : 3.91562758994729"       "VIF SemD : 4.63264214293218"      
+ [7] "VIF SubCD : 8.47806972206236"      "VIF MemCD : 9.9821781290219"       "VIF logWF : 6.31455258598826"     
+[10] "VIF nLet : 22.2866990495478"       "VIF nSyll : 5.50731696889211"      "VIF nPhon : 15.7223334444462"     
+[13] "VIF pld20 : 12.9730491752866"      "VIF old20 : 16.8542424728596"      "VIF phonUP : 5.29035311354475"    
+[16] "VIF posUni : 11.8981878697451"     "VIF posBi : 10.3779494651026"      "VIF NOS:nNoun : 8.25668285034043" 
+[19] "VIF NOS:nVerb : 5.98166450322885"  "VIF NOS:nAdj : 4.21462476423786"   "VIF NOS:Conc : 26.8081540540165"  
+[22] "VIF NOS:SemD : 123.848329288276"   "VIF NOS:SubCD : 177.478641166106"  "VIF NOS:MemCD : 78.0086992645386" 
+[25] "VIF NOS:logWF : 43.9119638017031"  "VIF NOS:nLet : 144.920050667357"   "VIF NOS:nSyll : 22.5846513818386" 
+[28] "VIF NOS:nPhon : 95.5912911018873"  "VIF NOS:pld20 : 50.2404170373817"  "VIF NOS:old20 : 76.6654796820326" 
+[31] "VIF NOS:phonUP : 63.1607883491441" "VIF NOS:posUni : 32.0389409300731" "VIF NOS:posBi : 15.6159302624297" 
+[1] "ELP binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.19591  -0.10108   0.06735   0.21783   0.69299  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -3.290e+00  9.747e-01  -3.375 0.000738 ***
+NOS          2.297e-01  2.316e-01   0.992 0.321283    
+nNoun        2.856e-02  9.546e-02   0.299 0.764814    
+nVerb        6.176e-04  8.417e-02   0.007 0.994146    
+nAdj         8.946e-02  9.679e-02   0.924 0.355316    
+Conc         2.106e-01  9.703e-02   2.170 0.030004 *  
+SemD         6.787e-02  3.462e-01   0.196 0.844572    
+SubCD        1.978e+00  4.781e-01   4.138 3.51e-05 ***
+MemCD        1.058e-03  5.111e-04   2.071 0.038383 *  
+logWF       -1.363e+00  5.024e-01  -2.712 0.006679 ** 
+nLet         2.837e-01  1.357e-01   2.091 0.036521 *  
+nSyll       -1.141e-01  1.753e-01  -0.651 0.514932    
+nPhon       -1.597e-02  1.337e-01  -0.119 0.904888    
+pld20        2.220e-01  2.422e-01   0.917 0.359305    
+old20       -4.285e-01  3.062e-01  -1.400 0.161648    
+phonUP       8.323e-02  7.659e-02   1.087 0.277187    
+posUni       2.027e-04  2.198e-04   0.922 0.356434    
+posBi       -1.044e-03  9.658e-04  -1.081 0.279580    
+NOS:nNoun    4.310e-03  8.356e-03   0.516 0.605986    
+NOS:nVerb    5.814e-04  3.233e-03   0.180 0.857278    
+NOS:nAdj    -3.306e-03  7.221e-03  -0.458 0.647120    
+NOS:Conc    -7.118e-03  2.294e-02  -0.310 0.756357    
+NOS:SemD    -2.035e-04  8.942e-02  -0.002 0.998184    
+NOS:SubCD   -8.383e-02  8.779e-02  -0.955 0.339615    
+NOS:MemCD   -7.313e-05  1.096e-04  -0.668 0.504425    
+NOS:logWF    7.363e-02  8.653e-02   0.851 0.394839    
+NOS:nLet    -2.806e-02  3.389e-02  -0.828 0.407832    
+NOS:nSyll    1.643e-02  4.520e-02   0.364 0.716163    
+NOS:nPhon    1.760e-03  3.355e-02   0.052 0.958164    
+NOS:pld20   -2.532e-02  6.763e-02  -0.374 0.708125    
+NOS:old20    6.694e-02  7.950e-02   0.842 0.399780    
+NOS:phonUP   1.375e-03  2.109e-02   0.065 0.947995    
+NOS:posUni  -1.844e-05  5.269e-05  -0.350 0.726308    
+NOS:posBi    1.288e-04  1.842e-04   0.699 0.484657    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 655.02  on 8444  degrees of freedom
+Residual deviance: 470.78  on 8411  degrees of freedom
+AIC: 947.97
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                        8444     655.02              
+NOS         1   24.903      8443     630.12 6.029e-07 ***
+nNoun       1    0.382      8442     629.74   0.53649    
+nVerb       1    3.301      8441     626.44   0.06926 .  
+nAdj        1    0.124      8440     626.31   0.72508    
+Conc        1    0.939      8439     625.38   0.33263    
+SemD        1   24.603      8438     600.77 7.046e-07 ***
+SubCD       1   54.358      8437     546.41 1.671e-13 ***
+MemCD       1    0.345      8436     546.07   0.55710    
+logWF       1   20.809      8435     525.26 5.074e-06 ***
+nLet        1   40.276      8434     484.99 2.205e-10 ***
+nSyll       1    0.063      8433     484.92   0.80159    
+nPhon       1    1.163      8432     483.76   0.28084    
+pld20       1    0.000      8431     483.76   0.99262    
+old20       1    1.530      8430     482.23   0.21618    
+phonUP      1    4.603      8429     477.63   0.03192 *  
+posUni      1    0.136      8428     477.49   0.71182    
+posBi       1    0.810      8427     476.68   0.36813    
+NOS:nNoun   1    0.030      8426     476.65   0.86236    
+NOS:nVerb   1    0.808      8425     475.84   0.36881    
+NOS:nAdj    1    0.928      8424     474.91   0.33535    
+NOS:Conc    1    0.057      8423     474.86   0.81164    
+NOS:SemD    1    0.645      8422     474.21   0.42179    
+NOS:SubCD   1    0.855      8421     473.36   0.35521    
+NOS:MemCD   1    0.033      8420     473.32   0.85537    
+NOS:logWF   1    1.007      8419     472.32   0.31551    
+NOS:nLet    1    0.286      8418     472.03   0.59282    
+NOS:nSyll   1    0.220      8417     471.81   0.63906    
+NOS:nPhon   1    0.020      8416     471.79   0.88719    
+NOS:pld20   1    0.000      8415     471.79   0.99116    
+NOS:old20   1    0.488      8414     471.30   0.48475    
+NOS:phonUP  1    0.002      8413     471.30   0.96412    
+NOS:posUni  1    0.011      8412     471.29   0.91462    
+NOS:posBi   1    0.508      8411     470.78   0.47617    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-4.399872e+02 -4.412594e+02  2.544419e+00  2.883133e-03  3.012476e-04  3.035945e-03 
+[1] "adj.r.sq:  0.0239055031302733"
+[1] "BIC:  1187.3796708147"
+ [1] "VIF NOS : 195.394276739073"        "VIF nNoun : 7.87947432440683"      "VIF nVerb : 15.7482426643779"     
+ [4] "VIF nAdj : 5.37853469479941"       "VIF Conc : 4.02755308818233"       "VIF SemD : 4.60433352863013"      
+ [7] "VIF SubCD : 22.6439153937449"      "VIF MemCD : 11.9830239706531"      "VIF logWF : 26.0819622334884"     
+[10] "VIF nLet : 31.5166804880353"       "VIF nSyll : 10.4911009059358"      "VIF nPhon : 27.7770399561889"     
+[13] "VIF pld20 : 20.2056428589876"      "VIF old20 : 23.9077133308359"      "VIF phonUP : 5.12023794897947"    
+[16] "VIF posUni : 5.74386484984076"     "VIF posBi : 8.84485707609901"      "VIF NOS:nNoun : 6.10356871858371" 
+[19] "VIF NOS:nVerb : 6.35891539579725"  "VIF NOS:nAdj : 3.74002701544321"   "VIF NOS:Conc : 24.4426602689467"  
+[22] "VIF NOS:SemD : 113.323680731941"   "VIF NOS:SubCD : 299.883298148891"  "VIF NOS:MemCD : 87.5785248143287" 
+[25] "VIF NOS:logWF : 128.173056809821"  "VIF NOS:nLet : 128.307113967909"   "VIF NOS:nSyll : 21.3007253277193" 
+[28] "VIF NOS:nPhon : 87.3282652670124"  "VIF NOS:pld20 : 49.1002545783823"  "VIF NOS:old20 : 75.2595009321053" 
+[31] "VIF NOS:phonUP : 39.8078496897157" "VIF NOS:posUni : 20.013122170854"  "VIF NOS:posBi : 13.9506441235945" 
+[1] "AELP binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.16167  -0.06378   0.06309   0.16992   0.67438  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -2.520e+00  1.295e+00  -1.946  0.05166 . 
+NOS         -1.182e-02  2.948e-01  -0.040  0.96801   
+nNoun        8.065e-04  1.845e-01   0.004  0.99651   
+nVerb        9.944e-02  1.786e-01   0.557  0.57759   
+nAdj         3.505e-02  1.888e-01   0.186  0.85274   
+Conc         6.171e-02  1.143e-01   0.540  0.58915   
+SemD         8.868e-02  4.352e-01   0.204  0.83855   
+SubCD        1.709e+00  6.585e-01   2.595  0.00946 **
+MemCD        1.504e-03  6.069e-04   2.479  0.01318 * 
+logWF       -1.768e+00  6.723e-01  -2.629  0.00856 **
+nLet        -5.185e-03  1.729e-01  -0.030  0.97607   
+nSyll        1.593e-01  2.182e-01   0.730  0.46531   
+nPhon        4.658e-02  1.644e-01   0.283  0.77685   
+pld20        7.717e-02  2.852e-01   0.271  0.78669   
+old20        5.076e-02  3.795e-01   0.134  0.89359   
+phonUP       1.223e-01  9.890e-02   1.236  0.21637   
+posUni       2.421e-04  2.811e-04   0.861  0.38924   
+posBi       -1.239e-04  1.432e-03  -0.087  0.93103   
+NOS:nNoun    6.205e-03  7.854e-03   0.790  0.42949   
+NOS:nVerb   -1.306e-03  3.579e-03  -0.365  0.71524   
+NOS:nAdj     3.714e-03  8.207e-03   0.453  0.65083   
+NOS:Conc    -3.681e-03  2.274e-02  -0.162  0.87143   
+NOS:SemD    -8.562e-04  9.369e-02  -0.009  0.99271   
+NOS:SubCD   -4.227e-02  1.023e-01  -0.413  0.67941   
+NOS:MemCD   -1.429e-04  9.899e-05  -1.444  0.14884   
+NOS:logWF    1.044e-01  9.387e-02   1.112  0.26622   
+NOS:nLet     1.595e-02  3.960e-02   0.403  0.68710   
+NOS:nSyll    2.918e-02  4.976e-02   0.586  0.55766   
+NOS:nPhon    8.679e-03  3.738e-02   0.232  0.81641   
+NOS:pld20    9.636e-03  6.849e-02   0.141  0.88810   
+NOS:old20   -3.329e-02  8.575e-02  -0.388  0.69784   
+NOS:phonUP  -8.455e-03  2.654e-02  -0.319  0.75001   
+NOS:posUni  -2.979e-05  6.644e-05  -0.448  0.65385   
+NOS:posBi   -4.815e-05  2.671e-04  -0.180  0.85693   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 393.09  on 5317  degrees of freedom
+Residual deviance: 253.54  on 5284  degrees of freedom
+AIC: 775.14
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                        5317     393.09              
+NOS         1    1.515      5316     391.58 0.2183557    
+nNoun       1    1.070      5315     390.51 0.3009409    
+nVerb       1    1.664      5314     388.84 0.1970785    
+nAdj        1    1.214      5313     387.63 0.2705079    
+Conc        1   18.016      5312     369.62 2.191e-05 ***
+SemD        1    8.757      5311     360.86 0.0030850 ** 
+SubCD       1   10.515      5310     350.34 0.0011839 ** 
+MemCD       1    0.585      5309     349.76 0.4443934    
+logWF       1   12.508      5308     337.25 0.0004052 ***
+nLet        1   59.227      5307     278.02 1.405e-14 ***
+nSyll       1    8.522      5306     269.50 0.0035095 ** 
+nPhon       1    3.555      5305     265.95 0.0593782 .  
+pld20       1    0.010      5304     265.94 0.9213897    
+old20       1    0.513      5303     265.43 0.4740272    
+phonUP      1    4.624      5302     260.80 0.0315306 *  
+posUni      1    0.942      5301     259.86 0.3318807    
+posBi       1    0.167      5300     259.69 0.6830777    
+NOS:nNoun   1    0.102      5299     259.59 0.7488705    
+NOS:nVerb   1    0.760      5298     258.83 0.3834840    
+NOS:nAdj    1    0.031      5297     258.80 0.8612632    
+NOS:Conc    1    0.009      5296     258.79 0.9237908    
+NOS:SemD    1    0.715      5295     258.08 0.3978443    
+NOS:SubCD   1    0.196      5294     257.88 0.6576724    
+NOS:MemCD   1    0.697      5293     257.18 0.4038227    
+NOS:logWF   1    1.758      5292     255.43 0.1849117    
+NOS:nLet    1    0.464      5291     254.96 0.4959815    
+NOS:nSyll   1    0.689      5290     254.27 0.4063961    
+NOS:nPhon   1    0.038      5289     254.23 0.8451946    
+NOS:pld20   1    0.057      5288     254.18 0.8120094    
+NOS:old20   1    0.014      5287     254.16 0.9056804    
+NOS:phonUP  1    0.161      5286     254.00 0.6882516    
+NOS:posUni  1    0.434      5285     253.57 0.5098636    
+NOS:posBi   1    0.032      5284     253.54 0.8584558    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-3.535724e+02 -3.483022e+02 -1.054041e+01 -1.513113e-02 -1.983991e-03 -1.615978e-02 
+[1] "adj.r.sq:  0.0231794116343207"
+[1] "BIC:  998.825706007218"
+ [1] "VIF NOS : 330.356644821466"        "VIF nNoun : 33.7811215762936"      "VIF nVerb : 60.1012538760498"     
+ [4] "VIF nAdj : 22.0588852045144"       "VIF Conc : 4.45198423168714"       "VIF SemD : 5.0080898208457"       
+ [7] "VIF SubCD : 39.7638510224232"      "VIF MemCD : 14.5626976372055"      "VIF logWF : 42.4386191361234"     
+[10] "VIF nLet : 34.0571640151552"       "VIF nSyll : 11.2032200270931"      "VIF nPhon : 27.8413680797523"     
+[13] "VIF pld20 : 18.9581313032011"      "VIF old20 : 25.1151909574889"      "VIF phonUP : 5.73152894370069"    
+[16] "VIF posUni : 6.82879396897928"     "VIF posBi : 8.25876625865424"      "VIF NOS:nNoun : 10.8378532755268" 
+[19] "VIF NOS:nVerb : 7.51519655116101"  "VIF NOS:nAdj : 5.14880908941878"   "VIF NOS:Conc : 30.5194546167287"  
+[22] "VIF NOS:SemD : 127.41305031795"    "VIF NOS:SubCD : 438.534312351666"  "VIF NOS:MemCD : 71.5351711827027" 
+[25] "VIF NOS:logWF : 151.99106011834"   "VIF NOS:nLet : 143.737050848101"   "VIF NOS:nSyll : 17.8305539726893" 
+[28] "VIF NOS:nPhon : 87.1467008849568"  "VIF NOS:pld20 : 40.6827000754706"  "VIF NOS:old20 : 76.14343217286"   
+[31] "VIF NOS:phonUP : 64.9882791584249" "VIF NOS:posUni : 22.9405142319029" "VIF NOS:posBi : 10.9364142096716" 
+[1] "MALD binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6869   0.1807   0.2382   0.2922   0.6109  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -2.070e+00  1.219e+00  -1.698   0.0896 .
+NOS          1.870e-01  2.491e-01   0.751   0.4529  
+nNoun        6.901e-02  9.056e-02   0.762   0.4460  
+nVerb        1.414e-01  8.083e-02   1.750   0.0802 .
+nAdj         1.576e-01  9.868e-02   1.597   0.1102  
+Conc         2.400e-01  1.199e-01   2.002   0.0452 *
+SemD        -9.058e-02  4.412e-01  -0.205   0.8373  
+SubCD        1.362e+00  5.821e-01   2.339   0.0193 *
+MemCD        9.206e-04  5.820e-04   1.582   0.1137  
+logWF       -1.222e+00  5.903e-01  -2.071   0.0384 *
+nLet         8.161e-02  1.716e-01   0.476   0.6343  
+nSyll        4.927e-02  2.155e-01   0.229   0.8192  
+nPhon        7.794e-02  1.659e-01   0.470   0.6386  
+pld20        7.360e-02  3.056e-01   0.241   0.8097  
+old20        1.265e-02  3.868e-01   0.033   0.9739  
+phonUP       1.181e-01  9.759e-02   1.210   0.2263  
+posUni       2.743e-04  2.664e-04   1.030   0.3030  
+posBi       -1.071e-03  1.108e-03  -0.967   0.3337  
+NOS:nNoun    4.168e-03  7.541e-03   0.553   0.5804  
+NOS:nVerb   -2.383e-03  3.411e-03  -0.698   0.4849  
+NOS:nAdj    -2.281e-03  8.110e-03  -0.281   0.7785  
+NOS:Conc    -2.675e-02  2.417e-02  -1.107   0.2685  
+NOS:SemD    -3.233e-02  9.604e-02  -0.337   0.7364  
+NOS:SubCD   -6.516e-02  9.982e-02  -0.653   0.5139  
+NOS:MemCD   -9.585e-05  1.087e-04  -0.882   0.3779  
+NOS:logWF    1.258e-01  9.567e-02   1.315   0.1886  
+NOS:nLet     2.418e-03  3.778e-02   0.064   0.9490  
+NOS:nSyll   -1.087e-02  4.658e-02  -0.233   0.8154  
+NOS:nPhon   -1.570e-03  3.644e-02  -0.043   0.9656  
+NOS:pld20    3.493e-02  7.426e-02   0.470   0.6381  
+NOS:old20    4.756e-03  8.574e-02   0.055   0.9558  
+NOS:phonUP  -1.727e-02  2.446e-02  -0.706   0.4802  
+NOS:posUni  -1.892e-05  5.681e-05  -0.333   0.7392  
+NOS:posBi    6.961e-05  1.858e-04   0.375   0.7080  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1210.2  on 7490  degrees of freedom
+Residual deviance: 1120.6  on 7457  degrees of freedom
+AIC: 1189
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)    
+NULL                        7490     1210.2             
+NOS         1    0.835      7489     1209.4 0.360726    
+nNoun       1    0.090      7488     1209.3 0.764243    
+nVerb       1    0.089      7487     1209.2 0.765644    
+nAdj        1    2.806      7486     1206.4 0.093903 .  
+Conc        1    1.478      7485     1204.9 0.224048    
+SemD        1    2.204      7484     1202.7 0.137675    
+SubCD       1   10.220      7483     1192.5 0.001389 ** 
+MemCD       1    0.006      7482     1192.5 0.938180    
+logWF       1    6.222      7481     1186.3 0.012618 *  
+nLet        1   50.255      7480     1136.0 1.35e-12 ***
+nSyll       1    1.240      7479     1134.8 0.265528    
+nPhon       1    2.981      7478     1131.8 0.084248 .  
+pld20       1    1.620      7477     1130.2 0.203068    
+old20       1    0.034      7476     1130.2 0.854717    
+phonUP      1    1.932      7475     1128.2 0.164500    
+posUni      1    0.360      7474     1127.9 0.548373    
+posBi       1    1.243      7473     1126.6 0.264923    
+NOS:nNoun   1    0.135      7472     1126.5 0.713642    
+NOS:nVerb   1    0.758      7471     1125.7 0.384008    
+NOS:nAdj    1    0.127      7470     1125.6 0.722061    
+NOS:Conc    1    0.706      7469     1124.9 0.400876    
+NOS:SemD    1    0.446      7468     1124.5 0.504330    
+NOS:SubCD   1    0.252      7467     1124.2 0.615566    
+NOS:MemCD   1    0.028      7466     1124.2 0.866018    
+NOS:logWF   1    2.300      7465     1121.9 0.129380    
+NOS:nLet    1    0.004      7464     1121.9 0.946578    
+NOS:nSyll   1    0.001      7463     1121.9 0.981023    
+NOS:nPhon   1    0.105      7462     1121.8 0.746254    
+NOS:pld20   1    0.398      7461     1121.4 0.528321    
+NOS:old20   1    0.000      7460     1121.4 0.989015    
+NOS:phonUP  1    0.597      7459     1120.8 0.439768    
+NOS:posUni  1    0.018      7458     1120.7 0.892060    
+NOS:posBi   1    0.143      7457     1120.6 0.705555    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-560.51518348 -606.55397479   92.07758262    0.07590222    0.01221653    0.08171069 
+[1] "adj.r.sq:  0.0104118949165833"
+[1] "BIC:  1424.35992464475"
+ [1] "VIF NOS : 216.840124048588"        "VIF nNoun : 6.78667949082417"      "VIF nVerb : 12.5893791742454"     
+ [4] "VIF nAdj : 4.73555007389411"       "VIF Conc : 4.34406028874981"       "VIF SemD : 5.07126211794988"      
+ [7] "VIF SubCD : 29.7209999269053"      "VIF MemCD : 15.7008231202362"      "VIF logWF : 35.3357097788799"     
+[10] "VIF nLet : 32.9896563893034"       "VIF nSyll : 9.86234512334581"      "VIF nPhon : 26.9392114818388"     
+[13] "VIF pld20 : 18.9657614234482"      "VIF old20 : 22.8488384893938"      "VIF phonUP : 5.46219603909403"    
+[16] "VIF posUni : 6.39611200147618"     "VIF posBi : 9.66430921872089"      "VIF NOS:nNoun : 6.95734209324913" 
+[19] "VIF NOS:nVerb : 6.71206300500381"  "VIF NOS:nAdj : 4.26100255141284"   "VIF NOS:Conc : 28.7857875333572"  
+[22] "VIF NOS:SemD : 129.512850393115"   "VIF NOS:SubCD : 385.846600567751"  "VIF NOS:MemCD : 86.7270637130494" 
+[25] "VIF NOS:logWF : 150.909622740475"  "VIF NOS:nLet : 139.592752000978"   "VIF NOS:nSyll : 18.9204521625028" 
+[28] "VIF NOS:nPhon : 88.9081442539955"  "VIF NOS:pld20 : 46.9593868702006"  "VIF NOS:old20 : 74.1810059058198" 
+[31] "VIF NOS:phonUP : 51.2828797392496" "VIF NOS:posUni : 22.2965613428656" "VIF NOS:posBi : 14.9323447044391" 
+[1] "NMG binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.23909  -0.03836   0.13653   0.19224   0.57441  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -7.351e-01  1.633e+00  -0.450    0.653  
+NOS          8.334e-02  4.220e-01   0.198    0.843  
+nNoun        4.185e-02  1.652e-01   0.253    0.800  
+nVerb        7.431e-02  1.501e-01   0.495    0.621  
+nAdj         1.257e-01  1.718e-01   0.732    0.464  
+Conc         2.499e-01  1.616e-01   1.546    0.122  
+SemD         4.582e-02  5.705e-01   0.080    0.936  
+SubCD        1.734e+00  8.227e-01   2.108    0.035 *
+MemCD        1.158e-03  8.647e-04   1.339    0.180  
+logWF       -1.390e+00  8.781e-01  -1.583    0.113  
+nLet         6.570e-02  2.132e-01   0.308    0.758  
+nSyll       -2.106e-01  2.749e-01  -0.766    0.444  
+nPhon       -5.716e-02  2.118e-01  -0.270    0.787  
+pld20        7.321e-02  3.701e-01   0.198    0.843  
+old20        1.066e-01  4.856e-01   0.220    0.826  
+phonUP       7.859e-02  1.118e-01   0.703    0.482  
+posUni      -4.720e-05  3.577e-04  -0.132    0.895  
+posBi        1.860e-04  1.614e-03   0.115    0.908  
+NOS:nNoun    4.107e-03  1.509e-02   0.272    0.786  
+NOS:nVerb   -2.776e-03  5.314e-03  -0.522    0.601  
+NOS:nAdj    -1.653e-03  1.642e-02  -0.101    0.920  
+NOS:Conc    -4.090e-03  4.249e-02  -0.096    0.923  
+NOS:SemD     2.360e-02  1.576e-01   0.150    0.881  
+NOS:SubCD   -7.192e-02  1.691e-01  -0.425    0.671  
+NOS:MemCD   -3.226e-05  2.012e-04  -0.160    0.873  
+NOS:logWF    6.388e-02  1.712e-01   0.373    0.709  
+NOS:nLet    -3.358e-02  5.777e-02  -0.581    0.561  
+NOS:nSyll    1.058e-02  7.708e-02   0.137    0.891  
+NOS:nPhon    2.412e-02  5.806e-02   0.415    0.678  
+NOS:pld20   -5.374e-02  1.111e-01  -0.484    0.628  
+NOS:old20    6.455e-02  1.385e-01   0.466    0.641  
+NOS:phonUP   1.030e-03  3.286e-02   0.031    0.975  
+NOS:posUni   5.515e-06  8.971e-05   0.061    0.951  
+NOS:posBi    7.906e-05  3.387e-04   0.233    0.815  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 468.26  on 8468  degrees of freedom
+Residual deviance: 405.54  on 8435  degrees of freedom
+AIC: 380.87
+
+Number of Fisher Scoring iterations: 8
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                        8468     468.26              
+NOS         1  17.5803      8467     450.68 2.754e-05 ***
+nNoun       1   0.0189      8466     450.66  0.890627    
+nVerb       1   0.4190      8465     450.24  0.517453    
+nAdj        1   0.0517      8464     450.19  0.820201    
+Conc        1   1.5281      8463     448.66  0.216394    
+SemD        1  10.1614      8462     438.50  0.001434 ** 
+SubCD       1  20.1133      8461     418.39 7.299e-06 ***
+MemCD       1   2.3075      8460     416.08  0.128752    
+logWF       1   4.3888      8459     411.69  0.036177 *  
+nLet        1   0.2982      8458     411.39  0.584982    
+nSyll       1   1.5953      8457     409.80  0.206571    
+nPhon       1   0.2120      8456     409.59  0.645227    
+pld20       1   0.0023      8455     409.58  0.961951    
+old20       1   0.5659      8454     409.02  0.451909    
+phonUP      1   1.7135      8453     407.30  0.190531    
+posUni      1   0.0476      8452     407.26  0.827282    
+posBi       1   0.3573      8451     406.90  0.550018    
+NOS:nNoun   1   0.0002      8450     406.90  0.988690    
+NOS:nVerb   1   0.5216      8449     406.38  0.470153    
+NOS:nAdj    1   0.0223      8448     406.36  0.881341    
+NOS:Conc    1   0.0038      8447     406.35  0.950667    
+NOS:SemD    1   0.0010      8446     406.35  0.974436    
+NOS:SubCD   1   0.0678      8445     406.28  0.794533    
+NOS:MemCD   1   0.0266      8444     406.26  0.870333    
+NOS:logWF   1   0.1170      8443     406.14  0.732346    
+NOS:nLet    1   0.0609      8442     406.08  0.805086    
+NOS:nSyll   1   0.0471      8441     406.03  0.828258    
+NOS:nPhon   1   0.0603      8440     405.97  0.806035    
+NOS:pld20   1   0.1709      8439     405.80  0.679313    
+NOS:old20   1   0.1264      8438     405.67  0.722208    
+NOS:phonUP  1   0.0000      8437     405.67  0.996513    
+NOS:posUni  1   0.0741      8436     405.60  0.785394    
+NOS:posBi   1   0.0558      8435     405.54  0.813325    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-1.564358e+02 -1.557942e+02 -1.283123e+00 -4.118007e-03 -1.515197e-04 -4.194543e-03 
+[1] "adj.r.sq:  0.00385928185606554"
+[1] "BIC:  620.373295781214"
+ [1] "VIF NOS : 193.119341544114"        "VIF nNoun : 8.85718061259361"      "VIF nVerb : 16.0285290664436"     
+ [4] "VIF nAdj : 5.72715341034583"       "VIF Conc : 4.39880462535709"       "VIF SemD : 4.88376144810307"      
+ [7] "VIF SubCD : 22.5082721761903"      "VIF MemCD : 10.3143981272648"      "VIF logWF : 24.3022303353067"     
+[10] "VIF nLet : 34.7740448520682"       "VIF nSyll : 12.2385316370768"      "VIF nPhon : 32.7140328016498"     
+[13] "VIF pld20 : 21.6227077535105"      "VIF old20 : 25.4683124714656"      "VIF phonUP : 5.42035541755803"    
+[16] "VIF posUni : 5.57675205138034"     "VIF posBi : 8.45728569487612"      "VIF NOS:nNoun : 5.93037274792668" 
+[19] "VIF NOS:nVerb : 5.82011472550718"  "VIF NOS:nAdj : 3.37226576545389"   "VIF NOS:Conc : 25.5401998854457"  
+[22] "VIF NOS:SemD : 98.3508330661982"   "VIF NOS:SubCD : 294.081581688888"  "VIF NOS:MemCD : 65.4475100601405" 
+[25] "VIF NOS:logWF : 115.772129027184"  "VIF NOS:nLet : 134.504880751177"   "VIF NOS:nSyll : 24.2977523900387" 
+[28] "VIF NOS:nPhon : 96.5473793947865"  "VIF NOS:pld20 : 52.7790185764413"  "VIF NOS:old20 : 82.4092245380087" 
+[31] "VIF NOS:phonUP : 33.1626896601953" "VIF NOS:posUni : 18.1479921132791" "VIF NOS:posBi : 13.402355379358"  
+[1] "SDP binomial: Acc~ NOS * ( nNoun + nVerb + nAdj + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0624  -0.1390   0.1089   0.3018   0.6795  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -2.606e+00  1.410e+00  -1.848  0.06461 . 
+NOS          5.898e-01  3.685e-01   1.601  0.10948   
+nNoun       -3.358e-01  1.548e-01  -2.170  0.03003 * 
+nVerb       -1.745e-01  1.519e-01  -1.148  0.25092   
+nAdj        -2.067e-01  1.665e-01  -1.242  0.21438   
+Conc         3.257e-01  1.072e-01   3.038  0.00238 **
+SemD         6.232e-01  4.347e-01   1.434  0.15166   
+SubCD        1.258e+00  8.628e-01   1.458  0.14474   
+MemCD        2.019e-04  5.782e-04   0.349  0.72691   
+logWF       -8.421e-01  9.056e-01  -0.930  0.35243   
+nLet         4.816e-02  1.622e-01   0.297  0.76661   
+nSyll        6.380e-02  2.026e-01   0.315  0.75276   
+nPhon        3.344e-02  1.533e-01   0.218  0.82733   
+pld20        2.363e-02  2.745e-01   0.086  0.93141   
+old20        9.991e-02  3.493e-01   0.286  0.77487   
+phonUP      -6.582e-02  8.165e-02  -0.806  0.42020   
+posUni       3.676e-04  2.887e-04   1.273  0.20290   
+posBi       -1.080e-03  1.054e-03  -1.024  0.30587   
+NOS:nNoun    1.800e-02  1.068e-02   1.685  0.09191 . 
+NOS:nVerb    2.302e-03  5.028e-03   0.458  0.64700   
+NOS:nAdj     1.541e-02  1.525e-02   1.011  0.31220   
+NOS:Conc    -2.186e-02  2.332e-02  -0.938  0.34847   
+NOS:SemD    -9.113e-02  1.103e-01  -0.826  0.40861   
+NOS:SubCD   -1.512e-01  1.977e-01  -0.765  0.44436   
+NOS:MemCD   -2.594e-05  1.111e-04  -0.233  0.81541   
+NOS:logWF    1.162e-01  1.868e-01   0.622  0.53390   
+NOS:nLet    -5.190e-03  4.036e-02  -0.129  0.89769   
+NOS:nSyll    6.422e-03  5.157e-02   0.125  0.90089   
+NOS:nPhon   -8.821e-03  3.838e-02  -0.230  0.81822   
+NOS:pld20   -2.598e-02  7.468e-02  -0.348  0.72797   
+NOS:old20    1.156e-02  8.841e-02   0.131  0.89595   
+NOS:phonUP   1.348e-02  2.180e-02   0.618  0.53644   
+NOS:posUni  -1.566e-05  6.740e-05  -0.232  0.81624   
+NOS:posBi    5.062e-05  1.871e-04   0.271  0.78675   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 391.12  on 3084  degrees of freedom
+Residual deviance: 341.04  on 3051  degrees of freedom
+AIC: 822.36
+
+Number of Fisher Scoring iterations: 5
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+           Df Deviance Resid. Df Resid. Dev Pr(>Chi)   
+NULL                        3084     391.12            
+NOS         1   6.5905      3083     384.53 0.010253 * 
+nNoun       1   0.9796      3082     383.55 0.322299   
+nVerb       1   1.0509      3081     382.50 0.305296   
+nAdj        1   2.0984      3080     380.40 0.147457   
+Conc        1  10.3671      3079     370.03 0.001283 **
+SemD        1   6.0577      3078     363.97 0.013846 * 
+SubCD       1   4.8304      3077     359.14 0.027963 * 
+MemCD       1   0.0559      3076     359.09 0.813064   
+logWF       1   1.0969      3075     357.99 0.294955   
+nLet        1   3.0080      3074     354.98 0.082856 . 
+nSyll       1   0.2879      3073     354.70 0.591556   
+nPhon       1   0.0520      3072     354.64 0.819567   
+pld20       1   0.5785      3071     354.07 0.446901   
+old20       1   1.3560      3070     352.71 0.244236   
+phonUP      1   0.0780      3069     352.63 0.780082   
+posUni      1   1.0536      3068     351.58 0.304686   
+posBi       1   3.0446      3067     348.53 0.081008 . 
+NOS:nNoun   1   2.3480      3066     346.19 0.125443   
+NOS:nVerb   1   0.0143      3065     346.17 0.904905   
+NOS:nAdj    1   1.1575      3064     345.01 0.281984   
+NOS:Conc    1   0.1506      3063     344.86 0.697929   
+NOS:SemD    1   2.1939      3062     342.67 0.138559   
+NOS:SubCD   1   0.3846      3061     342.28 0.535145   
+NOS:MemCD   1   0.0024      3060     342.28 0.960730   
+NOS:logWF   1   0.3978      3059     341.88 0.528240   
+NOS:nLet    1   0.2663      3058     341.62 0.605806   
+NOS:nSyll   1   0.0000      3057     341.62 0.997915   
+NOS:nPhon   1   0.0056      3056     341.61 0.940308   
+NOS:pld20   1   0.1669      3055     341.45 0.682924   
+NOS:old20   1   0.0009      3054     341.44 0.975536   
+NOS:phonUP  1   0.3287      3053     341.12 0.566446   
+NOS:posUni  1   0.0045      3052     341.11 0.946232   
+NOS:posBi   1   0.0732      3051     341.04 0.786671   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-3.771804e+02 -3.753389e+02 -3.683018e+00 -4.906258e-03 -1.194560e-03 -5.530666e-03 
+[1] "adj.r.sq:  0.00536174761315145"
+[1] "BIC:  1027.52720984684"
+ [1] "VIF NOS : 353.965692232054"        "VIF nNoun : 20.5611470481191"      "VIF nVerb : 42.3477691139033"     
+ [4] "VIF nAdj : 10.4332852184764"       "VIF Conc : 4.71120739648565"       "VIF SemD : 5.57017307490572"      
+ [7] "VIF SubCD : 59.828780285115"       "VIF MemCD : 11.6485105266514"      "VIF logWF : 57.6849744868061"     
+[10] "VIF nLet : 29.4694634378489"       "VIF nSyll : 9.85078761564517"      "VIF nPhon : 25.9226153310237"     
+[13] "VIF pld20 : 18.9758769309009"      "VIF old20 : 22.3012209224834"      "VIF phonUP : 5.87729601641895"    
+[16] "VIF posUni : 6.54269360348867"     "VIF posBi : 9.73670218220309"      "VIF NOS:nNoun : 8.88058537219861" 
+[19] "VIF NOS:nVerb : 10.6299439632931"  "VIF NOS:nAdj : 3.71498970171465"   "VIF NOS:Conc : 20.3002916728925"  
+[22] "VIF NOS:SemD : 119.529027405148"   "VIF NOS:SubCD : 1088.96141314788"  "VIF NOS:MemCD : 52.8226203522231" 
+[25] "VIF NOS:logWF : 346.232513317937"  "VIF NOS:nLet : 166.223783101245"   "VIF NOS:nSyll : 25.4980576903688" 
+[28] "VIF NOS:nPhon : 104.212798231796"  "VIF NOS:pld20 : 50.8728423783169"  "VIF NOS:old20 : 79.1739769503355" 
+[31] "VIF NOS:phonUP : 38.5105459551369" "VIF NOS:posUni : 31.772954476867"  "VIF NOS:posBi : 22.1154518148562" 

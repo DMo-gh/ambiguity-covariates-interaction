@@ -1,0 +1,24 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * MemCD"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-112.937  -30.297   -4.678   25.383  233.919 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  6.400e+02  1.566e+00  408.66   <2e-16 ***
+NOS         -5.606e+00  3.094e-01  -18.12   <2e-16 ***
+MemCD       -7.316e-02  2.044e-03  -35.78   <2e-16 ***
+NOS:MemCD    3.830e-03  2.581e-04   14.84   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 43.28 on 5191 degrees of freedom
+Multiple R-squared:  0.3204,	Adjusted R-squared:   0.32 
+F-statistic: 815.8 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  53928.0753655433"
+[1] "VIF NOS : 4.18001000451388"       "VIF MemCD : 2.54456705881088"     "VIF NOS:MemCD : 6.95111104269621"

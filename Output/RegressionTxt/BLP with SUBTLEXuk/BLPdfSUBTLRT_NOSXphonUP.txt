@@ -1,0 +1,24 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * phonUP"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-120.206  -34.043   -5.463   27.579  246.665 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 632.3069     4.3922 143.962  < 2e-16 ***
+NOS          -6.3672     0.7521  -8.466  < 2e-16 ***
+phonUP       -5.5622     0.9010  -6.174 7.18e-10 ***
+NOS:phonUP    0.3625     0.1572   2.306   0.0211 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48.83 on 5191 degrees of freedom
+Multiple R-squared:  0.135,	Adjusted R-squared:  0.1345 
+F-statistic: 270.1 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  55181.2837984623"
+[1] "VIF NOS : 19.4022234538757"        "VIF phonUP : 2.82155711648756"     "VIF NOS:phonUP : 21.2696624842498"

@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F binomial: Acc~ NOS * posUni"
+[1] "AP_H-F binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -42,9 +42,8 @@ fitting null model for pseudo-r2
 -1.195162e+01 -1.193010e+01 -4.303847e-02 -1.803776e-03 -2.326674e-04 -1.922820e-03 
 [1] "adj.r.sq:  -0.0127342626104932"
 [1] "BIC:  44.7846678353522"
-[1] "VIF NOS : 6.00714496905301"        "VIF posUni : 4.83989292891633"    
-[3] "VIF NOS:posUni : 7.36131355628177"
-[1] "VLD_AP_V-D binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 6.00714496905301"        "VIF posUni : 4.83989292891633"     "VIF NOS:posUni : 7.36131355628177"
+[1] "AP_V-D binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -88,9 +87,8 @@ fitting null model for pseudo-r2
 -1.193523e+01 -1.191637e+01 -3.771831e-02 -1.582625e-03 -2.039035e-04 -1.686927e-03 
 [1] "adj.r.sq:  -0.0135266935414105"
 [1] "BIC:  44.7518869511273"
-[1] "VIF NOS : 6.06495662598894"        "VIF posUni : 4.89365812704521"    
-[3] "VIF NOS:posUni : 7.54287211778034"
-[1] "VLD_BLP binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 6.06495662598894"        "VIF posUni : 4.89365812704521"     "VIF NOS:posUni : 7.54287211778034"
+[1] "BLP binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -138,9 +136,8 @@ fitting null model for pseudo-r2
 -2.471897e+02 -2.473377e+02  2.961648e-01  5.987052e-04  5.700796e-05  6.276445e-04 
 [1] "adj.r.sq:  0.00661232349824892"
 [1] "BIC:  528.601118269522"
-[1] "VIF NOS : 4.40128142278946"        "VIF posUni : 2.9783318855558"     
-[3] "VIF NOS:posUni : 5.97809228826577"
-[1] "VLD_ELP binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 4.40128142278946"        "VIF posUni : 2.9783318855558"      "VIF NOS:posUni : 5.97809228826577"
+[1] "ELP binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -188,9 +185,8 @@ fitting null model for pseudo-r2
 -4.412063e+02 -4.412594e+02  1.062575e-01  1.204025e-04  1.258222e-05  1.268024e-04 
 [1] "adj.r.sq:  0.00283400550366231"
 [1] "BIC:  918.577937506302"
-[1] "VIF NOS : 4.32680486929872"        "VIF posUni : 2.75458470395378"    
-[3] "VIF NOS:posUni : 5.94470546344783"
-[1] "ALD_AELP binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 4.32680486929872"        "VIF posUni : 2.75458470395378"     "VIF NOS:posUni : 5.94470546344783"
+[1] "AELP binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -238,9 +234,8 @@ fitting null model for pseudo-r2
 -3.487098e+02 -3.483022e+02 -8.153131e-01 -1.170411e-03 -1.533237e-04 -1.248835e-03 
 [1] "adj.r.sq:  0.001918902565758"
 [1] "BIC:  731.73503090229"
-[1] "VIF NOS : 4.58358976029465"        "VIF posUni : 2.73277608081277"    
-[3] "VIF NOS:posUni : 5.46853680474637"
-[1] "ALD_MALD binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 4.58358976029465"        "VIF posUni : 2.73277608081277"     "VIF NOS:posUni : 5.46853680474637"
+[1] "MALD binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -286,9 +281,8 @@ fitting null model for pseudo-r2
 -6.041009e+02 -6.065540e+02  4.906116e+00  4.044254e-03  6.547204e-04  4.379122e-03 
 [1] "adj.r.sq:  5.91301493380048e-05"
 [1] "BIC:  1243.88766340605"
-[1] "VIF NOS : 4.14654111671402"        "VIF posUni : 2.58353836418151"    
-[3] "VIF NOS:posUni : 5.46410893661715"
-[1] "NMG_ELP binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 4.14654111671402"        "VIF posUni : 2.58353836418151"     "VIF NOS:posUni : 5.46410893661715"
+[1] "NMG binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -336,9 +330,8 @@ fitting null model for pseudo-r2
 -1.559356e+02 -1.557942e+02 -2.826420e-01 -9.071004e-04 -3.337428e-05 -9.239050e-04 
 [1] "adj.r.sq:  0.00161208941021995"
 [1] "BIC:  348.047782861217"
-[1] "VIF NOS : 4.65335422858218"        "VIF posUni : 2.85812287070742"    
-[3] "VIF NOS:posUni : 6.54239682850678"
-[1] "SD_SDP binomial: Acc~ NOS * posUni"
+[1] "VIF NOS : 4.65335422858218"        "VIF posUni : 2.85812287070742"     "VIF NOS:posUni : 6.54239682850678"
+[1] "SDP binomial: Acc~ NOS * posUni"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -386,5 +379,4 @@ fitting null model for pseudo-r2
 -3.753217e+02 -3.753389e+02  3.430888e-02  4.570387e-05  1.112113e-05  5.148947e-05 
 [1] "adj.r.sq:  0.00130248161389623"
 [1] "BIC:  782.780674398542"
-[1] "VIF NOS : 5.84962152153224"        "VIF posUni : 2.43490156073666"    
-[3] "VIF NOS:posUni : 7.68537769193452"
+[1] "VIF NOS : 5.84962152153224"        "VIF posUni : 2.43490156073666"     "VIF NOS:posUni : 7.68537769193452"

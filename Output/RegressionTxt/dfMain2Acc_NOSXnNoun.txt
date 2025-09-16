@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F binomial: Acc~ NOS * nNoun"
+[1] "AP_H-F binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -44,9 +44,8 @@ fitting null model for pseudo-r2
 -1.195008e+01 -1.193010e+01 -3.995743e-02 -1.674647e-03 -2.160094e-04 -1.785154e-03 
 [1] "adj.r.sq:  -0.0132182249315471"
 [1] "BIC:  44.7815867971281"
-[1] "VIF NOS : 4.00594158262977"       "VIF nNoun : 5.53007396076291"    
-[3] "VIF NOS:nNoun : 10.5296371170353"
-[1] "VLD_AP_V-D binomial: Acc~ NOS * nNoun"
+[1] "VIF NOS : 4.00594158262977"       "VIF nNoun : 5.53007396076291"     "VIF NOS:nNoun : 10.5296371170353"
+[1] "AP_V-D binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -93,7 +92,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  -0.0142319719195985"
 [1] "BIC:  44.7407484012473"
 [1] "VIF NOS : 3.84616796019567"      "VIF nNoun : 5.60331330464974"    "VIF NOS:nNoun : 10.649894898909"
-[1] "VLD_BLP binomial: Acc~ NOS * nNoun"
+[1] "BLP binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -141,9 +140,8 @@ fitting null model for pseudo-r2
 -2.474739e+02 -2.473377e+02 -2.723106e-01 -5.504834e-04 -5.241921e-05 -5.771233e-04 
 [1] "adj.r.sq:  0.00532490924523366"
 [1] "BIC:  529.16959371452"
-[1] "VIF NOS : 2.38710055907953"       "VIF nNoun : 3.27322654722451"    
-[3] "VIF NOS:nNoun : 5.33144347469906"
-[1] "VLD_ELP binomial: Acc~ NOS * nNoun"
+[1] "VIF NOS : 2.38710055907953"       "VIF nNoun : 3.27322654722451"     "VIF NOS:nNoun : 5.33144347469906"
+[1] "ELP binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -191,9 +189,8 @@ fitting null model for pseudo-r2
 -4.412396e+02 -4.412594e+02  3.972171e-02  4.500947e-05  4.703566e-06  4.740211e-05 
 [1] "adj.r.sq:  0.00265095079344202"
 [1] "BIC:  918.644473291382"
-[1] "VIF NOS : 2.04175252165463"       "VIF nNoun : 3.14966358264946"    
-[3] "VIF NOS:nNoun : 4.81631203222296"
-[1] "ALD_AELP binomial: Acc~ NOS * nNoun"
+[1] "VIF NOS : 2.04175252165463"       "VIF nNoun : 3.14966358264946"     "VIF NOS:nNoun : 4.81631203222296"
+[1] "AELP binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -239,9 +236,8 @@ fitting null model for pseudo-r2
 -3.483855e+02 -3.483022e+02 -1.666396e-01 -2.392169e-04 -3.133550e-05 -2.552304e-04 
 [1] "adj.r.sq:  -5.30836723298123e-05"
 [1] "BIC:  731.086357350453"
-[1] "VIF NOS : 3.10207427374334"       "VIF nNoun : 3.02735298124367"    
-[3] "VIF NOS:nNoun : 5.74756052261277"
-[1] "ALD_MALD binomial: Acc~ NOS * nNoun"
+[1] "VIF NOS : 3.10207427374334"       "VIF nNoun : 3.02735298124367"     "VIF NOS:nNoun : 5.74756052261277"
+[1] "MALD binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -287,9 +283,8 @@ fitting null model for pseudo-r2
 -6.058626e+02 -6.065540e+02  1.382756e+00  1.139845e-03  1.845719e-04  1.234516e-03 
 [1] "adj.r.sq:  -0.000266621907695219"
 [1] "BIC:  1247.411024297"
-[1] "VIF NOS : 2.15609391200482"       "VIF nNoun : 2.94603274505945"    
-[3] "VIF NOS:nNoun : 4.68308748470439"
-[1] "NMG_ELP binomial: Acc~ NOS * nNoun"
+[1] "VIF NOS : 2.15609391200482"       "VIF nNoun : 2.94603274505945"     "VIF NOS:nNoun : 4.68308748470439"
+[1] "NMG binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -337,9 +332,8 @@ fitting null model for pseudo-r2
 -1.559335e+02 -1.557942e+02 -2.784342e-01 -8.935960e-04 -3.287741e-05 -9.101502e-04 
 [1] "adj.r.sq:  0.00163597900608203"
 [1] "BIC:  348.043575040896"
-[1] "VIF NOS : 2.09881653525302"       "VIF nNoun : 3.36382615614592"    
-[3] "VIF NOS:nNoun : 5.16842296864854"
-[1] "SD_SDP binomial: Acc~ NOS * nNoun"
+[1] "VIF NOS : 2.09881653525302"       "VIF nNoun : 3.36382615614592"     "VIF NOS:nNoun : 5.16842296864854"
+[1] "SDP binomial: Acc~ NOS * nNoun"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -387,5 +381,4 @@ fitting null model for pseudo-r2
 -3.752492e+02 -3.753389e+02  1.793765e-01  2.389528e-04  5.814305e-05  2.691952e-04 
 [1] "adj.r.sq:  0.0022935338103488"
 [1] "BIC:  782.635606759099"
-[1] "VIF NOS : 2.18904072386618"       "VIF nNoun : 3.14917402379834"    
-[3] "VIF NOS:nNoun : 5.01031632687649"
+[1] "VIF NOS : 2.18904072386618"       "VIF nNoun : 3.14917402379834"     "VIF NOS:nNoun : 5.01031632687649"

@@ -1,0 +1,49 @@
+[1] "BLP_SUBTLEXuk binomial: Acc~ NOS * pld20"
+
+Call:
+glm(formula = model, family = binomial(link = "logit"), data = df, 
+    na.action = na.omit)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.57201  -0.06235   0.11636   0.26320   0.43299  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  1.90970    0.33937   5.627 1.83e-08 ***
+NOS          0.09754    0.07787   1.253    0.210    
+pld20        0.28078    0.17572   1.598    0.110    
+NOS:pld20    0.03200    0.04750   0.674    0.501    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 450.73  on 5194  degrees of freedom
+Residual deviance: 407.82  on 5191  degrees of freedom
+AIC: 501.92
+
+Number of Fisher Scoring iterations: 6
+
+Analysis of Deviance Table
+
+Model: binomial, link: logit
+
+Response: Acc
+
+Terms added sequentially (first to last)
+
+
+          Df Deviance Resid. Df Resid. Dev  Pr(>Chi)    
+NULL                       5194     450.73              
+NOS        1  30.4846      5193     420.24 3.365e-08 ***
+pld20      1  11.9747      5192     408.27 0.0005393 ***
+NOS:pld20  1   0.4528      5191     407.82 0.5010183    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fitting null model for pseudo-r2
+          llh       llhNull            G2      McFadden          r2ML          r2CU 
+-2.469617e+02 -2.473377e+02  7.520145e-01  1.520218e-03  1.447469e-04  1.593630e-03 
+[1] "adj.r.sq:  0.00858808936526956"
+[1] "BIC:  528.145268541727"
+[1] "VIF NOS : 9.4657756535818"        "VIF pld20 : 2.70253781253269"     "VIF NOS:pld20 : 8.94005218198494"

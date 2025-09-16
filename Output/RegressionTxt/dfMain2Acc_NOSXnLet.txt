@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F binomial: Acc~ NOS * nLet"
+[1] "AP_H-F binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -43,7 +43,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  -0.0120927762765002"
 [1] "BIC:  44.7903445890123"
 [1] "VIF NOS : 36.3808703424171"      "VIF nLet : 4.79899570931095"     "VIF NOS:nLet : 34.9272986224092"
-[1] "VLD_AP_V-D binomial: Acc~ NOS * nLet"
+[1] "AP_V-D binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -88,7 +88,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  -0.0124997468518564"
 [1] "BIC:  44.760726372765"
 [1] "VIF NOS : 36.764320446853"       "VIF nLet : 4.83779685216311"     "VIF NOS:nLet : 35.6573998927058"
-[1] "VLD_BLP binomial: Acc~ NOS * nLet"
+[1] "BLP binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -137,7 +137,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.010314389890099"
 [1] "BIC:  528.216966852146"
 [1] "VIF NOS : 13.8458559420647"     "VIF nLet : 2.77827894652704"    "VIF NOS:nLet : 13.905519485444"
-[1] "VLD_ELP binomial: Acc~ NOS * nLet"
+[1] "ELP binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -186,7 +186,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.00703612210787985"
 [1] "BIC:  918.089454960119"
 [1] "VIF NOS : 10.2266431752455"      "VIF nLet : 2.84174565531375"     "VIF NOS:nLet : 9.78654533380966"
-[1] "ALD_AELP binomial: Acc~ NOS * nLet"
+[1] "AELP binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -235,7 +235,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.0125258653834264"
 [1] "BIC:  735.367824630472"
 [1] "VIF NOS : 12.2647467407307"      "VIF nLet : 2.86080394955555"     "VIF NOS:nLet : 10.9428554842171"
-[1] "ALD_MALD binomial: Acc~ NOS * nLet"
+[1] "MALD binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -284,7 +284,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.00590397739182014"
 [1] "BIC:  1204.41656724517"
 [1] "VIF NOS : 11.0414559258748"      "VIF nLet : 2.7165733027785"      "VIF NOS:nLet : 10.2568220280508"
-[1] "NMG_ELP binomial: Acc~ NOS * nLet"
+[1] "NMG binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -333,7 +333,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.00160676158957607"
 [1] "BIC:  348.049216926339"
 [1] "VIF NOS : 10.0666820342516"      "VIF nLet : 2.92025009803549"     "VIF NOS:nLet : 9.75145955488441"
-[1] "SD_SDP binomial: Acc~ NOS * nLet"
+[1] "SDP binomial: Acc~ NOS * nLet"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 

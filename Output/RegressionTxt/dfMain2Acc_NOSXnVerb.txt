@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F binomial: Acc~ NOS * nVerb"
+[1] "AP_H-F binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -44,9 +44,8 @@ fitting null model for pseudo-r2
 -1.194897e+01 -1.193010e+01 -3.772439e-02 -1.581059e-03 -2.039364e-04 -1.685379e-03 
 [1] "adj.r.sq:  -0.0135574170267965"
 [1] "BIC:  44.7793537502963"
-[1] "VIF NOS : 3.57767284553103"       "VIF nVerb : 6.80259247414481"    
-[3] "VIF NOS:nVerb : 9.43036671109546"
-[1] "VLD_AP_V-D binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 3.57767284553103"       "VIF nVerb : 6.80259247414481"     "VIF NOS:nVerb : 9.43036671109546"
+[1] "AP_V-D binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -92,9 +91,8 @@ fitting null model for pseudo-r2
 -1.193347e+01 -1.191637e+01 -3.420217e-02 -1.435092e-03 -1.848937e-04 -1.529655e-03 
 [1] "adj.r.sq:  -0.0138915102221442"
 [1] "BIC:  44.7483708148685"
-[1] "VIF NOS : 3.5817528295263"        "VIF nVerb : 6.82189749459293"    
-[3] "VIF NOS:nVerb : 9.50178037152085"
-[1] "VLD_BLP binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 3.5817528295263"        "VIF nVerb : 6.82189749459293"     "VIF NOS:nVerb : 9.50178037152085"
+[1] "BLP binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -142,9 +140,8 @@ fitting null model for pseudo-r2
 -2.474609e+02 -2.473377e+02 -2.463950e-01 -4.980942e-04 -4.743038e-05 -5.221975e-04 
 [1] "adj.r.sq:  0.00556265108224274"
 [1] "BIC:  529.143678052119"
-[1] "VIF NOS : 2.66251575366863"       "VIF nVerb : 3.70965258331857"    
-[3] "VIF NOS:nVerb : 3.11945912275984"
-[1] "VLD_ELP binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 2.66251575366863"       "VIF nVerb : 3.70965258331857"     "VIF NOS:nVerb : 3.11945912275984"
+[1] "ELP binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -192,9 +189,8 @@ fitting null model for pseudo-r2
 -4.411317e+02 -4.412594e+02  2.553852e-01  2.893822e-04  3.024054e-05  3.047614e-04 
 [1] "adj.r.sq:  0.00311758801122441"
 [1] "BIC:  918.428809783519"
-[1] "VIF NOS : 2.96718963480193"       "VIF nVerb : 4.31549097261563"    
-[3] "VIF NOS:nVerb : 3.40096498981904"
-[1] "ALD_AELP binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 2.96718963480193"       "VIF nVerb : 4.31549097261563"     "VIF NOS:nVerb : 3.40096498981904"
+[1] "AELP binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -240,9 +236,8 @@ fitting null model for pseudo-r2
 -3.483784e+02 -3.483022e+02 -1.525430e-01 -2.189809e-04 -2.868469e-05 -2.336394e-04 
 [1] "adj.r.sq:  -0.000131646115173023"
 [1] "BIC:  731.072260812444"
-[1] "VIF NOS : 2.9114415725698"        "VIF nVerb : 4.08225195004781"    
-[3] "VIF NOS:nVerb : 3.63732069204268"
-[1] "ALD_MALD binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 2.9114415725698"        "VIF nVerb : 4.08225195004781"     "VIF NOS:nVerb : 3.63732069204268"
+[1] "MALD binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -288,9 +283,8 @@ fitting null model for pseudo-r2
 -6.062816e+02 -6.065540e+02  5.447142e-01  4.490237e-04  7.271317e-05  4.863448e-04 
 [1] "adj.r.sq:  -0.000281187951740147"
 [1] "BIC:  1248.24906572505"
-[1] "VIF NOS : 2.68295624431679"       "VIF nVerb : 4.4264606796629"     
-[3] "VIF NOS:nVerb : 4.00598313017346"
-[1] "NMG_ELP binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 2.68295624431679"       "VIF nVerb : 4.4264606796629"      "VIF NOS:nVerb : 4.00598313017346"
+[1] "NMG binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -338,9 +332,8 @@ fitting null model for pseudo-r2
 -1.559555e+02 -1.557942e+02 -3.226275e-01 -1.035428e-03 -3.809583e-05 -1.054613e-03 
 [1] "adj.r.sq:  0.00162243011640628"
 [1] "BIC:  348.087768281954"
-[1] "VIF NOS : 2.72503220239654"       "VIF nVerb : 4.00081020797557"    
-[3] "VIF NOS:nVerb : 3.09626849437863"
-[1] "SD_SDP binomial: Acc~ NOS * nVerb"
+[1] "VIF NOS : 2.72503220239654"       "VIF nVerb : 4.00081020797557"     "VIF NOS:nVerb : 3.09626849437863"
+[1] "SDP binomial: Acc~ NOS * nVerb"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -388,5 +381,4 @@ fitting null model for pseudo-r2
 -3.756474e+02 -3.753389e+02 -6.170486e-01 -8.219886e-04 -2.000357e-04 -9.261409e-04 
 [1] "adj.r.sq:  0.00131615668282536"
 [1] "BIC:  783.432031837739"
-[1] "VIF NOS : 3.25201578883372"       "VIF nVerb : 4.70227746116395"    
-[3] "VIF NOS:nVerb : 4.09201626328975"
+[1] "VIF NOS : 3.25201578883372"       "VIF nVerb : 4.70227746116395"     "VIF NOS:nVerb : 4.09201626328975"

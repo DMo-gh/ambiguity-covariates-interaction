@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * SemD"
+[1] "AP_H-F : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -22,7 +22,7 @@ F-statistic: 6.392 on 3 and 181 DF,  p-value: 0.0003858
 
 [1] "BIC:  1770.01324516409"
 [1] "VIF NOS : 77.9790649045305"      "VIF SemD : 4.94083633139656"     "VIF NOS:SemD : 87.0746254059964"
-[1] "VLD_AP_V-D : RT~ NOS * SemD"
+[1] "AP_V-D : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,7 +46,7 @@ F-statistic: 5.863 on 3 and 181 DF,  p-value: 0.0007651
 
 [1] "BIC:  1790.97329766114"
 [1] "VIF NOS : 77.9790649045305"      "VIF SemD : 4.94083633139656"     "VIF NOS:SemD : 87.0746254059963"
-[1] "VLD_BLP : RT~ NOS * SemD"
+[1] "BLP : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -70,7 +70,7 @@ F-statistic: 348.9 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  54980.5907137796"
 [1] "VIF NOS : 39.1132073289257"      "VIF SemD : 2.2527056018445"      "VIF NOS:SemD : 44.6686824954306"
-[1] "VLD_ELP : RT~ NOS * SemD"
+[1] "ELP : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -94,7 +94,7 @@ F-statistic: 482.2 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  97560.4573545347"
 [1] "VIF NOS : 39.504693935484"       "VIF SemD : 2.15814220248199"     "VIF NOS:SemD : 44.3536200382382"
-[1] "ALD_AELP : RT~ NOS * SemD"
+[1] "AELP : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -118,7 +118,7 @@ F-statistic: 69.76 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61940.3905821224"
 [1] "VIF NOS : 41.2459224653795"      "VIF SemD : 2.27598403854231"     "VIF NOS:SemD : 46.6792631326035"
-[1] "ALD_MALD : RT~ NOS * SemD"
+[1] "MALD : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -142,7 +142,7 @@ F-statistic:  29.3 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95116.9153508205"
 [1] "VIF NOS : 41.057612970464"      "VIF SemD : 2.19522467769496"    "VIF NOS:SemD : 46.011003748298"
-[1] "NMG_ELP : RT~ NOS * SemD"
+[1] "NMG : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -166,7 +166,7 @@ F-statistic: 318.9 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  93749.6100358697"
 [1] "VIF NOS : 39.4251363563121"      "VIF SemD : 2.15401036801569"     "VIF NOS:SemD : 44.2639197902028"
-[1] "SD_SDP : RT~ NOS * SemD"
+[1] "SDP : RT~ NOS * SemD"
 
 Call:
 lm(formula = model, data = df, na.rm = T)

@@ -1,0 +1,25 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * logWF"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-115.493  -28.809   -4.073   23.536  216.004 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 788.4769     4.5208  174.41   <2e-16 ***
+NOS         -12.4668     0.7522  -16.57   <2e-16 ***
+logWF       -48.7785     1.1185  -43.61   <2e-16 ***
+NOS:logWF     2.3807     0.1584   15.03   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 40.78 on 5190 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.3967,	Adjusted R-squared:  0.3964 
+F-statistic:  1138 on 3 and 5190 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  53299.6869869525"
+[1] "VIF NOS : 27.8230664061832"      "VIF logWF : 2.38331412565823"    "VIF NOS:logWF : 33.613575516917"

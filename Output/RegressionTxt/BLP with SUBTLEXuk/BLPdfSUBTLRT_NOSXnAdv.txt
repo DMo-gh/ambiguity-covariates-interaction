@@ -1,0 +1,24 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * nAdv"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-118.936  -34.889   -5.849   27.777  249.851 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 606.64463    1.10614 548.434  < 2e-16 ***
+NOS          -4.80324    0.17914 -26.812  < 2e-16 ***
+nAdv         -7.26540    1.56282  -4.649 3.42e-06 ***
+NOS:nAdv      0.39598    0.07895   5.016 5.46e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48.98 on 5191 degrees of freedom
+Multiple R-squared:  0.1298,	Adjusted R-squared:  0.1293 
+F-statistic: 258.1 on 3 and 5191 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  55212.6222585937"
+[1] "VIF NOS : 1.09420881905029"      "VIF nAdv : 2.79963696979818"     "VIF NOS:nAdv : 2.89862780779767"

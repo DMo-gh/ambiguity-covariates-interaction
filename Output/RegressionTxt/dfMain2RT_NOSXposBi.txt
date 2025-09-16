@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * posBi"
+[1] "AP_H-F : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.1351,	Adjusted R-squared:  0.1208
 F-statistic: 9.424 on 3 and 181 DF,  p-value: 8.091e-06
 
 [1] "BIC:  1761.79235193975"
-[1] "VIF NOS : 4.27231701792221"       "VIF posBi : 8.75964119888901"    
-[3] "VIF NOS:posBi : 11.9687415423197"
-[1] "VLD_AP_V-D : RT~ NOS * posBi"
+[1] "VIF NOS : 4.27231701792221"       "VIF posBi : 8.75964119888901"     "VIF NOS:posBi : 11.9687415423197"
+[1] "AP_V-D : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.1441,	Adjusted R-squared:  0.1299
 F-statistic: 10.16 on 3 and 181 DF,  p-value: 3.239e-06
 
 [1] "BIC:  1779.34770407737"
-[1] "VIF NOS : 4.2723170179222"        "VIF posBi : 8.75964119888901"    
-[3] "VIF NOS:posBi : 11.9687415423197"
-[1] "VLD_BLP : RT~ NOS * posBi"
+[1] "VIF NOS : 4.2723170179222"        "VIF posBi : 8.75964119888901"     "VIF NOS:posBi : 11.9687415423197"
+[1] "BLP : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.1369,	Adjusted R-squared:  0.1364
 F-statistic: 274.4 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  55170.1826410191"
-[1] "VIF NOS : 1.75490333054893"       "VIF posBi : 3.39869642564094"    
-[3] "VIF NOS:posBi : 4.25519127873377"
-[1] "VLD_ELP : RT~ NOS * posBi"
+[1] "VIF NOS : 1.75490333054893"       "VIF posBi : 3.39869642564094"     "VIF NOS:posBi : 4.25519127873377"
+[1] "ELP : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -96,9 +93,8 @@ Multiple R-squared:  0.1358,	Adjusted R-squared:  0.1355
 F-statistic:   442 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  97663.9315096984"
-[1] "VIF NOS : 1.81280483644582"       "VIF posBi : 3.18843486868482"    
-[3] "VIF NOS:posBi : 4.11871491912666"
-[1] "ALD_AELP : RT~ NOS * posBi"
+[1] "VIF NOS : 1.81280483644582"       "VIF posBi : 3.18843486868482"     "VIF NOS:posBi : 4.11871491912666"
+[1] "AELP : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -121,9 +117,8 @@ Multiple R-squared:  0.03492,	Adjusted R-squared:  0.03438
 F-statistic:  64.1 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61956.7647926122"
-[1] "VIF NOS : 2.26268083429296"       "VIF posBi : 2.88049042104799"    
-[3] "VIF NOS:posBi : 3.85692453385558"
-[1] "ALD_MALD : RT~ NOS * posBi"
+[1] "VIF NOS : 2.26268083429296"       "VIF posBi : 2.88049042104799"     "VIF NOS:posBi : 3.85692453385558"
+[1] "MALD : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -146,9 +141,8 @@ Multiple R-squared:  0.01199,	Adjusted R-squared:  0.0116
 F-statistic:  30.3 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95113.9516716383"
-[1] "VIF NOS : 1.83541750533514"       "VIF posBi : 3.25764058449445"    
-[3] "VIF NOS:posBi : 4.19970212988136"
-[1] "NMG_ELP : RT~ NOS * posBi"
+[1] "VIF NOS : 1.83541750533514"       "VIF posBi : 3.25764058449445"     "VIF NOS:posBi : 4.19970212988136"
+[1] "NMG : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -171,9 +165,8 @@ Multiple R-squared:  0.09969,	Adjusted R-squared:  0.09938
 F-statistic: 312.5 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  93766.9732846056"
-[1] "VIF NOS : 1.81177065369652"       "VIF posBi : 3.18704361440296"    
-[3] "VIF NOS:posBi : 4.11862662518761"
-[1] "SD_SDP : RT~ NOS * posBi"
+[1] "VIF NOS : 1.81177065369652"       "VIF posBi : 3.18704361440296"     "VIF NOS:posBi : 4.11862662518761"
+[1] "SDP : RT~ NOS * posBi"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -196,5 +189,4 @@ Multiple R-squared:  0.005982,	Adjusted R-squared:  0.005014
 F-statistic: 6.181 on 3 and 3081 DF,  p-value: 0.0003486
 
 [1] "BIC:  38505.6614457744"
-[1] "VIF NOS : 1.94372626626551"       "VIF posBi : 3.1091947136554"     
-[3] "VIF NOS:posBi : 4.48996840551793"
+[1] "VIF NOS : 1.94372626626551"       "VIF posBi : 3.1091947136554"      "VIF NOS:posBi : 4.48996840551793"

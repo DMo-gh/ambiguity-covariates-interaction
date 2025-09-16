@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * pld20"
+[1] "AP_H-F : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.2029,	Adjusted R-squared:  0.1896
 F-statistic: 15.35 on 3 and 181 DF,  p-value: 6.084e-09
 
 [1] "BIC:  1746.69860524341"
-[1] "VIF NOS : 18.1961406285286"       "VIF pld20 : 5.31210092615013"    
-[3] "VIF NOS:pld20 : 20.6971383113117"
-[1] "VLD_AP_V-D : RT~ NOS * pld20"
+[1] "VIF NOS : 18.1961406285286"       "VIF pld20 : 5.31210092615013"     "VIF NOS:pld20 : 20.6971383113117"
+[1] "AP_V-D : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.1793,	Adjusted R-squared:  0.1657
 F-statistic: 13.18 on 3 and 181 DF,  p-value: 7.981e-08
 
 [1] "BIC:  1771.56786538178"
-[1] "VIF NOS : 18.1961406285285"       "VIF pld20 : 5.31210092615013"    
-[3] "VIF NOS:pld20 : 20.6971383113116"
-[1] "VLD_BLP : RT~ NOS * pld20"
+[1] "VIF NOS : 18.1961406285285"       "VIF pld20 : 5.31210092615013"     "VIF NOS:pld20 : 20.6971383113116"
+[1] "BLP : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.1434,	Adjusted R-squared:  0.1429
 F-statistic: 289.6 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  55130.8558431278"
-[1] "VIF NOS : 9.4797918911453"        "VIF pld20 : 2.35384043039718"    
-[3] "VIF NOS:pld20 : 8.61580826132869"
-[1] "VLD_ELP : RT~ NOS * pld20"
+[1] "VIF NOS : 9.4797918911453"        "VIF pld20 : 2.35384043039718"     "VIF NOS:pld20 : 8.61580826132869"
+[1] "ELP : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -97,7 +94,7 @@ F-statistic:  1160 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95979.9951791306"
 [1] "VIF NOS : 6.62591048116955"      "VIF pld20 : 2.4892439849628"     "VIF NOS:pld20 : 5.7782131884416"
-[1] "ALD_AELP : RT~ NOS * pld20"
+[1] "AELP : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -120,9 +117,8 @@ Multiple R-squared:  0.1317,	Adjusted R-squared:  0.1312
 F-statistic: 268.6 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61394.8905503635"
-[1] "VIF NOS : 6.56559297179032"       "VIF pld20 : 2.68223134947997"    
-[3] "VIF NOS:pld20 : 5.76897152688867"
-[1] "ALD_MALD : RT~ NOS * pld20"
+[1] "VIF NOS : 6.56559297179032"       "VIF pld20 : 2.68223134947997"     "VIF NOS:pld20 : 5.76897152688867"
+[1] "MALD : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -145,9 +141,8 @@ Multiple R-squared:  0.02916,	Adjusted R-squared:  0.02877
 F-statistic: 74.96 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  94982.6530166629"
-[1] "VIF NOS : 6.6908852366366"        "VIF pld20 : 2.49204820230685"    
-[3] "VIF NOS:pld20 : 5.73114029638925"
-[1] "NMG_ELP : RT~ NOS * pld20"
+[1] "VIF NOS : 6.6908852366366"        "VIF pld20 : 2.49204820230685"     "VIF NOS:pld20 : 5.73114029638925"
+[1] "NMG : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -171,7 +166,7 @@ F-statistic: 845.4 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  92437.0672286185"
 [1] "VIF NOS : 6.62364743795109"      "VIF pld20 : 2.48630152498355"    "VIF NOS:pld20 : 5.7834072558845"
-[1] "SD_SDP : RT~ NOS * pld20"
+[1] "SDP : RT~ NOS * pld20"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -194,5 +189,4 @@ Multiple R-squared:  0.01843,	Adjusted R-squared:  0.01747
 F-statistic: 19.28 on 3 and 3081 DF,  p-value: 2.197e-12
 
 [1] "BIC:  38466.7877946427"
-[1] "VIF NOS : 6.61513465556921"       "VIF pld20 : 2.39536461186695"    
-[3] "VIF NOS:pld20 : 5.76869741349997"
+[1] "VIF NOS : 6.61513465556921"       "VIF pld20 : 2.39536461186695"     "VIF NOS:pld20 : 5.76869741349997"

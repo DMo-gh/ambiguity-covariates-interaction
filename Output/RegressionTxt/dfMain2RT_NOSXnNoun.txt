@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F : RT~ NOS * nNoun"
+[1] "AP_H-F : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -21,9 +21,8 @@ Multiple R-squared:  0.1193,	Adjusted R-squared:  0.1047
 F-statistic: 8.172 on 3 and 181 DF,  p-value: 3.936e-05
 
 [1] "BIC:  1765.14361331583"
-[1] "VIF NOS : 3.81608770024895"       "VIF nNoun : 5.64979337674163"    
-[3] "VIF NOS:nNoun : 10.7313887427654"
-[1] "VLD_AP_V-D : RT~ NOS * nNoun"
+[1] "VIF NOS : 3.81608770024895"       "VIF nNoun : 5.64979337674163"     "VIF NOS:nNoun : 10.7313887427654"
+[1] "AP_V-D : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -46,9 +45,8 @@ Multiple R-squared:  0.09699,	Adjusted R-squared:  0.08203
 F-statistic:  6.48 on 3 and 181 DF,  p-value: 0.0003441
 
 [1] "BIC:  1789.25625978209"
-[1] "VIF NOS : 3.81608770024895"       "VIF nNoun : 5.64979337674163"    
-[3] "VIF NOS:nNoun : 10.7313887427654"
-[1] "VLD_BLP : RT~ NOS * nNoun"
+[1] "VIF NOS : 3.81608770024895"       "VIF nNoun : 5.64979337674163"     "VIF NOS:nNoun : 10.7313887427654"
+[1] "BLP : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -71,9 +69,8 @@ Multiple R-squared:  0.1372,	Adjusted R-squared:  0.1367
 F-statistic: 275.1 on 3 and 5191 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  55168.1756552157"
-[1] "VIF NOS : 2.46063052735492"       "VIF nNoun : 3.15074192936896"    
-[3] "VIF NOS:nNoun : 5.24609576306395"
-[1] "VLD_ELP : RT~ NOS * nNoun"
+[1] "VIF NOS : 2.46063052735492"       "VIF nNoun : 3.15074192936896"     "VIF NOS:nNoun : 5.24609576306395"
+[1] "ELP : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -96,9 +93,8 @@ Multiple R-squared:  0.1429,	Adjusted R-squared:  0.1426
 F-statistic:   469 on 3 and 8441 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  97594.1637335411"
-[1] "VIF NOS : 2.13638852750532"       "VIF nNoun : 2.84753202299926"    
-[3] "VIF NOS:nNoun : 4.51175011747519"
-[1] "ALD_AELP : RT~ NOS * nNoun"
+[1] "VIF NOS : 2.13638852750532"       "VIF nNoun : 2.84753202299926"     "VIF NOS:nNoun : 4.51175011747519"
+[1] "AELP : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -122,7 +118,7 @@ F-statistic: 71.83 on 3 and 5314 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  61934.4213291673"
 [1] "VIF NOS : 3.02098345347685"      "VIF nNoun : 2.97531893861893"    "VIF NOS:nNoun : 5.6552532255479"
-[1] "ALD_MALD : RT~ NOS * nNoun"
+[1] "MALD : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -145,9 +141,8 @@ Multiple R-squared:  0.01196,	Adjusted R-squared:  0.01156
 F-statistic: 30.21 on 3 and 7487 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  95114.2100104133"
-[1] "VIF NOS : 2.14735298547017"       "VIF nNoun : 2.86528251478661"    
-[3] "VIF NOS:nNoun : 4.55974734658021"
-[1] "NMG_ELP : RT~ NOS * nNoun"
+[1] "VIF NOS : 2.14735298547017"       "VIF nNoun : 2.86528251478661"     "VIF NOS:nNoun : 4.55974734658021"
+[1] "NMG : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -170,9 +165,8 @@ Multiple R-squared:  0.09125,	Adjusted R-squared:  0.09093
 F-statistic: 283.3 on 3 and 8465 DF,  p-value: < 2.2e-16
 
 [1] "BIC:  93846.0119752225"
-[1] "VIF NOS : 2.13633595559239"       "VIF nNoun : 2.84677041085364"    
-[3] "VIF NOS:nNoun : 4.51007363013633"
-[1] "SD_SDP : RT~ NOS * nNoun"
+[1] "VIF NOS : 2.13633595559239"       "VIF nNoun : 2.84677041085364"     "VIF NOS:nNoun : 4.51007363013633"
+[1] "SDP : RT~ NOS * nNoun"
 
 Call:
 lm(formula = model, data = df, na.rm = T)
@@ -195,5 +189,4 @@ Multiple R-squared:  0.01568,	Adjusted R-squared:  0.01472
 F-statistic: 16.36 on 3 and 3081 DF,  p-value: 1.505e-10
 
 [1] "BIC:  38475.4073511541"
-[1] "VIF NOS : 2.33245159436367"       "VIF nNoun : 2.98033882240055"    
-[3] "VIF NOS:nNoun : 4.91296827239665"
+[1] "VIF NOS : 2.33245159436367"       "VIF nNoun : 2.98033882240055"     "VIF NOS:nNoun : 4.91296827239665"

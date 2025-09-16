@@ -1,0 +1,68 @@
+[1] "BLP_SUBTLEXuk : RT~ NOS * ( nNoun + nVerb + nAdj + nAdv + Conc + SemD + SubCD + MemCD + logWF + nLet + nSyll + nPhon + pld20 + old20 + phonUP + posUni + posBi )"
+
+Call:
+lm(formula = model, data = df, na.rm = T)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-132.872  -26.745   -3.641   22.442  201.644 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  8.384e+02  1.153e+01  72.721  < 2e-16 ***
+NOS         -1.157e+01  2.414e+00  -4.792 1.70e-06 ***
+nNoun       -4.640e+00  9.517e-01  -4.876 1.11e-06 ***
+nVerb       -5.220e+00  8.597e-01  -6.072 1.36e-09 ***
+nAdj        -6.176e+00  1.013e+00  -6.099 1.14e-09 ***
+nAdv        -1.185e+00  1.554e+00  -0.762 0.445888    
+Conc        -8.287e+00  1.063e+00  -7.793 7.89e-15 ***
+SemD        -7.918e+00  3.973e+00  -1.993 0.046333 *  
+SubCD       -2.094e+01  3.312e+00  -6.321 2.81e-10 ***
+MemCD       -6.101e-03  4.973e-03  -1.227 0.219979    
+logWF       -3.163e+01  2.630e+00 -12.028  < 2e-16 ***
+nLet        -5.010e+00  1.689e+00  -2.966 0.003027 ** 
+nSyll       -5.043e+00  2.627e+00  -1.920 0.054958 .  
+nPhon        3.617e-01  1.659e+00   0.218 0.827416    
+pld20        1.943e+00  2.910e+00   0.668 0.504329    
+old20        1.269e+01  3.879e+00   3.272 0.001077 ** 
+phonUP      -6.411e+00  1.026e+00  -6.247 4.52e-10 ***
+posUni       5.039e-03  2.934e-03   1.717 0.085971 .  
+posBi        3.919e-02  1.059e-02   3.700 0.000218 ***
+NOS:nNoun   -7.325e-02  6.080e-02  -1.205 0.228297    
+NOS:nVerb    3.918e-02  2.952e-02   1.327 0.184540    
+NOS:nAdj     2.659e-02  6.193e-02   0.429 0.667684    
+NOS:nAdv    -2.249e-01  8.020e-02  -2.804 0.005067 ** 
+NOS:Conc     2.752e-01  1.887e-01   1.459 0.144698    
+NOS:SemD     1.312e+00  7.719e-01   1.700 0.089177 .  
+NOS:SubCD    6.195e-01  6.016e-01   1.030 0.303202    
+NOS:MemCD   -1.437e-04  8.339e-04  -0.172 0.863141    
+NOS:logWF    1.725e+00  4.973e-01   3.468 0.000529 ***
+NOS:nLet     8.736e-01  3.114e-01   2.805 0.005043 ** 
+NOS:nSyll    1.008e-01  4.388e-01   0.230 0.818380    
+NOS:nPhon    2.336e-01  3.193e-01   0.732 0.464488    
+NOS:pld20   -2.471e-01  5.727e-01  -0.431 0.666183    
+NOS:old20   -1.646e+00  7.165e-01  -2.296 0.021688 *  
+NOS:phonUP   3.207e-01  2.194e-01   1.462 0.143890    
+NOS:posUni  -7.666e-04  5.502e-04  -1.393 0.163547    
+NOS:posBi   -1.971e-03  1.534e-03  -1.285 0.198929    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 38.76 on 5158 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.4583,	Adjusted R-squared:  0.4547 
+F-statistic: 124.7 on 35 and 5158 DF,  p-value: < 2.2e-16
+
+[1] "BIC:  53013.8540743961"
+ [1] "VIF NOS : 317.12233354454"         "VIF nNoun : 11.9286322378198"      "VIF nVerb : 19.6337106676099"     
+ [4] "VIF nAdj : 8.76378757081991"       "VIF nAdv : 4.41867525150008"       "VIF Conc : 4.30107511594884"      
+ [7] "VIF SemD : 5.30780041099945"       "VIF SubCD : 14.924143326303"       "VIF MemCD : 18.7659553077553"     
+[10] "VIF logWF : 14.5846500693504"      "VIF nLet : 23.309161153524"        "VIF nSyll : 6.09765812340371"     
+[13] "VIF nPhon : 17.2512459636845"      "VIF pld20 : 13.2278850021751"      "VIF old20 : 19.6400804443907"     
+[16] "VIF phonUP : 5.80821710008033"     "VIF posUni : 10.3854205763549"     "VIF posBi : 10.420595054084"      
+[19] "VIF NOS:nNoun : 9.3180588639735"   "VIF NOS:nVerb : 7.0416256683429"   "VIF NOS:nAdj : 5.51682325269382"  
+[22] "VIF NOS:nAdv : 4.7758853008513"    "VIF NOS:Conc : 27.7131563915028"   "VIF NOS:SemD : 131.802929028454"  
+[25] "VIF NOS:SubCD : 236.550044770484"  "VIF NOS:MemCD : 90.4929404237738"  "VIF NOS:logWF : 366.971075814755" 
+[28] "VIF NOS:nLet : 144.515270514499"   "VIF NOS:nSyll : 21.9217114200663"  "VIF NOS:nPhon : 100.302531426541" 
+[31] "VIF NOS:pld20 : 43.6543950242828"  "VIF NOS:old20 : 81.9206774828815"  "VIF NOS:phonUP : 65.7287743749273"
+[34] "VIF NOS:posUni : 31.9959036726081" "VIF NOS:posBi : 15.4638986429973" 

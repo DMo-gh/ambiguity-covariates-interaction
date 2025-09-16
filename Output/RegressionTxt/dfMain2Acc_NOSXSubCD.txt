@@ -1,4 +1,4 @@
-[1] "VLD_AP_H-F binomial: Acc~ NOS * SubCD"
+[1] "AP_H-F binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -42,9 +42,8 @@ fitting null model for pseudo-r2
 -1.196534e+01 -1.193010e+01 -7.047541e-02 -2.953680e-03 -3.810207e-04 -3.148847e-03 
 [1] "adj.r.sq:  -0.0106179367514627"
 [1] "BIC:  44.8121047739433"
-[1] "VIF NOS : 63.3516052909401"       "VIF SubCD : 6.75711855247992"    
-[3] "VIF NOS:SubCD : 76.0886735368204"
-[1] "VLD_AP_V-D binomial: Acc~ NOS * SubCD"
+[1] "VIF NOS : 63.3516052909401"       "VIF SubCD : 6.75711855247992"     "VIF NOS:SubCD : 76.0886735368204"
+[1] "AP_V-D binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -88,9 +87,8 @@ fitting null model for pseudo-r2
 -1.196003e+01 -1.191637e+01 -8.731361e-02 -3.663599e-03 -4.720769e-04 -3.905568e-03 
 [1] "adj.r.sq:  -0.0101373643677898"
 [1] "BIC:  44.8014822590131"
-[1] "VIF NOS : 64.1676076932782"       "VIF SubCD : 6.58510750896941"    
-[3] "VIF NOS:SubCD : 79.1277469276479"
-[1] "VLD_BLP binomial: Acc~ NOS * SubCD"
+[1] "VIF NOS : 64.1676076932782"       "VIF SubCD : 6.58510750896941"     "VIF NOS:SubCD : 79.1277469276479"
+[1] "BLP binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -138,9 +136,8 @@ fitting null model for pseudo-r2
 -2.472971e+02 -2.473377e+02  8.130313e-02  1.643565e-04  1.565014e-05  1.723044e-04 
 [1] "adj.r.sq:  0.0205866899923641"
 [1] "BIC:  528.815979940899"
-[1] "VIF NOS : 15.2742132342492"       "VIF SubCD : 2.19868258160583"    
-[3] "VIF NOS:SubCD : 19.2786743029675"
-[1] "VLD_ELP binomial: Acc~ NOS * SubCD"
+[1] "VIF NOS : 15.2742132342492"       "VIF SubCD : 2.19868258160583"     "VIF NOS:SubCD : 19.2786743029675"
+[1] "ELP binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -189,7 +186,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.0140160331196617"
 [1] "BIC:  918.070855856776"
 [1] "VIF NOS : 15.8451705205291"      "VIF SubCD : 2.04236684389938"    "VIF NOS:SubCD : 19.412966043629"
-[1] "ALD_AELP binomial: Acc~ NOS * SubCD"
+[1] "AELP binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -237,9 +234,8 @@ fitting null model for pseudo-r2
 -3.489501e+02 -3.483022e+02 -1.295918e+00 -1.860336e-03 -2.437149e-04 -1.985080e-03 
 [1] "adj.r.sq:  0.00357457412123341"
 [1] "BIC:  732.215635762905"
-[1] "VIF NOS : 19.6502209794307"       "VIF SubCD : 2.3924300153202"     
-[3] "VIF NOS:SubCD : 24.7854099680913"
-[1] "ALD_MALD binomial: Acc~ NOS * SubCD"
+[1] "VIF NOS : 19.6502209794307"       "VIF SubCD : 2.3924300153202"      "VIF NOS:SubCD : 24.7854099680913"
+[1] "MALD binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -288,7 +284,7 @@ fitting null model for pseudo-r2
 [1] "adj.r.sq:  0.00156161357788764"
 [1] "BIC:  1234.38628489137"
 [1] "VIF NOS : 19.1662382439414"      "VIF SubCD : 2.28867731494944"    "VIF NOS:SubCD : 23.903335744003"
-[1] "NMG_ELP binomial: Acc~ NOS * SubCD"
+[1] "NMG binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -336,9 +332,8 @@ fitting null model for pseudo-r2
 -1.562105e+02 -1.557942e+02 -8.324978e-01 -2.671786e-03 -9.830425e-05 -2.721371e-03 
 [1] "adj.r.sq:  0.00525448332809642"
 [1] "BIC:  348.597638587586"
-[1] "VIF NOS : 14.9778815418116"       "VIF SubCD : 2.2062188106913"     
-[3] "VIF NOS:SubCD : 18.9315061773876"
-[1] "SD_SDP binomial: Acc~ NOS * SubCD"
+[1] "VIF NOS : 14.9778815418116"       "VIF SubCD : 2.2062188106913"      "VIF NOS:SubCD : 18.9315061773876"
+[1] "SDP binomial: Acc~ NOS * SubCD"
 
 Call:
 glm(formula = model, family = binomial(link = "logit"), data = df, 
@@ -386,5 +381,4 @@ fitting null model for pseudo-r2
 -3.754087e+02 -3.753389e+02 -1.396564e-01 -1.860404e-04 -4.527053e-05 -2.095970e-04 
 [1] "adj.r.sq:  0.00326442376598002"
 [1] "BIC:  782.954639686562"
-[1] "VIF NOS : 17.8271702541449"       "VIF SubCD : 2.22036242949533"    
-[3] "VIF NOS:SubCD : 22.1918298495301"
+[1] "VIF NOS : 17.8271702541449"       "VIF SubCD : 2.22036242949533"     "VIF NOS:SubCD : 22.1918298495301"
